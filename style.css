@@ -1148,32 +1148,40 @@ header#header li:hover {
   margin-top: 49px;
 }
 /* line 95, ../sass/layout.scss */
+#container.container * {
+  color: #7F8C8C;
+}
+/* line 99, ../sass/layout.scss */
 #container.container header {
   margin-bottom: 21px;
 }
-/* line 98, ../sass/layout.scss */
+/* line 102, ../sass/layout.scss */
 #container.container header h2 {
   font-size: 21px;
   line-height: 22px;
-  margin-bottom: 7px;
+  margin-bottom: 3px;
+  font-weight: 600;
 }
-/* line 104, ../sass/layout.scss */
+/* line 109, ../sass/layout.scss */
 #container.container header a {
   color: #304269;
   text-decoration: none;
 }
-/* line 110, ../sass/layout.scss */
+/* line 115, ../sass/layout.scss */
 #container.container header .entry-meta a {
   color: #E2534B;
   text-decoration: none;
 }
-/* line 115, ../sass/layout.scss */
+/* line 120, ../sass/layout.scss */
+#container.container header .entry-meta i {
+  color: #304269;
+}
+/* line 124, ../sass/layout.scss */
 #container.container header .entry-meta .tag-links, #container.container header .entry-meta .comments-link {
   margin-left: 21px;
 }
-/* line 122, ../sass/layout.scss */
+/* line 131, ../sass/layout.scss */
 #container.container .entry-date {
-  width: 50%;
   margin: 0 auto;
   text-align: center;
   background-color: white;
@@ -1185,14 +1193,33 @@ header#header li:hover {
   border-bottom: 3px solid #ECECEC;
   text-transform: uppercase;
 }
-/* line 131, ../sass/layout.scss */
+/* line 140, ../sass/layout.scss */
 #container.container .entry-date #date {
   padding: 7px;
 }
-/* line 135, ../sass/layout.scss */
+/* line 144, ../sass/layout.scss */
 #container.container .entry-date #day {
   font-weight: 800;
   font-size: 21px;
+}
+/* line 153, ../sass/layout.scss */
+#container.container #sidebar ul li h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 800;
+}
+/* line 160, ../sass/layout.scss */
+#container.container #sidebar ul li a {
+  text-decoration: none;
+}
+/* line 166, ../sass/layout.scss */
+#container.container #sidebar ul #archives-2, #container.container #sidebar ul #categories-2, #container.container #sidebar ul #meta-2 {
+  text-transform: uppercase;
+}
+/* line 172, ../sass/layout.scss */
+#container.container #sidebar ul #categories-2 ul li:before {
+  font-family: "FontAwesome";
+  content: "\25AE";
 }
 
 /* MEDIA QUERIES
