@@ -1,0 +1,1223 @@
+@charset "UTF-8";
+/*!
+Theme Name: BlankSlate
+Theme URI: http://wordpress.org/themes/blankslate
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: <strong>UPDATE</strong> - 4.0+ is here, completely overhauled, yet again. As always, <a href="http://tidythemes.com/concept/#upgrading">use caution when upgrading</a> (tidythemes.com/concept/#upgrading) and <a href="http://tidythemes.com/concept/">learn the TidyThemes concept</a> (tidythemes.com/concept). &nbsp; &rarr; <em><strong>CAUTION</strong>: If you're child theming or have clients that are child theming on top of BlankSlate (not the recommended use), please do not blindly upgrade to newer versions.</em> &nbsp; &rarr; <strong>DESCRIPTION</strong>: BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme available anywhere for designers/developers to use as a base/foundation to build websites for clients or to build completely custom themes from scratch to release faster. Clean, semi-minified, unformatted and valid code, SEO-friendly, no programmer comments, standardized and as white label as possible and most importantly, CSS reset for cross-browser-compatability and no intrusive visual CSS styles added whatsoever. A perfect skeleton theme that blows any others like it (the subsequent underscores.me for example) completely out of the water, as they're simply too overcomplicated for what people really want in this kind of theme. Now comes with jQuery enqueued and ready to go. &nbsp; &rarr; <strong>SUPPORT</strong>: Please use the <a href="http://tidythemes.com/forum/">official support forum</a> (tidythemes.com/forum). Comments and suggestions for improving BlankSlate, please see "<a href="http://tidythemes.com/tidythemes-sucks/">TidyThemes Sucks!</a>" (tidythemes.com/tidythemes-sucks). Just getting started? <a href="http://tidythemes.com/want-to-learn-css/">Want to learn CSS?</a> (tidythemes.com/want-to-learn-css) &nbsp; &rarr; <strong>WHAT'S NEW?</strong>: We stripped down as much custom, extraneous, superfluous junk code as we could and greatly improved the HTML5 structure. <a href="http://make.wordpress.org/themes/author/chipbennett/">Chip Bennett</a> (make.wordpress.org/themes/author/chipbennett), a highly experienced programmer and official WordPress administrator, worked closely with us to audit the theme code for quality. <a href="http://themes.trac.wordpress.org/changeset?old_path=/blankslate/3.3&new_path=/blankslate/4.0">See</a> (themes.trac.wordpress.org/changeset?old_path=/blankslate/3.3&new_path=/blankslate/4.0) just how much we've revamped things. Last, but not least, BlankSlate has now been <a href="https://github.com/tidythemes/blankslate">opened up on GitHub</a> (github.com/tidythemes/blankslate) if anyone would like to make suggested code additions/improvements. Thank you for using BlankSlate.
+Version: 4.0.2
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: black, blue, white, light, one-column, fluid-layout, responsive-layout, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2014 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+/**
+ * SASS/SCSS/Compass Transcription of Skeleton Responsive Grid
+ * originally authored by Dave Gamache. This translation offers
+ * mixins that support fluid and as well as fixed grids to supplement
+ * the work that Dave Gamache has done.
+ * @author Dennis Thompson <http://www.atomicpages.net>
+ * @copyright Copyright (c) 2013 AtomicPages LLC
+ * @license MIT
+ * @version 1.6.1
+ */
+/* RESET & BASICS (Inspired by E. Meyers)
+ * ------------------------------------------------ */
+/* line 17, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* BASIC STYLES
+ * ------------------------------------------------ */
+/* line 24, ../sass/base.scss */
+body {
+  background: white;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  color: #444444;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+}
+
+/* TYPOGRAPHY
+ * ------------------------------------------------ */
+/* line 40, ../sass/base.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #181818;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+
+/* line 49, ../sass/base.scss */
+h1 a, h2 a, h3 a,
+h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+/* line 51, ../sass/base.scss */
+h1 {
+  font-size: 54px;
+  line-height: 58px;
+  margin-bottom: 16px;
+}
+
+/* line 56, ../sass/base.scss */
+h2 {
+  font-size: 41px;
+  line-height: 47px;
+  margin-bottom: 12px;
+}
+
+/* line 61, ../sass/base.scss */
+h3 {
+  font-size: 33px;
+  line-height: 40px;
+  margin-bottom: 9px;
+}
+
+/* line 66, ../sass/base.scss */
+h4 {
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: 5px;
+}
+
+/* line 71, ../sass/base.scss */
+h5 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* line 75, ../sass/base.scss */
+h6 {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/* line 79, ../sass/base.scss */
+.subheader {
+  color: #777;
+}
+
+/* line 80, ../sass/base.scss */
+p {
+  margin: 0 0 20px 0;
+}
+/* line 82, ../sass/base.scss */
+p img {
+  margin: 0;
+}
+/* line 83, ../sass/base.scss */
+p.lead {
+  font-size: 25px;
+  line-height: 32px;
+  color: #777;
+}
+
+/* line 89, ../sass/base.scss */
+em, i {
+  font-style: italic;
+}
+
+/* line 90, ../sass/base.scss */
+strong, b {
+  font-weight: bold;
+  color: #333;
+}
+
+/* line 94, ../sass/base.scss */
+u {
+  text-decoration: underline;
+}
+
+/* line 95, ../sass/base.scss */
+small {
+  font-size: 80%;
+}
+
+/*	Blockquotes  */
+/* line 97, ../sass/base.scss */
+blockquote, blockquote p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #777;
+  font-style: italic;
+}
+
+/* line 103, ../sass/base.scss */
+blockquote {
+  margin: 0 0 20px;
+  padding: 9px 20px 0 19px;
+  border-left: 1px solid #ddd;
+}
+
+/* line 108, ../sass/base.scss */
+blockquote cite {
+  display: block;
+  font-size: 14px;
+  color: #555;
+}
+/* line 112, ../sass/base.scss */
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+/* line 113, ../sass/base.scss */
+blockquote cite a, blockquote cite a:visited {
+  color: #555;
+}
+
+/* line 115, ../sass/base.scss */
+hr {
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0;
+}
+
+/* LINKS
+ * ------------------------------------------------ */
+/* line 128, ../sass/base.scss */
+a, a:visited {
+  color: #333333;
+  text-decoration: underline;
+  outline: 0;
+}
+
+/* line 133, ../sass/base.scss */
+a:hover, a:focus, a:active {
+  color: black;
+}
+
+/* line 134, ../sass/base.scss */
+p a, p a:visited {
+  line-height: inherit;
+}
+
+/* LISTS
+ * ------------------------------------------------ */
+/* line 139, ../sass/base.scss */
+ul,
+ol {
+  margin-bottom: 20px;
+}
+
+/* line 140, ../sass/base.scss */
+ul {
+  list-style: none outside;
+}
+
+/* line 141, ../sass/base.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 143, ../sass/base.scss */
+ol, ul.square,
+ul.circle, ul.disc {
+  margin-left: 30px;
+}
+
+/* line 144, ../sass/base.scss */
+ul.square {
+  list-style: square outside;
+}
+
+/* line 145, ../sass/base.scss */
+ul.circle {
+  list-style: circle outside;
+}
+
+/* line 146, ../sass/base.scss */
+ul.disc {
+  list-style: disc outside;
+}
+
+/* line 148, ../sass/base.scss */
+ul ul, ul ol,
+ol ol, ol ul {
+  margin-top: 4px;
+  margin-right: 0;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  font-size: 90%;
+}
+
+/* line 158, ../sass/base.scss */
+ul ul li, ul ol li,
+ol ol li, ol ul li {
+  margin-bottom: 6px;
+}
+
+/* line 159, ../sass/base.scss */
+li {
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+/* line 163, ../sass/base.scss */
+ul.large li {
+  line-height: 21px;
+}
+
+/* line 164, ../sass/base.scss */
+li p {
+  line-height: 21px;
+}
+
+/* IMAGES
+ * ------------------------------------------------ */
+/* line 168, ../sass/base.scss */
+img.scale-with-grid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* BUTTONS
+ * ------------------------------------------------ */
+/* line 179, ../sass/base.scss */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background: #eeeeee -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+  background: #eeeeee -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: #eeeeee -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: #eeeeee -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: #eeeeee linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  border: 1px solid #aaa;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #444;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  line-height: normal;
+  padding: 8px 10px;
+}
+/* line 199, ../sass/base.scss */
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  color: #222;
+  background: #dddddd -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.3)));
+  background: #dddddd -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background: #dddddd -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background: #dddddd -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background: #dddddd linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+  border: 1px solid #888;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+}
+/* line 208, ../sass/base.scss */
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+  border: 1px solid #666;
+  background: #cccccc -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.35)), color-stop(100%, rgba(10, 10, 10, 0.4)));
+  background: #cccccc -webkit-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  background: #cccccc -moz-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  background: #cccccc -o-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+  background: #cccccc linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+}
+/* line 212, ../sass/base.scss */
+.button.full-width,
+button.full-width,
+input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+}
+/* line 218, ../sass/base.scss */
+.button.smaller,
+button.smaller,
+input[type="submit"].smaller,
+input[type="reset"].smaller,
+input[type="button"].smaller {
+  font-size: 12px;
+  padding: 4px 5px;
+}
+/* line 222, ../sass/base.scss */
+.button.larger,
+button.larger,
+input[type="submit"].larger,
+input[type="reset"].larger,
+input[type="button"].larger {
+  font-size: 16px;
+  padding: 10px 18px;
+}
+
+/* Fix for odd Mozilla border & padding issues */
+/* line 231, ../sass/base.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* FORMS
+ * ------------------------------------------------ */
+/* line 239, ../sass/base.scss */
+form {
+  margin-bottom: 20px;
+}
+
+/* line 240, ../sass/base.scss */
+fieldset {
+  margin-bottom: 20px;
+}
+
+/* line 255, ../sass/base.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="number"],
+textarea,
+select {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 4px;
+  outline: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: #777;
+  margin: 0 0 20px;
+  width: 210px;
+  max-width: 100%;
+  display: block;
+}
+/* line 270, ../sass/base.scss */
+input[type="text"]:hover, input[type="text"]:focus,
+input[type="password"]:hover,
+input[type="password"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+input[type="search"]:hover,
+input[type="search"]:focus,
+input[type="url"]:hover,
+input[type="url"]:focus,
+input[type="tel"]:hover,
+input[type="tel"]:focus,
+input[type="date"]:hover,
+input[type="date"]:focus,
+input[type="datetime"]:hover,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:hover,
+input[type="datetime-local"]:focus,
+input[type="month"]:hover,
+input[type="month"]:focus,
+input[type="week"]:hover,
+input[type="week"]:focus,
+input[type="time"]:hover,
+input[type="time"]:focus,
+input[type="number"]:hover,
+input[type="number"]:focus,
+textarea:hover,
+textarea:focus,
+select:hover,
+select:focus {
+  border: 1px solid #aaa;
+  color: #444;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+/* line 275, ../sass/base.scss */
+input[type="text"]:active,
+input[type="password"]:active,
+input[type="email"]:active,
+input[type="search"]:active,
+input[type="url"]:active,
+input[type="tel"]:active,
+input[type="date"]:active,
+input[type="datetime"]:active,
+input[type="datetime-local"]:active,
+input[type="month"]:active,
+input[type="week"]:active,
+input[type="time"]:active,
+input[type="number"]:active,
+textarea:active,
+select:active {
+  border: 1px solid #909090;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 280, ../sass/base.scss */
+select {
+  padding: 0;
+}
+
+/* line 281, ../sass/base.scss */
+textarea {
+  min-height: 60px;
+}
+
+/* line 283, ../sass/base.scss */
+label,
+legend {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* line 290, ../sass/base.scss */
+select {
+  width: 220px;
+}
+
+/* line 291, ../sass/base.scss */
+input[type="checkbox"] {
+  display: inline;
+}
+
+/* line 293, ../sass/base.scss */
+label span,
+legend span {
+  font-size: 15px;
+  font-weight: normal;
+  color: #444;
+}
+
+/* MISC
+ * ------------------------------------------------ */
+/* line 303, ../sass/base.scss */
+.subtract-bottom {
+  margin-bottom: -20px !important;
+}
+
+/* line 304, ../sass/base.scss */
+.remove-bottom {
+  margin-bottom: 0 !important;
+}
+
+/* line 305, ../sass/base.scss */
+.half-bottom {
+  margin-bottom: 10px !important;
+}
+
+/* line 306, ../sass/base.scss */
+.add-bottom {
+  margin-bottom: 20px !important;
+}
+
+/**
+ * SASS/SCSS/Compass Transcription of Skeleton Responsive Grid
+ * originally authored by Dave Gamache. This translation offers
+ * mixins that support fluid and as well as fixed grids to supplement
+ * the work that Dave Gamache has done.
+ * @author Dennis Thompson <http://www.atomicpages.net>
+ * @copyright Copyright (c) 2013 AtomicPages LLC
+ * @license MIT
+ * @version 1.6.1
+ */
+/* BASE GRID
+ * ------------------------------------------------ */
+/* line 22, ../sass/skeleton.scss */
+.container {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 29, ../sass/skeleton.scss */
+.container .column,
+.container .columns {
+  float: left;
+  display: inline;
+  position: relative;
+}
+/* line 33, ../sass/skeleton.scss */
+.container .column.alpha,
+.container .columns.alpha {
+  margin-left: 0;
+}
+/* line 34, ../sass/skeleton.scss */
+.container .column.omega,
+.container .columns.omega {
+  margin-right: 0;
+}
+
+/* line 37, ../sass/skeleton.scss */
+.row {
+  margin-bottom: 20px;
+}
+
+/* line 44, ../sass/_dependencies.scss */
+.container .column,
+.container .columns {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* The Grid */
+/* line 56, ../sass/_dependencies.scss */
+.container .one.column,
+.container .one.columns {
+  width: 40px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .two.columns {
+  width: 100px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .three.columns {
+  width: 160px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .four.columns {
+  width: 220px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .five.columns {
+  width: 280px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .six.columns {
+  width: 340px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .seven.columns {
+  width: 400px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .eight.columns {
+  width: 460px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .nine.columns {
+  width: 520px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .ten.columns {
+  width: 580px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .eleven.columns {
+  width: 640px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .twelve.columns {
+  width: 700px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .thirteen.columns {
+  width: 760px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .fourteen.columns {
+  width: 820px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .fifteen.columns {
+  width: 880px;
+}
+/* line 58, ../sass/_dependencies.scss */
+.container .sixteen.columns {
+  width: 940px;
+}
+/* line 61, ../sass/_dependencies.scss */
+.container .one-third.column {
+  width: 300px;
+}
+/* line 62, ../sass/_dependencies.scss */
+.container .two-thirds.column {
+  width: 620px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-one {
+  padding-left: 60px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-two {
+  padding-left: 120px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-three {
+  padding-left: 180px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-four {
+  padding-left: 240px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-five {
+  padding-left: 300px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-six {
+  padding-left: 360px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-seven {
+  padding-left: 420px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-eight {
+  padding-left: 480px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-nine {
+  padding-left: 540px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-ten {
+  padding-left: 600px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-eleven {
+  padding-left: 660px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-twelve {
+  padding-left: 720px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-thirteen {
+  padding-left: 780px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-fourteen {
+  padding-left: 840px;
+}
+/* line 75, ../sass/_dependencies.scss */
+.container .offset-by-fifteen {
+  padding-left: 900px;
+}
+
+/* TABLET (PORTRAIT)
+ * ------------------------------------------------ */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 47, ../sass/skeleton.scss */
+  .container {
+    width: 768px;
+  }
+  /* line 51, ../sass/skeleton.scss */
+  .container .column.alpha, .container .columns.alpha {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  /* line 57, ../sass/skeleton.scss */
+  .container .column.omega, .container .columns.omega {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  /* line 65, ../sass/skeleton.scss */
+  .alpha.omega {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 44, ../sass/_dependencies.scss */
+  .container .column,
+  .container .columns {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* The Grid */
+  /* line 56, ../sass/_dependencies.scss */
+  .container .one.column,
+  .container .one.columns {
+    width: 28px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .two.columns {
+    width: 76px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .three.columns {
+    width: 124px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .four.columns {
+    width: 172px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .five.columns {
+    width: 220px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .six.columns {
+    width: 268px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .seven.columns {
+    width: 316px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .eight.columns {
+    width: 364px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .nine.columns {
+    width: 412px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .ten.columns {
+    width: 460px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .eleven.columns {
+    width: 508px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .twelve.columns {
+    width: 556px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .thirteen.columns {
+    width: 604px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .fourteen.columns {
+    width: 652px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .fifteen.columns {
+    width: 700px;
+  }
+  /* line 58, ../sass/_dependencies.scss */
+  .container .sixteen.columns {
+    width: 748px;
+  }
+  /* line 61, ../sass/_dependencies.scss */
+  .container .one-third.column {
+    width: 236px;
+  }
+  /* line 62, ../sass/_dependencies.scss */
+  .container .two-thirds.column {
+    width: 492px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-one {
+    padding-left: 48px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-two {
+    padding-left: 96px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-three {
+    padding-left: 144px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-four {
+    padding-left: 192px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-five {
+    padding-left: 240px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-six {
+    padding-left: 288px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-seven {
+    padding-left: 336px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-eight {
+    padding-left: 384px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-nine {
+    padding-left: 432px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-ten {
+    padding-left: 480px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-eleven {
+    padding-left: 528px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-twelve {
+    padding-left: 576px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-thirteen {
+    padding-left: 624px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-fourteen {
+    padding-left: 672px;
+  }
+  /* line 75, ../sass/_dependencies.scss */
+  .container .offset-by-fifteen {
+    padding-left: 720px;
+  }
+}
+/*  MOBILE (PORTRAIT)
+ * ------------------------------------------------ */
+@media only screen and (max-width: 767px) {
+  /* line 82, ../sass/_dependencies.scss */
+  .container {
+    width: 300px;
+  }
+  /* line 85, ../sass/_dependencies.scss */
+  .container .column,
+  .container .columns {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 94, ../sass/_dependencies.scss */
+  .container .one.column {
+    width: 300px;
+  }
+  /* line 124, ../sass/_dependencies.scss */
+  .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns, .container .thirteen.columns, .container .fourteen.columns, .container .fifteen.columns, .container .sixteen.columns {
+    width: 300px;
+  }
+  /* line 98, ../sass/_dependencies.scss */
+  .container .one-third.column {
+    width: 300px;
+  }
+  /* line 99, ../sass/_dependencies.scss */
+  .container .two-thirds.column {
+    width: 300px;
+  }
+  /* line 124, ../sass/_dependencies.scss */
+  .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven, .container .offset-by-twelve, .container .offset-by-thirteen, .container .offset-by-fourteen, .container .offset-by-fifteen {
+    padding-left: 0;
+  }
+}
+/* MOBILE (LANDSCAPE)
+ * ------------------------------------------------ */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 82, ../sass/_dependencies.scss */
+  .container {
+    width: 420px;
+  }
+  /* line 85, ../sass/_dependencies.scss */
+  .container .column,
+  .container .columns {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 94, ../sass/_dependencies.scss */
+  .container .one.column {
+    width: 420px;
+  }
+  /* line 124, ../sass/_dependencies.scss */
+  .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns, .container .thirteen.columns, .container .fourteen.columns, .container .fifteen.columns, .container .sixteen.columns {
+    width: 420px;
+  }
+  /* line 98, ../sass/_dependencies.scss */
+  .container .one-third.column {
+    width: 420px;
+  }
+  /* line 99, ../sass/_dependencies.scss */
+  .container .two-thirds.column {
+    width: 420px;
+  }
+  /* line 124, ../sass/_dependencies.scss */
+  .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven, .container .offset-by-twelve, .container .offset-by-thirteen, .container .offset-by-fourteen, .container .offset-by-fifteen {
+    padding-left: 0;
+  }
+}
+/* CLEARING
+ * ------------------------------------------------ */
+/* line 92, ../sass/skeleton.scss */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 99, ../sass/skeleton.scss */
+.clearfix, .row {
+  zoom: 1;
+}
+/* line 101, ../sass/skeleton.scss */
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+  content: "\0020";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/* line 109, ../sass/skeleton.scss */
+.clearfix:after, .row:after {
+  clear: both;
+}
+
+/* line 111, ../sass/skeleton.scss */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/*!
+Theme Name: BlankSlate
+Theme URI: http://wordpress.org/themes/blankslate
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: <strong>UPDATE</strong> - 4.0+ is here, completely overhauled, yet again. As always, <a href="http://tidythemes.com/concept/#upgrading">use caution when upgrading</a> (tidythemes.com/concept/#upgrading) and <a href="http://tidythemes.com/concept/">learn the TidyThemes concept</a> (tidythemes.com/concept). &nbsp; &rarr; <em><strong>CAUTION</strong>: If you're child theming or have clients that are child theming on top of BlankSlate (not the recommended use), please do not blindly upgrade to newer versions.</em> &nbsp; &rarr; <strong>DESCRIPTION</strong>: BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme available anywhere for designers/developers to use as a base/foundation to build websites for clients or to build completely custom themes from scratch to release faster. Clean, semi-minified, unformatted and valid code, SEO-friendly, no programmer comments, standardized and as white label as possible and most importantly, CSS reset for cross-browser-compatability and no intrusive visual CSS styles added whatsoever. A perfect skeleton theme that blows any others like it (the subsequent underscores.me for example) completely out of the water, as they're simply too overcomplicated for what people really want in this kind of theme. Now comes with jQuery enqueued and ready to go. &nbsp; &rarr; <strong>SUPPORT</strong>: Please use the <a href="http://tidythemes.com/forum/">official support forum</a> (tidythemes.com/forum). Comments and suggestions for improving BlankSlate, please see "<a href="http://tidythemes.com/tidythemes-sucks/">TidyThemes Sucks!</a>" (tidythemes.com/tidythemes-sucks). Just getting started? <a href="http://tidythemes.com/want-to-learn-css/">Want to learn CSS?</a> (tidythemes.com/want-to-learn-css) &nbsp; &rarr; <strong>WHAT'S NEW?</strong>: We stripped down as much custom, extraneous, superfluous junk code as we could and greatly improved the HTML5 structure. <a href="http://make.wordpress.org/themes/author/chipbennett/">Chip Bennett</a> (make.wordpress.org/themes/author/chipbennett), a highly experienced programmer and official WordPress administrator, worked closely with us to audit the theme code for quality. <a href="http://themes.trac.wordpress.org/changeset?old_path=/blankslate/3.3&new_path=/blankslate/4.0">See</a> (themes.trac.wordpress.org/changeset?old_path=/blankslate/3.3&new_path=/blankslate/4.0) just how much we've revamped things. Last, but not least, BlankSlate has now been <a href="https://github.com/tidythemes/blankslate">opened up on GitHub</a> (github.com/tidythemes/blankslate) if anyone would like to make suggested code additions/improvements. Thank you for using BlankSlate.
+Version: 4.0.2
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: black, blue, white, light, one-column, fluid-layout, responsive-layout, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2014 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+/* SITE STYLES
+ * ------------------------------------------------ */
+/* Add site styles here */
+/* For example: a { color: #000; } */
+/* PAGE STYLES
+ * ------------------------------------------------ */
+/* Add page styles here */
+/* For example: .page-home { background: rgba(0, 0, 0, 0.4); } */
+/* line 33, ../sass/layout.scss */
+body {
+  background-color: #F3F3F3;
+}
+
+/* line 37, ../sass/layout.scss */
+header#header {
+  background-color: #304269;
+}
+/* line 41, ../sass/layout.scss */
+header#header * {
+  color: white;
+}
+/* line 45, ../sass/layout.scss */
+header#header h1 {
+  display: inline-block;
+  font-size: 28px;
+  margin-bottom: 7px;
+}
+/* line 50, ../sass/layout.scss */
+header#header h1 span {
+  font-weight: 800;
+}
+/* line 55, ../sass/layout.scss */
+header#header a {
+  text-decoration: none;
+}
+/* line 59, ../sass/layout.scss */
+header#header ul {
+  float: right;
+  margin-bottom: 14px;
+  margin-top: 16px;
+  display: inline-block;
+  text-align: center;
+}
+/* line 67, ../sass/layout.scss */
+header#header li {
+  display: inline-block;
+  width: 106px;
+  margin: 0px 7px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* line 75, ../sass/layout.scss */
+header#header li a {
+  display: inline-block;
+  width: 106px;
+  height: 100%;
+  padding: 5px 0px;
+}
+/* line 83, ../sass/layout.scss */
+header#header li:hover {
+  background-color: #1F2A43;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-bottom: 3px solid #1D273F;
+}
+
+/* line 92, ../sass/layout.scss */
+#container.container {
+  margin-top: 49px;
+}
+/* line 95, ../sass/layout.scss */
+#container.container header {
+  margin-bottom: 21px;
+}
+/* line 98, ../sass/layout.scss */
+#container.container header h2 {
+  font-size: 21px;
+  line-height: 22px;
+  margin-bottom: 7px;
+}
+/* line 104, ../sass/layout.scss */
+#container.container header a {
+  color: #304269;
+  text-decoration: none;
+}
+/* line 110, ../sass/layout.scss */
+#container.container header .entry-meta a {
+  color: #E2534B;
+  text-decoration: none;
+}
+/* line 115, ../sass/layout.scss */
+#container.container header .entry-meta .tag-links, #container.container header .entry-meta .comments-link {
+  margin-left: 21px;
+}
+/* line 122, ../sass/layout.scss */
+#container.container .entry-date {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-bottom: 3px solid #ECECEC;
+  text-transform: uppercase;
+}
+/* line 131, ../sass/layout.scss */
+#container.container .entry-date #date {
+  padding: 7px;
+}
+/* line 135, ../sass/layout.scss */
+#container.container .entry-date #day {
+  font-weight: 800;
+  font-size: 21px;
+}
+
+/* MEDIA QUERIES
+ * ------------------------------------------------ */
+/* Otherwise known as custom responsive code! Write it here! */
+@media only screen and (min-width: 960px) and (max-width: 1280px) {
+  /* add code here */
+}
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  /* add code here */
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* add code here */
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  /* add code here */
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* add code here */
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  /* add code here */
+}
