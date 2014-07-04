@@ -1,87 +1,198 @@
-/*
-Syntax error: Undefined mixin 'border-radius'.
-        on line 85 of /opt/lampp/htdocs/wordpress/wp-content/themes/blankslate/sass/layout.scss, in `border-radius'
-        from line 85 of /opt/lampp/htdocs/wordpress/wp-content/themes/blankslate/sass/layout.scss
+@charset "UTF-8";
+/*!
+Theme Name: BlankSlate
+Theme URI: http://wordpress.org/themes/blankslate
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: <strong>UPDATE</strong> - 4.0+ is here, completely overhauled, yet again. As always, <a href="http://tidythemes.com/concept/#upgrading">use caution when upgrading</a> (tidythemes.com/concept/#upgrading) and <a href="http://tidythemes.com/concept/">learn the TidyThemes concept</a> (tidythemes.com/concept). &nbsp; &rarr; <em><strong>CAUTION</strong>: If you're child theming or have clients that are child theming on top of BlankSlate (not the recommended use), please do not blindly upgrade to newer versions.</em> &nbsp; &rarr; <strong>DESCRIPTION</strong>: BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme available anywhere for designers/developers to use as a base/foundation to build websites for clients or to build completely custom themes from scratch to release faster. Clean, semi-minified, unformatted and valid code, SEO-friendly, no programmer comments, standardized and as white label as possible and most importantly, CSS reset for cross-browser-compatability and no intrusive visual CSS styles added whatsoever. A perfect skeleton theme that blows any others like it (the subsequent underscores.me for example) completely out of the water, as they're simply too overcomplicated for what people really want in this kind of theme. Now comes with jQuery enqueued and ready to go. &nbsp; &rarr; <strong>SUPPORT</strong>: Please use the <a href="http://tidythemes.com/forum/">official support forum</a> (tidythemes.com/forum). Comments and suggestions for improving BlankSlate, please see "<a href="http://tidythemes.com/tidythemes-sucks/">TidyThemes Sucks!</a>" (tidythemes.com/tidythemes-sucks). Just getting started? <a href="http://tidythemes.com/want-to-learn-css/">Want to learn CSS?</a> (tidythemes.com/want-to-learn-css) &nbsp; &rarr; <strong>WHAT'S NEW?</strong>: We stripped down as much custom, extraneous, superfluous junk code as we could and greatly improved the HTML5 structure. <a href="http://make.wordpress.org/themes/author/chipbennett/">Chip Bennett</a> (make.wordpress.org/themes/author/chipbennett), a highly experienced programmer and official WordPress administrator, worked closely with us to audit the theme code for quality. <a href="http://themes.trac.wordpress.org/changeset?old_path=/blankslate/3.3&new_path=/blankslate/4.0">See</a> (themes.trac.wordpress.org/changeset?old_path=/blankslate/3.3&new_path=/blankslate/4.0) just how much we've revamped things. Last, but not least, BlankSlate has now been <a href="https://github.com/tidythemes/blankslate">opened up on GitHub</a> (github.com/tidythemes/blankslate) if anyone would like to make suggested code additions/improvements. Thank you for using BlankSlate.
+Version: 4.0.2
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: black, blue, white, light, one-column, fluid-layout, responsive-layout, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: blankslate
 
-Backtrace:
-/opt/lampp/htdocs/wordpress/wp-content/themes/blankslate/sass/layout.scss:85:in `border-radius'
-/opt/lampp/htdocs/wordpress/wp-content/themes/blankslate/sass/layout.scss:85
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/tree/root_node.rb:20:in `render'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/engine.rb:315:in `_render'
-/var/lib/gems/1.9.1/gems/sass-3.2.18/lib/sass/engine.rb:262:in `render'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/compiler.rb:138:in `block in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/logger.rb:45:in `red'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/compiler.rb:137:in `compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/compiler.rb:118:in `compile_if_required'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/compiler.rb:101:in `each'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/compiler.rb:101:in `block in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/compiler.rb:100:in `run'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/commands/watch_project.rb:147:in `recompile'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/commands/watch_project.rb:87:in `perform'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/commands/base.rb:18:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/commands/project_base.rb:19:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/bin/compass:30:in `block in <top (required)>'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/bin/compass:44:in `call'
-/var/lib/gems/1.9.1/gems/compass-0.12.4/bin/compass:44:in `<top (required)>'
-/usr/local/bin/compass:23:in `load'
-/usr/local/bin/compass:23:in `<main>'
+BlankSlate WordPress Theme © 2011-2014 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'border-radius'.\A         on line 85 of /opt/lampp/htdocs/wordpress/wp-content/themes/blankslate/sass/layout.scss, in `border-radius'\A         from line 85 of /opt/lampp/htdocs/wordpress/wp-content/themes/blankslate/sass/layout.scss"; }
+/* SITE STYLES
+ * ------------------------------------------------ */
+/* Add site styles here */
+/* For example: a { color: #000; } */
+/* PAGE STYLES
+ * ------------------------------------------------ */
+/* Add page styles here */
+/* For example: .page-home { background: rgba(0, 0, 0, 0.4); } */
+/* line 33, ../sass/layout.scss */
+body {
+  background-color: #F3F3F3;
+}
+
+/* line 37, ../sass/layout.scss */
+header#header {
+  background-color: #304269;
+  background-image: url("ruler.gif");
+  background-position: left bottom;
+  background-repeat: repeat-x;
+}
+/* line 43, ../sass/layout.scss */
+header#header * {
+  color: white;
+}
+/* line 47, ../sass/layout.scss */
+header#header h1 {
+  display: inline-block;
+  font-size: 28px;
+  margin-bottom: 7px;
+}
+/* line 52, ../sass/layout.scss */
+header#header h1 span {
+  font-weight: 800;
+}
+/* line 57, ../sass/layout.scss */
+header#header a {
+  text-decoration: none;
+}
+/* line 61, ../sass/layout.scss */
+header#header ul {
+  float: right;
+  margin-bottom: 14px;
+  margin-top: 16px;
+  display: inline-block;
+  text-align: center;
+}
+/* line 69, ../sass/layout.scss */
+header#header li {
+  display: inline-block;
+  width: 106px;
+  margin: 0px 7px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* line 77, ../sass/layout.scss */
+header#header li a {
+  display: inline-block;
+  width: 106px;
+  height: 100%;
+  padding: 5px 0px;
+}
+/* line 85, ../sass/layout.scss */
+header#header li:hover {
+  background-color: #1f2a43;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-bottom: 3px solid #1d273f;
+}
+/* line 92, ../sass/layout.scss */
+header#header img {
+  position: absolute;
+  margin-top: -9px;
+}
+
+/* line 99, ../sass/layout.scss */
+#container.container {
+  margin-top: 49px;
+}
+/* line 102, ../sass/layout.scss */
+#container.container * {
+  color: #7F8C8C;
+}
+/* line 106, ../sass/layout.scss */
+#container.container header {
+  margin-bottom: 21px;
+}
+/* line 109, ../sass/layout.scss */
+#container.container header h2 {
+  font-size: 21px;
+  line-height: 22px;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+/* line 116, ../sass/layout.scss */
+#container.container header a {
+  color: #304269;
+  text-decoration: none;
+}
+/* line 122, ../sass/layout.scss */
+#container.container header .entry-meta a {
+  color: #e2534b;
+  text-decoration: none;
+}
+/* line 127, ../sass/layout.scss */
+#container.container header .entry-meta i {
+  color: #304269;
+}
+/* line 131, ../sass/layout.scss */
+#container.container header .entry-meta .tag-links, #container.container header .entry-meta .comments-link {
+  margin-left: 21px;
+}
+/* line 138, ../sass/layout.scss */
+#container.container .entry-date {
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-bottom: 3px solid #ECECEC;
+  text-transform: uppercase;
+}
+/* line 147, ../sass/layout.scss */
+#container.container .entry-date #date {
+  padding: 7px;
+}
+/* line 151, ../sass/layout.scss */
+#container.container .entry-date #day {
+  font-weight: 800;
+  font-size: 21px;
+}
+/* line 160, ../sass/layout.scss */
+#container.container #sidebar ul li h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 800;
+}
+/* line 167, ../sass/layout.scss */
+#container.container #sidebar ul li a {
+  text-decoration: none;
+}
+/* line 173, ../sass/layout.scss */
+#container.container #sidebar ul #archives-2, #container.container #sidebar ul #categories-2, #container.container #sidebar ul #meta-2 {
+  text-transform: uppercase;
+}
+/* line 179, ../sass/layout.scss */
+#container.container #sidebar ul #categories-2 ul li:before {
+  font-family: "FontAwesome";
+  content: "\25AE";
+}
+
+/* MEDIA QUERIES
+ * ------------------------------------------------ */
+/* Otherwise known as custom responsive code! Write it here! */
+@media only screen and (min-width: 960px) and (max-width: 1280px) {
+  /* add code here */
+}
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  /* add code here */
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* add code here */
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  /* add code here */
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* add code here */
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  /* add code here */
+}

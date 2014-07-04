@@ -19,7 +19,7 @@ BlankSlate is distributed under the terms of the GNU GPL
 // IMPORTS
 @import "vars"; // import _global_variables.scss
 @import "mixins"; // import _mixins.scss
-
+@import "compass/css3";
 
 /* SITE STYLES
  * ------------------------------------------------ */
@@ -36,8 +36,10 @@ body{
 
 header#header{
 	// height: 77px; 
-	background-color: #304269;
-	
+	background-color: $mainBlue;
+	background-image: url("ruler.gif");
+	background-position: left bottom;
+	background-repeat: repeat-x;	
 	*{
 		color: white;
 	}
@@ -81,10 +83,15 @@ header#header{
 	}
 
 	li:hover{
-		background-color: #1F2A43;
+		background-color: $secondaryBlue;
 		@include border-radius(4px);
-		border-bottom: 3px solid #1D273F;
+		border-bottom: 3px solid $borderBlue;
 
+	}
+
+	img{
+		position: absolute;
+		margin-top: -9px;
 	}
 }
 
@@ -107,18 +114,18 @@ header#header{
 		}
 		
 		a{
-			color: #304269;
+			color: $mainBlue;
 			text-decoration: none;
 		}
 
 		.entry-meta{
 			a{
-				color: #E2534B;
+				color: $mainOrange;
 				text-decoration: none;
 			}
 
 			i{
-				color: #304269;
+				color: $mainBlue;
 			}
 
 			.tag-links, .comments-link{
@@ -176,6 +183,11 @@ header#header{
 				}
 			}
 		}
+	}
+
+	//Specific categories
+	.category-picture{
+		
 	}
 }
 /* MEDIA QUERIES
