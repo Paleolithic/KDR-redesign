@@ -101,6 +101,7 @@ header#header img {
 }
 /* line 106, ../sass/layout.scss */
 #container.container .entry-date {
+  width: 60%;
   margin: 0 auto;
   text-align: center;
   background-color: white;
@@ -126,7 +127,7 @@ header#header img {
   margin-bottom: 21px;
 }
 /* line 128, ../sass/layout.scss */
-#container.container header h2 {
+#container.container header h2, #container.container header h1 {
   font-size: 21px;
   line-height: 22px;
   margin-bottom: 3px;
@@ -159,29 +160,40 @@ header#header img {
 #container.container #sidebar ul li h3 {
   text-transform: uppercase;
   font-size: 18px;
+  margin-bottom: 7px;
   font-weight: 800;
 }
-/* line 173, ../sass/layout.scss */
-#container.container #sidebar ul li a {
+/* line 174, ../sass/layout.scss */
+#container.container #sidebar ul li a, #container.container #sidebar ul li abbr {
   text-decoration: none;
-}
-/* line 179, ../sass/layout.scss */
-#container.container #sidebar ul #archives-2, #container.container #sidebar ul #categories-2, #container.container #sidebar ul #meta-2 {
-  text-transform: uppercase;
+  color: #e2534b;
 }
 /* line 185, ../sass/layout.scss */
-#container.container #sidebar ul #recent-posts-2 ul li:before {
+#container.container #recent-posts-2 ul li:before, #container.container #recent-comments-2 ul li:before {
   font-family: "FontAwesome";
   content: "\f054";
   margin-left: -14px;
   margin-right: 7px;
+  color: #304269;
 }
-/* line 197, ../sass/layout.scss */
-#container.container #sidebar ul #categories-2 ul li:before, #container.container #sidebar ul #archives-2 ul li:before {
+/* line 195, ../sass/layout.scss */
+#container.container #categories-2, #container.container #archives-2, #container.container #meta-2 {
+  text-transform: uppercase;
+}
+/* line 200, ../sass/layout.scss */
+#container.container #categories-2 ul li:before, #container.container #archives-2 ul li:before, #container.container #meta-2 ul li:before {
   font-family: "FontAwesome";
   content: "\f0a9";
   margin-left: -14px;
   margin-right: 7px;
+  color: #304269;
+}
+/* line 211, ../sass/layout.scss */
+#container.container #comments .comments-title {
+  font-size: 21px;
+  line-height: 22px;
+  margin-bottom: 3px;
+  font-weight: 600;
 }
 
 /* MEDIA QUERIES

@@ -104,7 +104,7 @@ header#header{
 	}
 	
 	.entry-date{
-		// width: 50%;
+		 width: 60%;
 		margin: 0 auto;
 		text-align: center;
 		background-color: white;
@@ -125,7 +125,7 @@ header#header{
 	header{
 		margin-bottom: 21px;
 
-		h2{
+		h2, h1{
 			font-size: 21px;
 			line-height: 22px;
 			margin-bottom:3px;
@@ -166,46 +166,55 @@ header#header{
 				h3{
 					text-transform: uppercase;
 					font-size: 18px;
+					margin-bottom: 7px;
 					font-weight: 800;
 				}
 
 				
-				a{
+				a, abbr{
 					text-decoration: none;
-
+					color: $mainOrange;
 				}
 			}
 			
-			#archives-2, #categories-2, #meta-2{
-				text-transform: uppercase;
-			}
+		}
+	}
 
-			#recent-posts-2{
-				ul{
-					li:before{
-						font-family: "FontAwesome";
-						content: "\f054";
-						margin-left: -14px;
-						margin-right: 7px;
-
-					}
-				}
-			}
-			#categories-2,  #archives-2{
-				ul{
-
-					li:before{
-						font-family: "FontAwesome";
-						content: "\f0a9";
-						margin-left: -14px;
-						margin-right: 7px;
-
-					}
-				}
+	#recent-posts-2, #recent-comments-2{
+		ul{
+			li:before{
+				font-family: "FontAwesome";
+				content: "\f054";
+				margin-left: -14px;
+				margin-right: 7px;
+				color: $mainBlue;
 			}
 		}
 	}
 
+	#categories-2, #archives-2, #meta-2{
+		text-transform: uppercase;
+
+		ul{
+
+			li:before{
+				font-family: "FontAwesome";
+				content: "\f0a9";
+				margin-left: -14px;
+				margin-right: 7px;
+				color: $mainBlue;
+			}
+		}
+	}
+
+	#comments{
+		.comments-title{
+			font-size: 21px;
+			line-height: 22px;
+			margin-bottom:3px;
+			font-weight: 600;
+		}
+	}
 	//Specific categories
 	.category-picture{
 		
