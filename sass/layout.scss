@@ -100,34 +100,16 @@ header#header{
 	margin-top: 49px;
 
 	*{
-		color: #7F8C8C;
-	}
-	
-	.entry-date{
-		 width: 60%;
-		margin: 0 auto;
-		text-align: center;
-		background-color: white;
-		@include border-radius(4px);
-		border-bottom: 3px solid #ECECEC;
-		text-transform: uppercase;
-
-		#date{
-			padding: 7px;
-		}
-
-		#day{
-			font-weight: 800;
-			font-size: 21px;
-		}
+		// color: #7F8C8C;
+		color: rgba(0, 0, 0, .8);
 	}
 
 	header{
 		margin-bottom: 21px;
 
 		h2, h1{
-			font-size: 21px;
-			line-height: 22px;
+			font-size: 35px;
+			line-height: 40px;
 			margin-bottom:3px;
 			font-weight: 600;
 		}
@@ -152,73 +134,101 @@ header#header{
 			}
 		}
 	}
+}
 
-	.entry-content{
-		img{
-			width: 100%;
-			height: auto;
-		}
+.entry-date{
+	 width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: white;
+	@include border-radius(4px);
+	border-bottom: 3px solid #ECECEC;
+	text-transform: uppercase;
+
+	#date{
+		padding: 7px;
 	}
-	
-	#sidebar{
-		ul{
-			li{
-				h3{
-					text-transform: uppercase;
-					font-size: 18px;
-					margin-bottom: 7px;
-					font-weight: 800;
-				}
 
-				
-				a, abbr{
-					text-decoration: none;
-					color: $mainOrange;
-				}
+	#day{
+		font-weight: 800;
+		font-size: 21px;
+	}
+}
+
+.entry-content{
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+	p{
+		font-size: 21px;
+		line-height: 32px;
+		font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+	}
+}
+
+#sidebar{
+	width: 100%;
+	background-color: $mainBlue;
+
+	ul{
+		li{
+			margin-left: 14px;
+			h3{
+				text-transform: uppercase;
+				font-size: 18px;
+				margin-bottom: 7px;
+				font-weight: 800;
 			}
+
 			
-		}
-	}
-
-	#recent-posts-2, #recent-comments-2{
-		ul{
-			li:before{
-				font-family: "FontAwesome";
-				content: "\f054";
-				margin-left: -14px;
-				margin-right: 7px;
-				color: $mainBlue;
+			a, abbr{
+				text-decoration: none;
+				color: white;
 			}
 		}
 	}
 
-	#categories-2, #archives-2, #meta-2{
-		text-transform: uppercase;
+}
 
-		ul{
-
-			li:before{
-				font-family: "FontAwesome";
-				content: "\f0a9";
-				margin-left: -14px;
-				margin-right: 7px;
-				color: $mainBlue;
-			}
+#recent-posts, #recent-comments{
+	ul{
+		li:before{
+			font-family: "FontAwesome";
+			content: "\f054";
+			margin-left: -14px;
+			margin-right: 7px;
+			color: $mainOrange;
 		}
 	}
+}
 
-	#comments{
-		.comments-title{
-			font-size: 21px;
-			line-height: 22px;
-			margin-bottom:3px;
-			font-weight: 600;
+#categories, #archives, #meta{
+	text-transform: uppercase;
+
+	ul{
+		li:before{
+			font-family: "FontAwesome";
+			content: "\f0a9";
+			margin-left: -14px;
+			margin-right: 7px;
+			color: $mainOrange;
 		}
 	}
-	//Specific categories
-	.category-picture{
-		
+}
+
+#comments{
+	.comments-title{
+		font-size: 21px;
+		line-height: 22px;
+		margin-bottom:3px;
+		font-weight: 600;
 	}
+}
+//Specific categories
+.category-picture{
+	
 }
 /* MEDIA QUERIES
  * ------------------------------------------------ */

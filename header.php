@@ -27,4 +27,3 @@
 	</div>
 	<img src="<?php bloginfo('template_directory'); ?>/ruler.gif"/>	
 </header>
-<div class="container" id="container">

@@ -97,10 +97,40 @@ header#header img {
 }
 /* line 102, ../sass/layout.scss */
 #container.container * {
-  color: #7F8C8C;
+  color: rgba(0, 0, 0, 0.8);
 }
-/* line 106, ../sass/layout.scss */
-#container.container .entry-date {
+/* line 107, ../sass/layout.scss */
+#container.container header {
+  margin-bottom: 21px;
+}
+/* line 110, ../sass/layout.scss */
+#container.container header h2, #container.container header h1 {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+/* line 117, ../sass/layout.scss */
+#container.container header a {
+  color: #304269;
+  text-decoration: none;
+}
+/* line 123, ../sass/layout.scss */
+#container.container header .entry-meta a {
+  color: #e2534b;
+  text-decoration: none;
+}
+/* line 128, ../sass/layout.scss */
+#container.container header .entry-meta i {
+  color: #304269;
+}
+/* line 132, ../sass/layout.scss */
+#container.container header .entry-meta .tag-links, #container.container header .entry-meta .comments-link {
+  margin-left: 21px;
+}
+
+/* line 139, ../sass/layout.scss */
+.entry-date {
   width: 60%;
   margin: 0 auto;
   text-align: center;
@@ -113,83 +143,74 @@ header#header img {
   border-bottom: 3px solid #ECECEC;
   text-transform: uppercase;
 }
-/* line 115, ../sass/layout.scss */
-#container.container .entry-date #date {
+/* line 148, ../sass/layout.scss */
+.entry-date #date {
   padding: 7px;
 }
-/* line 119, ../sass/layout.scss */
-#container.container .entry-date #day {
+/* line 152, ../sass/layout.scss */
+.entry-date #day {
   font-weight: 800;
   font-size: 21px;
 }
-/* line 125, ../sass/layout.scss */
-#container.container header {
-  margin-bottom: 21px;
-}
-/* line 128, ../sass/layout.scss */
-#container.container header h2, #container.container header h1 {
-  font-size: 21px;
-  line-height: 22px;
-  margin-bottom: 3px;
-  font-weight: 600;
-}
-/* line 135, ../sass/layout.scss */
-#container.container header a {
-  color: #304269;
-  text-decoration: none;
-}
-/* line 141, ../sass/layout.scss */
-#container.container header .entry-meta a {
-  color: #e2534b;
-  text-decoration: none;
-}
-/* line 146, ../sass/layout.scss */
-#container.container header .entry-meta i {
-  color: #304269;
-}
-/* line 150, ../sass/layout.scss */
-#container.container header .entry-meta .tag-links, #container.container header .entry-meta .comments-link {
-  margin-left: 21px;
-}
-/* line 157, ../sass/layout.scss */
-#container.container .entry-content img {
+
+/* line 159, ../sass/layout.scss */
+.entry-content img {
   width: 100%;
   height: auto;
 }
-/* line 166, ../sass/layout.scss */
-#container.container #sidebar ul li h3 {
+/* line 164, ../sass/layout.scss */
+.entry-content p {
+  font-size: 21px;
+  line-height: 32px;
+  font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+/* line 171, ../sass/layout.scss */
+#sidebar {
+  width: 100%;
+  background-color: #304269;
+}
+/* line 176, ../sass/layout.scss */
+#sidebar ul li {
+  margin-left: 14px;
+}
+/* line 178, ../sass/layout.scss */
+#sidebar ul li h3 {
   text-transform: uppercase;
   font-size: 18px;
   margin-bottom: 7px;
   font-weight: 800;
 }
-/* line 174, ../sass/layout.scss */
-#container.container #sidebar ul li a, #container.container #sidebar ul li abbr {
+/* line 186, ../sass/layout.scss */
+#sidebar ul li a, #sidebar ul li abbr {
   text-decoration: none;
-  color: #e2534b;
+  color: white;
 }
-/* line 185, ../sass/layout.scss */
-#container.container #recent-posts-2 ul li:before, #container.container #recent-comments-2 ul li:before {
+
+/* line 197, ../sass/layout.scss */
+#recent-posts ul li:before, #recent-comments ul li:before {
   font-family: "FontAwesome";
   content: "\f054";
   margin-left: -14px;
   margin-right: 7px;
-  color: #304269;
+  color: #e2534b;
 }
-/* line 195, ../sass/layout.scss */
-#container.container #categories-2, #container.container #archives-2, #container.container #meta-2 {
+
+/* line 207, ../sass/layout.scss */
+#categories, #archives, #meta {
   text-transform: uppercase;
 }
-/* line 200, ../sass/layout.scss */
-#container.container #categories-2 ul li:before, #container.container #archives-2 ul li:before, #container.container #meta-2 ul li:before {
+/* line 211, ../sass/layout.scss */
+#categories ul li:before, #archives ul li:before, #meta ul li:before {
   font-family: "FontAwesome";
   content: "\f0a9";
   margin-left: -14px;
   margin-right: 7px;
-  color: #304269;
+  color: #e2534b;
 }
-/* line 211, ../sass/layout.scss */
-#container.container #comments .comments-title {
+
+/* line 222, ../sass/layout.scss */
+#comments .comments-title {
   font-size: 21px;
   line-height: 22px;
   margin-bottom: 3px;
