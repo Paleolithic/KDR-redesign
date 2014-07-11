@@ -5,7 +5,13 @@
 		<?php get_template_part( 'entry' ); ?>
 		<?php comments_template(); ?>
 		<?php endwhile; endif; ?>
-		<?php get_template_part( 'nav', 'below' ); ?>
+		<?php 
+			if(function_exists('wp_paginate')) {
+				wp_paginate(); 
+			} else{
+				get_template_part( 'nav', 'below' );
+			}
+		?>
 	</section>
 </div>
 <?php get_sidebar(); ?>

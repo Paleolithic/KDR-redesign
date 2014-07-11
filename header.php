@@ -13,12 +13,12 @@
 <div id="wrapper" class="hfeed">
 <header id="header" role="banner">
 	<div class="container">
-		<section class='six columns' id="branding">
+		<section class='four columns' id="branding">
 			<!-- <div id="site-title"><?php if ( ! is_singular() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'blankslate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( ! is_singular() ) { echo '</h1>'; } ?></div> -->
 			<div id="site-title"><h1><a href='#'><span>KDR </span>iota beta</a></h1></div>
 			<!-- <div id="site-description"><?php bloginfo( 'description' ); ?></div> -->
 		</section>
-		<nav class='ten columns' id="menu" role="navigation">
+		<nav class='twelve columns' id="menu" role="navigation">
 			<div id="search">
 			<!-- <?php get_search_form(); ?> -->
 			</div>
