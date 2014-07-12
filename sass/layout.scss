@@ -82,12 +82,18 @@ header#header{
 		}
 	}
 
-	li:hover, .current-menu-item{
+	.current-menu-item{
 		background-color: $secondaryBlue;
 		@include border-radius(4px);
 		border-bottom: 3px solid $borderBlue;
 
 	}
+
+	li:hover{
+		background-color: $mainOrange;
+		@include border-radius(4px);
+		border-bottom: 3px solid $borderOrange;
+	} 
 
 	img{
 		position: absolute;
@@ -132,6 +138,41 @@ header#header{
 			.tag-links, .comments-link{
 				margin-left: 21px;
 			}
+		}
+	}
+
+	.wp-pagenavi{
+		margin-bottom: 35px;
+
+		a, span{
+			display: inline-block;
+			padding: 7px 14px;
+			margin: 7px;
+			@include border-radius(4px);
+			color: white;
+			font-weight: 800;
+
+		}
+
+		a{
+			background-color: $mainGrey;
+			border-bottom: 3px solid $borderGrey;
+			text-decoration: none;
+		}
+
+		span{
+			background-color: $mainBlue;
+			border-bottom: 3px solid $borderBlue;
+			cursor: pointer;
+		}
+
+		a:hover, span:hover{
+			background-color: $mainOrange;
+			border-bottom: 3px solid $borderOrange;
+		}
+
+		i{
+			color: white;
 		}
 	}
 }

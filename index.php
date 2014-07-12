@@ -6,8 +6,9 @@
 		<?php comments_template(); ?>
 		<?php endwhile; endif; ?>
 		<?php 
-			if(function_exists('wp_paginate')) {
-				wp_paginate(); 
+			if(function_exists('wp_pagenavi')) {
+				// wp_paginate(); 
+				wp_pagenavi();
 			} else{
 				get_template_part( 'nav', 'below' );
 			}
