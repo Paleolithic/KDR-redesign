@@ -25,7 +25,14 @@ BlankSlate is distributed under the terms of the GNU GPL
  * ------------------------------------------------ */
 /* Add site styles here */
 /* For example: a { color: #000; } */
-
+code{
+	display: inline-block;
+	margin: 0 .4em;
+	padding: 1px 6px;
+	background: #fff;
+	border: 1px solid #DDD;
+	box-shadow: 1px 1px 0 #fff, 2px 2px 0 #ddd;
+}
 /* PAGE STYLES
  * ------------------------------------------------ */
 /* Add page styles here */
@@ -105,11 +112,35 @@ header#header{
 #container.container{
 	margin-top: 49px;
 
-	*{
+	p{
 		// color: #7F8C8C;
 		color: rgba(0, 0, 0, .8);
 	}
 
+	a{
+		color: $mainBlue;
+		text-decoration: none;
+	}
+
+	.entry-date{
+		 width: 60%;
+		margin: 0 auto;
+		text-align: center;
+		background-color: white;
+		@include border-radius(4px);
+		border-bottom: 3px solid #ECECEC;
+		text-transform: uppercase;
+
+		#date{
+			padding: 7px;
+		}
+
+		#day{
+			font-weight: 800;
+			font-size: 21px;
+		}
+	}
+	
 	header{
 		margin-bottom: 21px;
 
@@ -120,10 +151,6 @@ header#header{
 			font-weight: 600;
 		}
 		
-		a{
-			color: $mainBlue;
-			text-decoration: none;
-		}
 
 		.entry-meta{
 			a{
@@ -141,6 +168,33 @@ header#header{
 		}
 	}
 
+	.entry-content{
+		img{
+			width: 100%;
+			height: auto;
+		}
+
+		p{
+			font-size: 21px;
+			line-height: 32px;
+			font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+		}
+
+		blockquote{
+			border-left: 14px solid $mainOrange;
+		}
+
+		.more-link{
+			font-size: 14px;
+			font-family: $fontFamily;
+			line-height: 25px;
+			color: $mainOrange;
+			font-weight: light;
+			display: block;
+			margin: 7px 0 0 0;
+		}
+	}
+
 	.wp-pagenavi{
 		margin-bottom: 35px;
 
@@ -152,6 +206,10 @@ header#header{
 			color: white;
 			font-weight: 800;
 
+			&:hover{
+				background-color: $mainOrange;
+				border-bottom: 3px solid $borderOrange;
+			}
 		}
 
 		a{
@@ -166,53 +224,20 @@ header#header{
 			cursor: pointer;
 		}
 
-		a:hover, span:hover{
-			background-color: $mainOrange;
-			border-bottom: 3px solid $borderOrange;
-		}
-
 		i{
 			color: white;
 		}
 	}
 }
 
-.entry-date{
-	 width: 60%;
-	margin: 0 auto;
-	text-align: center;
-	background-color: white;
-	@include border-radius(4px);
-	border-bottom: 3px solid #ECECEC;
-	text-transform: uppercase;
-
-	#date{
-		padding: 7px;
-	}
-
-	#day{
-		font-weight: 800;
-		font-size: 21px;
-	}
-}
-
-.entry-content{
-	img{
-		width: 100%;
-		height: auto;
-	}
-
-	p{
-		font-size: 21px;
-		line-height: 32px;
-		font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-	}
-}
 
 //"Sidebar" stylization
 #sidebar{
 	width: 100%;
 	background-color: $mainBlue;
+	background-image: url("ruler.gif");
+	background-position: left top;
+	background-repeat: repeat-x;
 	padding: 28px 0px;
 
 	h3{
@@ -279,11 +304,62 @@ body > footer{
 
 //Specific entry styles
 #comments{
+
+	p{
+		font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+	}
+
+	.comment-body{
+		padding: 1em 1.6em;
+		border: 1px solid #eee;
+		border-left: 3px solid $mainOrange;
+		margin-bottom: 1em;
+		margin-left: 49px;
+	}
+
 	.comments-title{
 		font-size: 21px;
 		line-height: 22px;
-		margin-bottom:3px;
+		margin-bottom: 0.8em;
 		font-weight: 600;
+	}
+
+	.comment-author{
+		float: left;
+		display: inline-block;
+		width: 50%;
+		margin-bottom: 7px;
+
+		.fn{
+			a{
+				color: $mainOrange;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+
+		.says, .avatar{
+			display: none;
+		}
+	}
+
+	.comment-meta{
+		display: inline-block;
+		width: 50%;
+		float: right;
+		margin-bottom: 7px;
+
+		a{
+			text-align: right;
+			width: 100%;
+			display: block;
+		}
+	}
+
+	.comment-form{
+		input, textarea{
+			width: 100%;
+		}
 	}
 }
 
@@ -302,6 +378,11 @@ body > footer{
 /* Smaller than standard #{strip-units($baseWidthMQ)} (devices and browsers) */
 @media only screen and (max-width: $baseWidthMQ - 1) {
 	/* add code here */
+	header#header{	
+		h1{
+			font-size: 21px;
+		}
+	}
 }
 
 /* Tablet Portrait size to standard #{strip-units($baseWidthMQ)} (devices and browsers) */
