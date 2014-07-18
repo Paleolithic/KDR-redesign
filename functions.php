@@ -64,3 +64,8 @@ return count( $comments_by_type['comment'] );
 return $count;
 }
 }
+
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
+function modify_read_more_link() {
+return '<a class="more-link" href="' . get_permalink() . '">Continue reading <i class="fa fa-arrow-right"></i></a>';
+}
