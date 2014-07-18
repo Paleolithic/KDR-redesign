@@ -324,11 +324,14 @@ body > footer a {
   width: 50%;
   margin-bottom: 7px;
 }
-/* line 334, ../sass/layout.scss */
+/* line 333, ../sass/layout.scss */
+#comments .comment-author .fn {
+  text-transform: uppercase;
+}
+/* line 335, ../sass/layout.scss */
 #comments .comment-author .fn a {
   color: #e5655d;
   text-decoration: none;
-  text-transform: uppercase;
 }
 /* line 341, ../sass/layout.scss */
 #comments .comment-author .says, #comments .comment-author .avatar {
