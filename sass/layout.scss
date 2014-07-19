@@ -33,6 +33,19 @@ code{
 	border: 1px solid #DDD;
 	box-shadow: 1px 1px 0 #fff, 2px 2px 0 #ddd;
 }
+
+input[type="button"],input[type="submit"]{
+    background: none;
+    border: none;
+    text-shadow: none !important;
+}
+input[type="button"]:hover,input[type="submit"]:hover{
+    background: none;
+    border: none;
+    color: white;
+    text-shadow: none !important;
+}
+
 /* PAGE STYLES
  * ------------------------------------------------ */
 /* Add page styles here */
@@ -228,8 +241,28 @@ header#header{
 			color: white;
 		}
 	}
-}
 
+	input[type="submit"]{
+		background-color: $mainGrey;
+		border-bottom: 3px solid $borderGrey;
+		text-decoration: none;
+		display: inline-block;
+		padding: 7px 14px;
+		margin: 7px;
+		@include border-radius(4px);
+		color: white;
+		font-weight: 800;
+
+		&:hover{
+			background-color: $mainOrange;
+			border-bottom: 3px solid $borderOrange;
+		}
+	}
+
+	#nav-below{
+		display: none;
+	}
+}
 
 //"Sidebar" stylization
 #sidebar{
