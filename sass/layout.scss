@@ -401,6 +401,36 @@ body > footer{
 .category-picture{
 	
 }
+
+//Soliloquy stuff
+.soliloquy-container{
+	.soliloquy-wrapper{
+		.soliloquy-controls{
+			.soliloquy-pager{
+				display: none;
+			}
+
+			.soliloquy-controls-direction{
+				.soliloquy-prev, .soliloquy-next{
+					height: 35px;
+					background-color: $mainOrange;
+					border-bottom: 3px solid $borderOrange;
+				}			
+				.soliloquy-prev:hover, .soliloquy-next:hover{
+					color: $borderOrange;
+				}
+				.soliloquy-prev{
+					left: 0px;
+					@include border-radius(0px 3px 3px 0px);
+				}
+				.soliloquy-next{
+					right: 0px;
+					@include border-radius(3px 0px 0px 3px);
+				}
+			}
+		}
+	}
+}
 /* MEDIA QUERIES
  * ------------------------------------------------ */
 /* Otherwise known as custom responsive code! Write it here! */

@@ -395,6 +395,39 @@ body > footer a {
   width: 100%;
 }
 
+/* line 409, ../sass/layout.scss */
+.soliloquy-container .soliloquy-wrapper .soliloquy-controls .soliloquy-pager {
+  display: none;
+}
+/* line 414, ../sass/layout.scss */
+.soliloquy-container .soliloquy-wrapper .soliloquy-controls .soliloquy-controls-direction .soliloquy-prev, .soliloquy-container .soliloquy-wrapper .soliloquy-controls .soliloquy-controls-direction .soliloquy-next {
+  height: 35px;
+  background-color: #e5655d;
+  border-bottom: 3px solid #e25850;
+}
+/* line 419, ../sass/layout.scss */
+.soliloquy-container .soliloquy-wrapper .soliloquy-controls .soliloquy-controls-direction .soliloquy-prev:hover, .soliloquy-container .soliloquy-wrapper .soliloquy-controls .soliloquy-controls-direction .soliloquy-next:hover {
+  color: #e25850;
+}
+/* line 422, ../sass/layout.scss */
+.soliloquy-container .soliloquy-wrapper .soliloquy-controls .soliloquy-controls-direction .soliloquy-prev {
+  left: 0px;
+  -webkit-border-radius: 0px 3px 3px 0px;
+  -moz-border-radius: 0px 3px 3px 0px;
+  -ms-border-radius: 0px 3px 3px 0px;
+  -o-border-radius: 0px 3px 3px 0px;
+  border-radius: 0px 3px 3px 0px;
+}
+/* line 426, ../sass/layout.scss */
+.soliloquy-container .soliloquy-wrapper .soliloquy-controls .soliloquy-controls-direction .soliloquy-next {
+  right: 0px;
+  -webkit-border-radius: 3px 0px 0px 3px;
+  -moz-border-radius: 3px 0px 0px 3px;
+  -ms-border-radius: 3px 0px 0px 3px;
+  -o-border-radius: 3px 0px 0px 3px;
+  border-radius: 3px 0px 0px 3px;
+}
+
 /* MEDIA QUERIES
  * ------------------------------------------------ */
 /* Otherwise known as custom responsive code! Write it here! */
@@ -404,7 +437,7 @@ body > footer a {
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   /* add code here */
-  /* line 415, ../sass/layout.scss */
+  /* line 445, ../sass/layout.scss */
   header#header h1 {
     font-size: 21px;
   }
