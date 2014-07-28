@@ -1462,13 +1462,13 @@ body > footer a {
   width: 100%;
 }
 
-/* line 415, ../sass/layout.scss */
-#top {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://127.0.0.1/wordpress/wp-content/uploads/2014/07/402819_10151055549982107_436206485_n.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+/* line 416, ../sass/layout.scss */
+.about .top {
+  background: linear-gradient(0deg, rgba(34, 41, 57, 0.4), rgba(34, 41, 57, 0.4));
+  background-image: linear-gradient(0deg, rgba(34, 41, 57, 0.6), rgba(27, 33, 47, 0.6)), url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII="), url("http://127.0.0.1/wordpress/wp-content/uploads/2014/07/402819_10151055549982107_436206485_n.jpg");
+  background-repeat: no-repeat, repeat, no-repeat center center;
+  background-position: 0 0;
+  background-size: cover, 4px 4px, cover;
   margin: 0;
   padding: 0;
   min-width: 100%;
@@ -1476,30 +1476,23 @@ body > footer a {
   text-align: center;
   overflow: hidden;
 }
-/* line 424, ../sass/layout.scss */
-#top .container {
+/* line 431, ../sass/layout.scss */
+.about .top .container {
   top: 50%;
   margin-top: -140px;
 }
-/* line 428, ../sass/layout.scss */
-#top h5 {
+/* line 436, ../sass/layout.scss */
+.about .top h5 {
+  font-family: 'Lobster', cursive;
   font-size: 28px;
   line-height: 39px;
   font-weight: lighter;
-}
-/* line 433, ../sass/layout.scss */
-#top h3 {
-  font-size: 35px;
-  line-height: 46px;
-}
-/* line 437, ../sass/layout.scss */
-#top h5, #top h3 {
   color: #fff;
   overflow: hidden;
   text-align: center;
 }
-/* line 443, ../sass/layout.scss */
-#top h5:before, #top h5:after, #top h3:before, #top h3:after {
+/* line 445, ../sass/layout.scss */
+.about .top h5:before, .about .top h5:after {
   background-color: #fff;
   content: "";
   display: inline-block;
@@ -1508,31 +1501,75 @@ body > footer a {
   vertical-align: middle;
   width: 50%;
 }
-/* line 452, ../sass/layout.scss */
-#top h5:before, #top h3:before {
+/* line 454, ../sass/layout.scss */
+.about .top h5:before {
   right: 0.5em;
   margin-left: -50%;
 }
-/* line 456, ../sass/layout.scss */
-#top h5:after, #top h3:after {
+/* line 458, ../sass/layout.scss */
+.about .top h5:after {
   left: 0.5em;
   margin-right: -50%;
 }
-/* line 462, ../sass/layout.scss */
-#top h1 {
+/* line 464, ../sass/layout.scss */
+.about .top h1 {
   font-size: 140px;
   line-height: 151px;
   font-weight: bolder;
   color: #fff;
   border: 14px solid #fff;
+  margin-bottom: 4px;
 }
-
-/* line 471, ../sass/layout.scss */
-.about {
-  background-color: #e5655d;
+/* line 474, ../sass/layout.scss */
+.about .info {
+  background-color: #EBEBEB;
+  padding: 49px 0px;
+  overflow: hidden;
 }
-
 /* line 478, ../sass/layout.scss */
+.about .info h1 {
+  text-align: center;
+  color: #e5655d;
+  font-family: 'Lobster', cursive;
+  line-height: 70px;
+  overflow: hidden;
+}
+/* line 485, ../sass/layout.scss */
+.about .info h1:before, .about .info h1:after {
+  background-color: #e5655d;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+/* line 494, ../sass/layout.scss */
+.about .info h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+/* line 498, ../sass/layout.scss */
+.about .info h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+/* line 504, ../sass/layout.scss */
+.about .info h5 {
+  text-align: center;
+  font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+  margin: 14px 0px 56px 0px;
+}
+/* line 510, ../sass/layout.scss */
+.about .info .info-thirds {
+  text-align: center;
+}
+/* line 514, ../sass/layout.scss */
+.about .info .info-thirds p {
+  font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+/* line 526, ../sass/layout.scss */
 .cycloneslider-template-standard p .cycloneslider-prev, .cycloneslider-template-standard p .cycloneslider-next {
   opacity: 1;
   background: #e5655d;
@@ -1541,11 +1578,11 @@ body > footer a {
   height: 35px;
   width: 35px;
 }
-/* line 486, ../sass/layout.scss */
+/* line 534, ../sass/layout.scss */
 .cycloneslider-template-standard p .cycloneslider-prev:hover, .cycloneslider-template-standard p .cycloneslider-next:hover {
   background: #e25850;
 }
-/* line 490, ../sass/layout.scss */
+/* line 538, ../sass/layout.scss */
 .cycloneslider-template-standard p .cycloneslider-prev .arrow, .cycloneslider-template-standard p .cycloneslider-next .arrow {
   border: none;
   top: 12%;
@@ -1553,7 +1590,7 @@ body > footer a {
   margin-top: 0px;
   margin-left: 0px;
 }
-/* line 498, ../sass/layout.scss */
+/* line 546, ../sass/layout.scss */
 .cycloneslider-template-standard p .cycloneslider-prev {
   left: 0px;
   -webkit-border-radius: 0px 3px 3px 0px;
@@ -1562,13 +1599,13 @@ body > footer a {
   -o-border-radius: 0px 3px 3px 0px;
   border-radius: 0px 3px 3px 0px;
 }
-/* line 501, ../sass/layout.scss */
+/* line 549, ../sass/layout.scss */
 .cycloneslider-template-standard p .cycloneslider-prev .arrow:before {
   font-family: "FontAwesome";
   content: "\f053";
   color: white;
 }
-/* line 508, ../sass/layout.scss */
+/* line 556, ../sass/layout.scss */
 .cycloneslider-template-standard p .cycloneslider-next {
   right: 0px;
   -webkit-border-radius: 3px 0px 0px 3px;
@@ -1577,14 +1614,14 @@ body > footer a {
   -o-border-radius: 3px 0px 0px 3px;
   border-radius: 3px 0px 0px 3px;
 }
-/* line 511, ../sass/layout.scss */
+/* line 559, ../sass/layout.scss */
 .cycloneslider-template-standard p .cycloneslider-next .arrow:before {
   font-family: "FontAwesome";
   content: "\f054";
   color: white;
   margin-right: 0px;
 }
-/* line 522, ../sass/layout.scss */
+/* line 570, ../sass/layout.scss */
 .cycloneslider-template-standard:hover p .cycloneslider-prev, .cycloneslider-template-standard:hover p .cycloneslider-next {
   opacity: 1;
 }
@@ -1598,7 +1635,7 @@ body > footer a {
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   /* add code here */
-  /* line 568, ../sass/layout.scss */
+  /* line 616, ../sass/layout.scss */
   header#header h1 {
     font-size: 21px;
   }

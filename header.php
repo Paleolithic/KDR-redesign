@@ -6,8 +6,9 @@
 	<title><?php wp_title( ' | ', true, 'right' ); ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'>
-	<?php wp_head(); ?>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
