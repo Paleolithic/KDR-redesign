@@ -60,6 +60,11 @@
 		}
 		.one-third.column { width: ( $width / 3 ) - 20}
 		.two-thirds.column { width: ( ( $width * 2 ) / 3 ) - 20 }
+
+		.one-fifth.column              	{ width: (  $width / 5 ) - 20} /* ((960/5) - 20) = 172 */
+		.two-fifths.column              { width: (( $width / 5 ) * 2 ) - 20} /* (((960/5) *2) - 20) = 364 */
+		.three-fifths.column            { width: (( $width / 5 ) * 3 ) - 20} /* (((960/5) *3) - 20) = 556 */
+		.four-fifths.column             { width: (( $width / 5 ) * 4 ) - 20} /* (((960/5) *4) - 20) = 748 */
 		@include _offset(false, $colCount, $colWidth);
 	}
 }
