@@ -18,8 +18,8 @@ Template Name: About us page
 		<div class="container">
 			<div class="fourteen columns offset-by-one info-title">
 				<h1>About our Fraternity</h1>
-				<h5>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.
-				</h5>
+				<h6>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.
+				</h6>
 			</div>
 			<div class="one-third column info-thirds">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
@@ -68,7 +68,7 @@ Template Name: About us page
 					</g>
 				</svg>
 				<h3>Honor</h3>
-				<h5>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</h5>
+				<h6>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</h6>
 
 			</div>
 			<div class="one-third column info-thirds">
@@ -87,7 +87,7 @@ Template Name: About us page
 					</g>
 				</svg>
 				<h3>Super</h3>
-				<h5>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</h5>
+				<h6>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</h6>
 			</div>
 			<div class="one-third column info-thirds">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -111,17 +111,12 @@ Template Name: About us page
 					</g>
 				</svg>
 				<h3>Omnia</h3>
-				<h5>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</h5>
+				<h6>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</h6>
 			</div>
 		</div>
 	</div>
 	<div class="where">
 		<div id="map"></div>
-	</div>
-	<div class="blogs">
-		<div class="container">
-			<h1 class="sixteen columns">This is where Blogs or possibly pictures will go. Try left/right alternating</h1>
-		</div>
 	</div>
 	<div class="e-board">
 		<div class="container">
@@ -131,33 +126,102 @@ Template Name: About us page
 				</h5>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<img src="http://placekitten.com/172/206"/>
-				<h5>Lorem Dicksum</h5>
-				<h6>Consul</h6>
+				<img src="http://lorempixel.com/140/140/cats"/>
+				<h4>Praetor</h4>
+				<div class="border-bottom"></div>
+				<h6>Will Hammond</h6>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<img src="http://placekitten.com/172/206"/>
-				<h5>Lorem Dicksum</h5>
-				<h6>Consul</h6>
+				<img src="http://lorempixel.com/140/140/nightlife"/>
+				<h4>Junior Tribune</h4>
+				<div class="border-bottom"></div>
+				<h6>Jaime Geiger</h6>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<img src="http://placekitten.com/172/206"/>
-				<h5>Lorem Dicksum</h5>
-				<h6>Consul</h6>
+				<img src="http://lorempixel.com/140/140/sports"/>
+				<h4>Consul</h4>
+				<div class="border-bottom"></div>
+				<h6>Justin Peterson</h6>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<img src="http://placekitten.com/172/206"/>
-				<h5>Lorem Dicksum</h5>
-				<h6>Consul</h6>
+				<img src="http://lorempixel.com/140/140/technics"/>
+				<h4>Senior Tribune</h4>
+				<div class="border-bottom"></div>
+				<h6>Kyle Chrystler</h6>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<img src="http://placekitten.com/172/206"/>
-				<h5>Lorem Dicksum</h5>
-				<h6>Consul</h6>
+				<img src="http://lorempixel.com/140/140/nature"/>
+				<h4>Quaestor</h4>
+				<div class="border-bottom"></div>
+				<h6>Xavier Hocquet</h6>
 			</div>
+						<!-- <div class="one-fifth column flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper e-board-fifths">
+					<div class="front">
+						<img src="http://placekitten.com/172/206"/>
+					</div>
+					<div class="back">
+						<p>Lorem Ipsum</p>
+					</div>
+				</div>
+				<h4>Praetor</h4>
+				<h6>Will Hammond</h6>
+			</div>
+			<div class="one-fifth column flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper e-board-fifths" >
+					<div class="front">
+						<img src="http://placekitten.com/172/206"/>
+					</div>
+					<div class="back">
+						<p>Lorem Ipsum</p>
+					</div>
+				</div>
+				<h4>Junior Tribune</h4>
+				<h6>Jaime Geiger</h6>
+			</div>
+			<div class="one-fifth column flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper e-board-fifths" >
+					<div class="front">
+						<img src="http://placekitten.com/172/206"/>
+					</div>
+					<div class="back">
+						<p>Lorem Ipsum</p>
+					</div>
+				</div>
+				<h4>Consul</h4>
+				<h6>Justin Peterson</h6>
+			</div>
+			<div class="one-fifth column flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper e-board-fifths" >
+					<div class="front">
+						<img src="http://placekitten.com/172/206"/>
+					</div>
+					<div class="back">
+						<p>Lorem Ipsum</p>
+					</div>
+				</div>
+				<h4>Senior Tribune</h4>
+				<h6>Kyle Chrystler</h6>
+			</div>
+			<div class="one-fifth column flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper e-board-fifths" >
+					<div class="front">
+						<img src="http://placekitten.com/172/206"/>
+					</div>
+					<div class="back">
+						<p>Lorem Ipsum</p>
+					</div>
+				</div>		
+				<h4>Queastor</h4>
+				<h6>Xavier Hocquet</h6>
+			</div> -->
 		</div>
 	</div>
-
+	<div class="blogs">
+		<div class="container">
+			<h1 class="sixteen columns">Read Recent Events</h1>
+		</div>
+	</div>
 </div>
 
 

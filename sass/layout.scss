@@ -512,14 +512,19 @@ body > footer{
 			    background-color: $mainOrange;
 			}
 		}
+		h3{
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
 
-		h5{
+		h6{
 			text-align: center;
 			font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+			color: #64696a;
 		}
 
 		.info-title{
-			h5{
+			h6{
 				margin: 14px 0px 49px 0px;
 			}
 		}
@@ -529,7 +534,7 @@ body > footer{
 			@include border-radius(4px);
 			border-bottom: 4px solid $borderBlue;
 			text-align: center;
-			padding: 14px 21px;
+			padding: 28px 21px;
 			background-color: white;
 			transition: all 0.4s;
 
@@ -583,9 +588,60 @@ body > footer{
 			padding-bottom: 14px;
 		}
 	}
+	
+	.e-board{
+		background-color: $mainBlue;
+		text-align: center;
+
+		
+		h1{
+			color:white;
+			&:before, &:after {
+			    background-color:white;
+			}
+		}
+
+
+		h4{
+			color: white;
+			text-align: center;
+			font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+			
+
+		}
+		h6{
+			text-transform: uppercase;
+			color: white;
+			letter-spacing: 1px;
+		}
+		img{
+			display: block;
+			margin: 0 auto 7px auto;
+			border-radius: 50%;
+		}
+
+		.e-board-title{
+			h5{
+				color:white;
+				margin: 14px 0px 49px 0px;
+				font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+
+			}
+		}
+
+		.e-board-fifths:hover{
+			.border-bottom:after{
+				@include scaleX(1);
+				@include transform-origin(top-left);
+				@include transition-property(all);
+				@include transition-duration(.5s);
+				@include transition-timing-function(linear);
+			}			
+		}
+	}
 
 	.blogs{
-		display: none;
+		// display: none;
 		background-color: black;
 
 		h1{
@@ -595,40 +651,32 @@ body > footer{
 			}
 		}
 	}
-	.e-board{
-		background-color: $mainBlue;
-		text-align: center;
-		h1{
-			color:white;
-
-			&:before, &:after {
-			    background-color:white;
-			}
-		}
-
-		.e-board-title{
-			h5{
-				margin: 14px 0px 49px 0px;
-			}
-		}
-
-		h6{
-			color: white;
-		}
-		h5{
-			color: white;
-			text-align: center;
-		}
-		p{
-			text-align: center;
-		}
-		img{
-			display: block;
-			margin: 0 auto 7px auto;
-		}
-	}
 }
 
+.border-bottom{
+	background-color: #919191;
+	width: 35%;
+	height: 2px;
+	margin: 10px auto;
+	background-color: rgba(255,255,255, .2);
+
+	&:after{
+		content: "";
+		width: 100%;
+		margin: 0;
+		display: block;
+		height: 2px;
+
+		background-color: $borderOrange;
+		@include scaleX(0);
+		@include transform-origin(left);
+		@include transition-property(all);
+		@include transition-duration(.5s);
+		@include transition-timing-function(linear);
+
+
+	}
+}
 
 //Cyclone slider stuff
 .cycloneslider-template-standard{
@@ -683,6 +731,51 @@ body > footer{
 		}
 	}
 }
+
+// /* entire container, keeps perspective */
+// .flip-container {
+// 	@include perspective(1000);
+// }
+// /* flip the pane when hovered */
+// .flip-container:hover .flipper, .flip-container.hover .flipper {
+// 	@include rotateY(180deg);
+// 	// background-color: $borderOrange;
+// }
+
+// // .flip-container, .front, .back {
+// // 	width: 320px;
+// // 	height: 480px;
+// // }
+
+// /* flip speed goes here */
+// .flipper {
+// 	transition: 0.6s;
+// 	transform-style: preserve-3d;
+
+// 	position: relative;
+// }
+
+// /* hide back of pane during swap */
+// .front, .back {
+// 	backface-visibility: hidden;
+// 	background-color: white;
+// 	// position: absolute;
+// 	// top: 0;
+// 	// left: 0;
+// }
+
+// /* front pane, placed above back */
+// .front {
+// 	z-index: 2;
+// }
+
+// /* back, initially hidden pane */
+// .back {
+// 	position: absolute;
+// 	top: 0;
+// 	@include rotateY(180deg);
+// }
+
 //Soliloquy stuff
 // .soliloquy-container{
 // 	.soliloquy-wrapper{
@@ -712,6 +805,7 @@ body > footer{
 // 		}
 // 	}
 // }
+
 /* MEDIA QUERIES
  * ------------------------------------------------ */
 /* Otherwise known as custom responsive code! Write it here! */
