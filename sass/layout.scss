@@ -630,12 +630,23 @@ body > footer{
 		}
 
 		.e-board-fifths:hover{
-			.border-bottom:after{
-				@include scaleX(1);
-				@include transform-origin(top-left);
-				@include transition-property(all);
-				@include transition-duration(.5s);
-				@include transition-timing-function(linear);
+			.border-bottom{
+				&:after{
+					@include scaleX(1);
+					@include transform-origin(left);
+					@include transition-property(all);
+					@include transition-duration(.5s);
+					@include transition-timing-function(linear);
+				}
+				&.transition-right:after{
+					@include transform-origin(right);
+				}
+				&.transition-center:after{
+					@include transform-origin(center);
+				}
+				&.transition-left:after{
+					@include transform-origin(left);
+				}
 			}			
 		}
 	}
@@ -656,7 +667,7 @@ body > footer{
 .border-bottom{
 	background-color: #919191;
 	width: 35%;
-	height: 2px;
+	height: 1px;
 	margin: 10px auto;
 	background-color: rgba(255,255,255, .2);
 
@@ -665,16 +676,22 @@ body > footer{
 		width: 100%;
 		margin: 0;
 		display: block;
-		height: 2px;
+		height: 1px;
 
 		background-color: $borderOrange;
 		@include scaleX(0);
-		@include transform-origin(left);
 		@include transition-property(all);
 		@include transition-duration(.5s);
 		@include transition-timing-function(linear);
-
-
+	}
+	&.transition-right:after{
+		@include transform-origin(right);
+	}
+	&.transition-center:after{
+		@include transform-origin(center);
+	}
+	&.transition-left:after{
+		@include transform-origin(left);
 	}
 }
 

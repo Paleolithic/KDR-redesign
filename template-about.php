@@ -128,31 +128,31 @@ Template Name: About us page
 			<div class="one-fifth column e-board-fifths">
 				<img src="http://lorempixel.com/140/140/cats"/>
 				<h4>Praetor</h4>
-				<div class="border-bottom"></div>
+				<div class="border-bottom transition-right"></div>
 				<h6>Will Hammond</h6>
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<img src="http://lorempixel.com/140/140/nightlife"/>
 				<h4>Junior Tribune</h4>
-				<div class="border-bottom"></div>
+				<div class="border-bottom transition-right"></div>
 				<h6>Jaime Geiger</h6>
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<img src="http://lorempixel.com/140/140/sports"/>
 				<h4>Consul</h4>
-				<div class="border-bottom"></div>
+				<div class="border-bottom transition-center"></div>
 				<h6>Justin Peterson</h6>
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<img src="http://lorempixel.com/140/140/technics"/>
 				<h4>Senior Tribune</h4>
-				<div class="border-bottom"></div>
+				<div class="border-bottom transition-left"></div>
 				<h6>Kyle Chrystler</h6>
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<img src="http://lorempixel.com/140/140/nature"/>
 				<h4>Quaestor</h4>
-				<div class="border-bottom"></div>
+				<div class="border-bottom transition-left"></div>
 				<h6>Xavier Hocquet</h6>
 			</div>
 						<!-- <div class="one-fifth column flip-container" ontouchstart="this.classList.toggle('hover');">
