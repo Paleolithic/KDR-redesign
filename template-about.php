@@ -9,7 +9,7 @@ Template Name: About us page
 		<div class="container">
 			<div class="six columns offset-by-five">
 				<h5>Welcome to</h5>
-				<h1>K&Delta;P</h1>
+				<h2>KDR</h2>
 				<h5>Iota Beta Chapter</h5>
 			</div>
 		</div>
@@ -155,71 +155,31 @@ Template Name: About us page
 				<div class="border-bottom transition-left"></div>
 				<h6>Xavier Hocquet</h6>
 			</div>
-						<!-- <div class="one-fifth column flip-container" ontouchstart="this.classList.toggle('hover');">
-				<div class="flipper e-board-fifths">
-					<div class="front">
-						<img src="http://placekitten.com/172/206"/>
-					</div>
-					<div class="back">
-						<p>Lorem Ipsum</p>
-					</div>
-				</div>
-				<h4>Praetor</h4>
-				<h6>Will Hammond</h6>
-			</div>
-			<div class="one-fifth column flip-container" ontouchstart="this.classList.toggle('hover');">
-				<div class="flipper e-board-fifths" >
-					<div class="front">
-						<img src="http://placekitten.com/172/206"/>
-					</div>
-					<div class="back">
-						<p>Lorem Ipsum</p>
-					</div>
-				</div>
-				<h4>Junior Tribune</h4>
-				<h6>Jaime Geiger</h6>
-			</div>
-			<div class="one-fifth column flip-container" ontouchstart="this.classList.toggle('hover');">
-				<div class="flipper e-board-fifths" >
-					<div class="front">
-						<img src="http://placekitten.com/172/206"/>
-					</div>
-					<div class="back">
-						<p>Lorem Ipsum</p>
-					</div>
-				</div>
-				<h4>Consul</h4>
-				<h6>Justin Peterson</h6>
-			</div>
-			<div class="one-fifth column flip-container" ontouchstart="this.classList.toggle('hover');">
-				<div class="flipper e-board-fifths" >
-					<div class="front">
-						<img src="http://placekitten.com/172/206"/>
-					</div>
-					<div class="back">
-						<p>Lorem Ipsum</p>
-					</div>
-				</div>
-				<h4>Senior Tribune</h4>
-				<h6>Kyle Chrystler</h6>
-			</div>
-			<div class="one-fifth column flip-container" ontouchstart="this.classList.toggle('hover');">
-				<div class="flipper e-board-fifths" >
-					<div class="front">
-						<img src="http://placekitten.com/172/206"/>
-					</div>
-					<div class="back">
-						<p>Lorem Ipsum</p>
-					</div>
-				</div>		
-				<h4>Queastor</h4>
-				<h6>Xavier Hocquet</h6>
-			</div> -->
 		</div>
 	</div>
 	<div class="blogs">
 		<div class="container">
-			<h1 class="sixteen columns">Read Recent Events</h1>
+			<div class="fourteen columns offset-by-one">
+				<h1>What We've Been Up To</h1>
+			</div>
+			<div class="sixteen columns blog">
+				<div class="eight columns alpha blog-image">
+					<img src="http://lorempixel.com/460/200">
+				</div>
+				<div class="eight columns omega blog-post">
+					<h2><a>Suspendisse enim turpis dictum</a></h2>
+					<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.</p>
+				</div>
+			</div>
+			<div class="sixteen columns blog">
+				<div class="eight columns alpha blog-post">
+					<h2><a>Maecenas vestibulum mollis</a></h2>
+					<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.</p>
+				</div>
+				<div class="eight columns omega blog-image">
+					<img src="http://lorempixel.com/460/200/cats">
+				</div>
+			</div>			
 		</div>
 	</div>
 </div>

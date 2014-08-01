@@ -438,6 +438,10 @@ body > footer{
 		}
 	}
 
+	.info, .e-board, .blogs{
+		padding: 42px 0px 70px 0px;
+		overflow: hidden;
+	}
 
 	.top{
 		background: linear-gradient(0deg, rgba(34,41,57,.4), rgba(34,41,57,.4));
@@ -487,19 +491,15 @@ body > footer{
 			}
 		}
 
-		h1{
+		h2{
 			font-size: 140px;
 			line-height: 151px;
 			font-weight: bolder;
 			color: #fff;
 			border: 14px solid #fff;
 			margin-bottom: 4px;
+			letter-spacing: 1px;
 		}
-	}
-
-	.info, .blogs, .e-board{
-		padding: 42px 0px 70px 0px;
-		overflow: hidden;
 	}
 
 	.info{
@@ -606,8 +606,6 @@ body > footer{
 			color: white;
 			text-align: center;
 			font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-			
-
 		}
 		h6{
 			text-transform: uppercase;
@@ -629,8 +627,39 @@ body > footer{
 			}
 		}
 
-		.e-board-fifths:hover{
+		.e-board-fifths{
 			.border-bottom{
+				background-color: #919191;
+				width: 35%;
+				height: 1px;
+				margin: 10px auto;
+				background-color: rgba(255,255,255, .2);
+
+				&:after{
+					content: "";
+					width: 100%;
+					margin: 0;
+					display: block;
+					height: 1px;
+
+					background-color: $borderOrange;
+					@include scaleX(0);
+					@include transition-property(all);
+					@include transition-duration(.5s);
+					@include transition-timing-function(linear);
+				}
+				&.transition-right:after{
+					@include transform-origin(right);
+				}
+				&.transition-center:after{
+					@include transform-origin(center);
+				}
+				&.transition-left:after{
+					@include transform-origin(left);
+				}
+			}
+			
+			&:hover .border-bottom{
 				&:after{
 					@include scaleX(1);
 					@include transform-origin(left);
@@ -652,48 +681,48 @@ body > footer{
 	}
 
 	.blogs{
-		// display: none;
-		background-color: black;
+		// background-color: $mainOrange;
+		background-color: #EEEEEE;
 
 		h1{
-			color: white;
+			// color: white;
+			color: $mainOrange;
 			&:before, &:after {
-			    background-color: white;
+			    // background-color: white;
+			    background-color: $mainOrange;
+			}
+		}
+
+		.blog{
+			margin-top: 42px;
+			margin-bottom: 42px;
+
+			.blog-post{
+				h2{
+					// font-size: 35px;
+					margin-bottom: 3px;
+					font-weight: 600;
+				}
+				a{
+					color: #304269;
+					text-decoration: none;
+					cursor: pointer;
+				}
+				p{
+					font-size: 21px;
+					line-height: 32px;
+					font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+				}
+			}
+			.blog-image{
+				img{
+					@include border-radius(4px);
+				}
 			}
 		}
 	}
 }
 
-.border-bottom{
-	background-color: #919191;
-	width: 35%;
-	height: 1px;
-	margin: 10px auto;
-	background-color: rgba(255,255,255, .2);
-
-	&:after{
-		content: "";
-		width: 100%;
-		margin: 0;
-		display: block;
-		height: 1px;
-
-		background-color: $borderOrange;
-		@include scaleX(0);
-		@include transition-property(all);
-		@include transition-duration(.5s);
-		@include transition-timing-function(linear);
-	}
-	&.transition-right:after{
-		@include transform-origin(right);
-	}
-	&.transition-center:after{
-		@include transform-origin(center);
-	}
-	&.transition-left:after{
-		@include transform-origin(left);
-	}
-}
 
 //Cyclone slider stuff
 .cycloneslider-template-standard{
@@ -748,50 +777,6 @@ body > footer{
 		}
 	}
 }
-
-// /* entire container, keeps perspective */
-// .flip-container {
-// 	@include perspective(1000);
-// }
-// /* flip the pane when hovered */
-// .flip-container:hover .flipper, .flip-container.hover .flipper {
-// 	@include rotateY(180deg);
-// 	// background-color: $borderOrange;
-// }
-
-// // .flip-container, .front, .back {
-// // 	width: 320px;
-// // 	height: 480px;
-// // }
-
-// /* flip speed goes here */
-// .flipper {
-// 	transition: 0.6s;
-// 	transform-style: preserve-3d;
-
-// 	position: relative;
-// }
-
-// /* hide back of pane during swap */
-// .front, .back {
-// 	backface-visibility: hidden;
-// 	background-color: white;
-// 	// position: absolute;
-// 	// top: 0;
-// 	// left: 0;
-// }
-
-// /* front pane, placed above back */
-// .front {
-// 	z-index: 2;
-// }
-
-// /* back, initially hidden pane */
-// .back {
-// 	position: absolute;
-// 	top: 0;
-// 	@include rotateY(180deg);
-// }
 
 //Soliloquy stuff
 // .soliloquy-container{
