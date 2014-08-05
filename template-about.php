@@ -8,18 +8,17 @@ Template Name: About us page
 	<div class="top">
 		<div class="container">
 			<div class="six columns offset-by-five">
-				<h5>Welcome to</h5>
-				<h2>KDR</h2>
-				<h5>Iota Beta Chapter</h5>
+				<h5 class='lobster'>Welcome to</h5>
+				<h1>KDR</h1>
+				<h5 class='lobster'>Iota Beta Chapter</h5>
 			</div>
 		</div>
 	</div>
 	<div class="info">
 		<div class="container">
 			<div class="fourteen columns offset-by-one info-title">
-				<h1>About our Fraternity</h1>
-				<h6>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.
-				</h6>
+				<h1 class='lobster'>About our Fraternity</h1>
+				<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at.</p>
 			</div>
 			<div class="one-third column info-thirds">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
@@ -68,7 +67,7 @@ Template Name: About us page
 					</g>
 				</svg>
 				<h3>Honor</h3>
-				<h6>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</h6>
+				<p>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci.</p>
 
 			</div>
 			<div class="one-third column info-thirds">
@@ -87,7 +86,7 @@ Template Name: About us page
 					</g>
 				</svg>
 				<h3>Super</h3>
-				<h6>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</h6>
+				<p>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
 			</div>
 			<div class="one-third column info-thirds">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -111,7 +110,7 @@ Template Name: About us page
 					</g>
 				</svg>
 				<h3>Omnia</h3>
-				<h6>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</h6>
+				<p>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in.</p>
 			</div>
 		</div>
 	</div>
@@ -121,7 +120,7 @@ Template Name: About us page
 	<div class="e-board">
 		<div class="container">
 			<div class="fourteen columns offset-by-one e-board-title">
-				<h1>Meet Our E-Board</h1>
+				<h1 class='lobster'>Meet Our E-Board</h1>
 				<h5>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.
 				</h5>
 			</div>
@@ -129,38 +128,38 @@ Template Name: About us page
 				<img src="http://lorempixel.com/140/140/cats"/>
 				<h4>Praetor</h4>
 				<div class="border-bottom transition-right"></div>
-				<h6>Will Hammond</h6>
+				<p>Will Hammond</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<img src="http://lorempixel.com/140/140/nightlife"/>
 				<h4>Junior Tribune</h4>
 				<div class="border-bottom transition-right"></div>
-				<h6>Jaime Geiger</h6>
+				<p>Jaime Geiger</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<img src="http://lorempixel.com/140/140/sports"/>
 				<h4>Consul</h4>
 				<div class="border-bottom transition-center"></div>
-				<h6>Justin Peterson</h6>
+				<p>Justin Peterson</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<img src="http://lorempixel.com/140/140/technics"/>
 				<h4>Senior Tribune</h4>
 				<div class="border-bottom transition-left"></div>
-				<h6>Kyle Chrystler</h6>
+				<p>Kyle Chrystler</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<img src="http://lorempixel.com/140/140/nature"/>
 				<h4>Quaestor</h4>
 				<div class="border-bottom transition-left"></div>
-				<h6>Xavier Hocquet</h6>
+				<p>Xavier Hocquet</p>
 			</div>
 		</div>
 	</div>
 	<div class="blogs">
 		<div class="container">
 			<div class="fourteen columns offset-by-one">
-				<h1>What We've Been Up To</h1>
+				<h1 class='lobster'r>What We've Been Up To</h1>
 			</div>
 			<div class="sixteen columns blog">
 				<div class="eight columns alpha blog-image">
@@ -179,7 +178,16 @@ Template Name: About us page
 				<div class="eight columns omega blog-image">
 					<img src="http://lorempixel.com/460/200/cats">
 				</div>
-			</div>			
+			</div>	
+			<div class="sixteen columns blog">
+				<div class="eight columns alpha blog-image">
+					<img src="http://lorempixel.com/460/200">
+				</div>
+				<div class="eight columns omega blog-post">
+					<h2><a>Suspendisse enim turpis dictum</a></h2>
+					<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.</p>
+				</div>
+			</div>		
 		</div>
 	</div>
 </div>
@@ -224,9 +232,9 @@ Template Name: About us page
 		var contentString = 
 			'<div id="iwindow-descriptor" class="descriptor">'+
 				'<img src="">'+
-				'<h1 id="firstHeading" class="firstHeading">Where We\'re Located</h1>'+
+				'<h1 id="firstHeading" class="lobster">Where We\'re Located</h1>'+
 				'<div id="bodyContent">'+
-					'<h6>Nam eget dui. Praesent blandit laoreet nibh. Etiam ultricies nisi vel augue. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus.</h6>'+
+					'<p>Nam eget dui. Praesent blandit laoreet nibh. Etiam ultricies nisi vel augue. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Phasellus volutpat, metus eget egestas mollis.</p>'+
 				'</div>'+
 				'<div class="bottom"></div>'+
 			'</div>';
@@ -237,7 +245,7 @@ Template Name: About us page
 		});
 
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(40.8, -73.9597),
+            position: new google.maps.LatLng(40.795, -73.9597),
             map: map,
             animation: google.maps.Animation.DROP,
             title: 'Field House'

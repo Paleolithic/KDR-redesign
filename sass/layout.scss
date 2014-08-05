@@ -416,10 +416,18 @@ body > footer{
 .about{
 	h1{
 		text-align: center;
-		font-family: 'Lobster', cursive;
 		line-height: 70px;
 		overflow: hidden;
-
+	}
+	
+	p{
+		font-size: 21px;
+		line-height: 32px;
+		font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+	}
+	
+	.lobster{
+		font-family: 'Lobster', cursive;
 		&:before, &:after {
 		    content: "";
 		    display: inline-block;
@@ -437,6 +445,7 @@ body > footer{
 		    margin-right: -50%;
 		}
 	}
+	
 
 	.info, .e-board, .blogs{
 		padding: 42px 0px 70px 0px;
@@ -446,11 +455,9 @@ body > footer{
 	.top{
 		background: linear-gradient(0deg, rgba(34,41,57,.4), rgba(34,41,57,.4));
 		background-image: linear-gradient(0deg, rgba(34,41,57,.6), rgba(27,33,47,.6)), url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII="), url("http://127.0.0.1/wordpress/wp-content/uploads/2014/07/402819_10151055549982107_436206485_n.jpg");
-		// background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=") repeat, linear-gradient(0deg, rgba(0,0,0,.4), rgba(0,0,0,.4)), url("http://127.0.0.1/wordpress/wp-content/uploads/2014/07/402819_10151055549982107_436206485_n.jpg") no-repeat center center;
 		background-repeat: no-repeat, repeat, no-repeat center center;
 		background-position: 0 0;
 		background-size: cover, 4px 4px, cover;
-		// @include background-size(cover, 4px 4px);
 		margin: 0;
 		padding: 0;
 		min-width: 100%;
@@ -458,40 +465,7 @@ body > footer{
 		text-align: center;
 		overflow: hidden;
 		
-		.container{
-			top: 50%;
-			margin-top: -140px;
-		}
-
-		h5{
-			font-family: 'Lobster', cursive;
-			font-size: 28px;
-			line-height: 39px;
-			font-weight: lighter;
-			color: #fff;
-		    overflow: hidden;
-		    text-align: center;
-
-			&:before, &:after {
-			    background-color: #fff;
-			    content: "";
-			    display: inline-block;
-			    height: 1px;
-			    position: relative;
-			    vertical-align: middle;
-			    width: 50%;
-			}
-			&:before {
-			    right: 0.5em;
-			    margin-left: -50%;
-			}
-			&:after {
-			    left: 0.5em;
-			    margin-right: -50%;
-			}
-		}
-
-		h2{
+		h1{
 			font-size: 140px;
 			line-height: 151px;
 			font-weight: bolder;
@@ -499,6 +473,23 @@ body > footer{
 			border: 14px solid #fff;
 			margin-bottom: 4px;
 			letter-spacing: 1px;
+		}
+		h5{
+			font-size: 28px;
+			line-height: 39px;
+			font-weight: lighter;
+			color: #fff;
+		    overflow: hidden;
+		    text-align: center;
+
+		    &:before, &:after {
+			    background-color: white;
+			}
+		}
+
+		.container{
+			top: 50%;
+			margin-top: -140px;
 		}
 	}
 
@@ -512,6 +503,7 @@ body > footer{
 			    background-color: $mainOrange;
 			}
 		}
+
 		h3{
 			text-transform: uppercase;
 			letter-spacing: 1px;
@@ -537,6 +529,7 @@ body > footer{
 			padding: 28px 21px;
 			background-color: white;
 			transition: all 0.4s;
+			height: 322px;
 
 			&:hover{
 				@include box-shadow(rgba($borderBlue, 0.4) 0 5px 25px );
