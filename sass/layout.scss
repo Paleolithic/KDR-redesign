@@ -46,6 +46,33 @@ input[type="button"]:hover,input[type="submit"]:hover{
     text-shadow: none !important;
 }
 
+p{
+	font-size: 21px;
+	line-height: 32px;
+	font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+blockquote{
+	border-left: 14px solid $mainOrange;
+}
+
+h2{
+	font-size: 35px;
+	line-height: 40px;
+	margin-bottom:3px;
+	font-weight: 600;
+}
+
+.more-link{
+	font-size: 14px;
+	font-family: $fontFamily;
+	line-height: 25px;
+	color: $mainOrange;
+	font-weight: light;
+	display: block;
+	margin: 7px 0 0 0;
+}
+
 /* PAGE STYLES
  * ------------------------------------------------ */
 /* Add page styles here */
@@ -163,7 +190,7 @@ header#header{
 	header{
 		margin-bottom: 21px;
 
-		h2, h1{
+		h1{
 			font-size: 35px;
 			line-height: 40px;
 			margin-bottom:3px;
@@ -187,32 +214,32 @@ header#header{
 		}
 	}
 
-	.entry-content{
-		img{
-			width: 100%;
-			height: auto;
-		}
+	// .entry-content{
+	// 	img{
+	// 		width: 100%;
+	// 		height: auto;
+	// 	}
 
-		p{
-			font-size: 21px;
-			line-height: 32px;
-			font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-		}
+	// 	p{
+	// 		font-size: 21px;
+	// 		line-height: 32px;
+	// 		font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+	// 	}
 
-		blockquote{
-			border-left: 14px solid $mainOrange;
-		}
+	// 	blockquote{
+	// 		border-left: 14px solid $mainOrange;
+	// 	}
 
-		.more-link{
-			font-size: 14px;
-			font-family: $fontFamily;
-			line-height: 25px;
-			color: $mainOrange;
-			font-weight: light;
-			display: block;
-			margin: 7px 0 0 0;
-		}
-	}
+	// 	.more-link{
+	// 		font-size: 14px;
+	// 		font-family: $fontFamily;
+	// 		line-height: 25px;
+	// 		color: $mainOrange;
+	// 		font-weight: light;
+	// 		display: block;
+	// 		margin: 7px 0 0 0;
+	// 	}
+	// }
 
 	.wp-pagenavi{
 		margin-bottom: 35px;
@@ -496,12 +523,8 @@ body > footer{
 	.info{
 		background-color: #EEEEEE;
 
-		h1{
+		.lobster, .lobster:before, .lobster:after{
 			color: $mainOrange;
-
-			&:before, &:after {
-			    background-color: $mainOrange;
-			}
 		}
 
 		h3{
@@ -509,16 +532,8 @@ body > footer{
 			letter-spacing: 1px;
 		}
 
-		h6{
-			text-align: center;
-			font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-			color: #64696a;
-		}
-
 		.info-title{
-			h6{
-				margin: 14px 0px 49px 0px;
-			}
+			margin-bottom: 49px;
 		}
 
 		.info-thirds{
@@ -533,9 +548,7 @@ body > footer{
 
 			&:hover{
 				@include box-shadow(rgba($borderBlue, 0.4) 0 5px 25px );
-           		// @include box-shadow(rgba(blue, 0.4) 0px 7px);
 	            @include translate(0px, -7px);
-	            // transition: opacity 0.6s;
 	            transition: all 0.4s;
 	        }
 
@@ -562,23 +575,10 @@ body > footer{
 	        &>div{
 	            @include border-radius(20px); 
 	        }
-	        .bottom{
-	            background-color: #CC2A41;
-	        }
-
 	    }
 
-	    h1{
+	    .lobster, .lobster:before, .lobster:after{
 			color: $mainOrange;
-
-			&:before, &:after {
-			    background-color: $mainOrange;
-			}
-		}
-
-		h6{
-			font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-			padding-bottom: 14px;
 		}
 	}
 	
@@ -587,28 +587,8 @@ body > footer{
 		text-align: center;
 
 		
-		h1{
-			color:white;
-			&:before, &:after {
-			    background-color:white;
-			}
-		}
-
-
-		h4{
+		.lobster, .lobster:before, .lobster:after{
 			color: white;
-			text-align: center;
-			font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-		}
-		h6{
-			text-transform: uppercase;
-			color: white;
-			letter-spacing: 1px;
-		}
-		img{
-			display: block;
-			margin: 0 auto 7px auto;
-			border-radius: 50%;
 		}
 
 		.e-board-title{
@@ -620,57 +600,72 @@ body > footer{
 			}
 		}
 
-		.e-board-fifths{
-			.border-bottom{
-				background-color: #919191;
-				width: 35%;
-				height: 1px;
-				margin: 10px auto;
-				background-color: rgba(255,255,255, .2);
 
-				&:after{
-					content: "";
-					width: 100%;
-					margin: 0;
-					display: block;
-					height: 1px;
-
-					background-color: $borderOrange;
-					@include scaleX(0);
-					@include transition-property(all);
-					@include transition-duration(.5s);
-					@include transition-timing-function(linear);
-				}
-				&.transition-right:after{
-					@include transform-origin(right);
-				}
-				&.transition-center:after{
-					@include transform-origin(center);
-				}
-				&.transition-left:after{
-					@include transform-origin(left);
-				}
-			}
-			
-			&:hover .border-bottom{
-				&:after{
-					@include scaleX(1);
-					@include transform-origin(left);
-					@include transition-property(all);
-					@include transition-duration(.5s);
-					@include transition-timing-function(linear);
-				}
-				&.transition-right:after{
-					@include transform-origin(right);
-				}
-				&.transition-center:after{
-					@include transform-origin(center);
-				}
-				&.transition-left:after{
-					@include transform-origin(left);
-				}
-			}			
+		img{
+			display: block;
+			margin: 0 auto 7px auto;
+			border-radius: 50%;
 		}
+		h4{
+			color: white;
+			text-align: center;
+			font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+		}
+		p{
+			text-transform: uppercase;
+			color: white;
+			font-size: 18px;
+			font-family: Lato, sans-serif;
+			letter-spacing: 1px;
+		}
+		.border-bottom{
+			background-color: #919191;
+			width: 35%;
+			height: 1px;
+			margin: 10px auto;
+			background-color: rgba(255,255,255, .2);
+
+			&:after{
+				content: "";
+				width: 100%;
+				margin: 0;
+				display: block;
+				height: 1px;
+
+				background-color: $borderOrange;
+				@include scaleX(0);
+				@include transition-property(all);
+				@include transition-duration(.5s);
+				@include transition-timing-function(linear);
+			}
+			&.transition-right:after{
+				@include transform-origin(right);
+			}
+			&.transition-center:after{
+				@include transform-origin(center);
+			}
+			&.transition-left:after{
+				@include transform-origin(left);
+			}
+		}	
+		.e-board-fifths:hover .border-bottom{
+			&:after{
+				@include scaleX(1);
+				@include transform-origin(left);
+				@include transition-property(all);
+				@include transition-duration(.5s);
+				@include transition-timing-function(linear);
+			}
+			&.transition-right:after{
+				@include transform-origin(right);
+			}
+			&.transition-center:after{
+				@include transform-origin(center);
+			}
+			&.transition-left:after{
+				@include transform-origin(left);
+			}
+		}			
 	}
 
 	.blogs{
@@ -701,11 +696,11 @@ body > footer{
 					text-decoration: none;
 					cursor: pointer;
 				}
-				p{
-					font-size: 21px;
-					line-height: 32px;
-					font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-				}
+				// p{
+				// 	font-size: 21px;
+				// 	line-height: 32px;
+				// 	font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+				// }
 			}
 			.blog-image{
 				img{

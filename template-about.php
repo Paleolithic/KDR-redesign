@@ -66,7 +66,7 @@ Template Name: About us page
 						</g>
 					</g>
 				</svg>
-				<h3>Honor</h3>
+				<h2>Honor</h2>
 				<p>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci.</p>
 
 			</div>
@@ -85,7 +85,7 @@ Template Name: About us page
 						</g>
 					</g>
 				</svg>
-				<h3>Super</h3>
+				<h2>Super</h2>
 				<p>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
 			</div>
 			<div class="one-third column info-thirds">
@@ -109,9 +109,16 @@ Template Name: About us page
 						</g>
 					</g>
 				</svg>
-				<h3>Omnia</h3>
+				<h2>Omnia</h2>
 				<p>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in.</p>
 			</div>
+			<?php $my_query = "showposts=3"; $my_query = new WP_Query($my_query); ?>
+			<?php if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
+				<!-- standard tags to display blog post information like the_title() here -->
+				<h3><a href="<?php the_permalink(); ?>" title="Read full post"><?php the_title(); ?></a></h3>
+			<?php endwhile; // end of one post ?>
+			<?php endif; //end of loop ?>
 		</div>
 	</div>
 	<div class="where">
@@ -166,13 +173,13 @@ Template Name: About us page
 					<img src="http://lorempixel.com/460/200">
 				</div>
 				<div class="eight columns omega blog-post">
-					<h2><a>Suspendisse enim turpis dictum</a></h2>
+					<h2 class="entry-title"><a>Suspendisse enim turpis dictum</a></h2>
 					<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.</p>
 				</div>
 			</div>
 			<div class="sixteen columns blog">
 				<div class="eight columns alpha blog-post">
-					<h2><a>Maecenas vestibulum mollis</a></h2>
+					<h2 class="entry-title"><a>Maecenas vestibulum mollis</a></h2>
 					<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.</p>
 				</div>
 				<div class="eight columns omega blog-image">
@@ -184,7 +191,7 @@ Template Name: About us page
 					<img src="http://lorempixel.com/460/200">
 				</div>
 				<div class="eight columns omega blog-post">
-					<h2><a>Suspendisse enim turpis dictum</a></h2>
+					<h2 class="entry-title"><a>Suspendisse enim turpis dictum</a></h2>
 					<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.</p>
 				</div>
 			</div>		
