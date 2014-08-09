@@ -69,3 +69,13 @@ add_filter( 'the_content_more_link', 'modify_read_more_link' );
 function modify_read_more_link() {
 return '<a class="more-link" href="' . get_permalink() . '">Continue reading <i class="fa fa-arrow-right"></i></a>';
 }
+
+function new_excerpt_more( $more ) {
+	return '<a class="more-link" href="' . get_permalink() . '">Continue reading <i class="fa fa-arrow-right"></i></a>';;
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

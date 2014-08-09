@@ -112,13 +112,6 @@ Template Name: About us page
 				<h2>Omnia</h2>
 				<p>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in.</p>
 			</div>
-			<?php $my_query = "showposts=3"; $my_query = new WP_Query($my_query); ?>
-			<?php if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post(); ?>
-
-				<!-- standard tags to display blog post information like the_title() here -->
-				<h3><a href="<?php the_permalink(); ?>" title="Read full post"><?php the_title(); ?></a></h3>
-			<?php endwhile; // end of one post ?>
-			<?php endif; //end of loop ?>
 		</div>
 	</div>
 	<div class="where">
@@ -164,11 +157,35 @@ Template Name: About us page
 		</div>
 	</div>
 	<div class="blogs">
-		<div class="container">
+		<div id="container" class="container">
 			<div class="fourteen columns offset-by-one">
 				<h1 class='lobster'r>What We've Been Up To</h1>
 			</div>
-			<div class="sixteen columns blog">
+
+			<?php $my_query = new WP_Query( 'posts_per_page=-1' ); $imgs = 0; ?>
+			<?php if ($my_query->have_posts()) : while ($my_query->have_posts() && $imgs < 3) : $my_query->the_post(); echo($i);?>
+				<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+					<?php if ( has_post_thumbnail() ): $imgs++;?>
+						<div class="sixteen columns blog">
+							<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+							<?php if($imgs % 2 == 0) : ?>
+								<div class="eight columns alpha blog-image" style="background-image: url('<?php echo $url; ?>');"></div>
+								<div class="eight columns omega blog-post">
+									<h2 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?> </a></h2>
+									<?php the_excerpt(); ?>
+								</div>
+							<?php else: ?>
+								<div class="eight columns alpha blog-post">
+									<h2 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?> </a></h2>
+									<?php the_excerpt(); ?>
+								</div>
+								<div class="eight columns omega blog-image" style="background-image: url('<?php echo $url; ?>');"></div>
+							<?php endif; ?>
+						</div>
+					<?php endif; ?>						
+			<?php endwhile; // end of one post ?>
+			<?php endif; //end of loop ?>
+<!-- 			<div class="sixteen columns blog">
 				<div class="eight columns alpha blog-image">
 					<img src="http://lorempixel.com/460/200">
 				</div>
@@ -193,7 +210,7 @@ Template Name: About us page
 				<div class="eight columns omega blog-post">
 					<h2 class="entry-title"><a>Suspendisse enim turpis dictum</a></h2>
 					<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.</p>
-				</div>
+				</div> -->
 			</div>		
 		</div>
 	</div>
