@@ -63,6 +63,26 @@ h2{
 	font-weight: 600;
 }
 
+.lobster{
+	font-family: 'Lobster', cursive;
+	&:before, &:after {
+	    content: "";
+	    display: inline-block;
+	    height: 1px;
+	    position: relative;
+	    vertical-align: middle;
+	    width: 50%;
+	}
+	&:before {
+	    right: 0.5em;
+	    margin-left: -50%;
+	}
+	&:after {
+	    left: 0.5em;
+	    margin-right: -50%;
+	}
+}
+
 #container.container a.more-link{
 	font-size: 14px;
 	font-family: $fontFamily;
@@ -414,44 +434,13 @@ body > footer{
 }
 
 //About page styles
-#wrapper{
-	// height: 100%;
-}
-
 .about{
 	h1{
 		text-align: center;
 		line-height: 70px;
 		overflow: hidden;
 	}
-	
-	p{
-		font-size: 21px;
-		line-height: 32px;
-		font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-	}
-	
-	.lobster{
-		font-family: 'Lobster', cursive;
-		&:before, &:after {
-		    content: "";
-		    display: inline-block;
-		    height: 1px;
-		    position: relative;
-		    vertical-align: middle;
-		    width: 50%;
-		}
-		&:before {
-		    right: 0.5em;
-		    margin-left: -50%;
-		}
-		&:after {
-		    left: 0.5em;
-		    margin-right: -50%;
-		}
-	}
-	
-
+		
 	.info, .e-board, .blogs{
 		padding: 42px 0px 70px 0px;
 		overflow: hidden;
@@ -501,8 +490,11 @@ body > footer{
 	.info{
 		background-color: #EEEEEE;
 
-		.lobster, .lobster:before, .lobster:after{
+		h1{
 			color: $mainOrange;
+		 	&:before, &:after{
+				background-color: $mainOrange;
+		 	}
 		}
 
 		h3{
@@ -564,34 +556,31 @@ body > footer{
 		background-color: $mainBlue;
 		text-align: center;
 
-		
-		.lobster, .lobster:before, .lobster:after{
+		.e-board-title{
+			margin-bottom: 49px;
+		}
+		h1{
+			color: white;
+			&:before, &:after{
+				background-color: white;
+			}
+		}	
+		p{
 			color: white;
 		}
-
-		.e-board-title{
-			h5{
-				color:white;
-				margin: 14px 0px 49px 0px;
-				font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-
-			}
-		}
-
-
 		img{
 			display: block;
 			margin: 0 auto 7px auto;
 			border-radius: 50%;
 		}
+
 		h4{
 			color: white;
 			text-align: center;
 			font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
 		}
-		p{
+		.e-board-fifths p{
 			text-transform: uppercase;
-			color: white;
 			font-size: 18px;
 			font-family: Lato, sans-serif;
 			letter-spacing: 1px;

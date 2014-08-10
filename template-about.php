@@ -121,8 +121,8 @@ Template Name: About us page
 		<div class="container">
 			<div class="fourteen columns offset-by-one e-board-title">
 				<h1 class='lobster'>Meet Our E-Board</h1>
-				<h5>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.
-				</h5>
+				<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.
+				</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<img src="http://lorempixel.com/140/140/cats"/>
