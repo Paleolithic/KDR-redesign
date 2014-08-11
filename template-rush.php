@@ -6,23 +6,35 @@ Template Name: Rush page
 <?php get_header(); ?>
 <main class="rush">
 	<section class="calendar">
-		<div class="container">	
-			<section class="main">
-				<div class="custom-calendar-wrap">
-					<div id="custom-inner" class="custom-inner">
-						<div class="custom-header clearfix">
-							<nav>
-								<span id="custom-prev" class="custom-prev"></span>
-								<span id="custom-next" class="custom-next"></span>
-							</nav>
-							<h2 id="custom-month" class="custom-month"></h2>
-							<h3 id="custom-year" class="custom-year"></h3>
-						</div>
-						<div id="calendar" class="fc-calendar-container"></div>
-					</div>
-				</div>
-			</section>
+		<div class="container calendar-title">
+			<div class="fourteen columns offset-by-one info-title">
+				<h1 class='lobster'>Our Rush Schedule</h1>
+				<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at.</p>
+			</div>
 		</div>
+		<div class="main">
+			<div class="custom-calendar-wrap">
+				<div id="custom-inner" class="custom-inner">
+					<div class="custom-header clearfix">
+						<nav>
+							<span id="custom-prev" class="custom-prev"></span>
+							<span id="custom-next" class="custom-next"></span>
+						</nav>
+						<h2 id="custom-month" class="custom-month"></h2>
+						<h3 id="custom-year" class="custom-year"></h3>
+					</div>
+					<div id="calendar" class="fc-calendar-container"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="why">
+		<header class="container why-title">
+			<div class="fourteen columns offset-by-one info-title">
+				<h1 class='lobster'>Why Should You Join Us?</h1>
+				<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at.</p>
+			</div>
+		</header>		
 	</section>
 </main>
 

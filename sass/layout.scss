@@ -65,6 +65,8 @@ h2{
 
 .lobster{
 	font-family: 'Lobster', cursive;
+	text-align: center;
+	overflow: hidden;
 	&:before, &:after {
 	    content: "";
 	    display: inline-block;
@@ -209,14 +211,6 @@ header#header{
 	
 	header{
 		margin-bottom: 21px;
-
-		h1{
-			font-size: 35px;
-			line-height: 40px;
-			margin-bottom:3px;
-			font-weight: 600;
-		}
-		
 
 		.entry-meta{
 			a{
@@ -444,6 +438,10 @@ body > footer{
 	.info, .e-board, .blogs{
 		padding: 42px 0px 70px 0px;
 		overflow: hidden;
+
+		header{
+			margin-bottom: 49px;
+		}
 	}
 
 	.top{
@@ -502,10 +500,6 @@ body > footer{
 			letter-spacing: 1px;
 		}
 
-		.info-title{
-			margin-bottom: 49px;
-		}
-
 		.info-thirds{
 			@include box-sizing(border-box);
 			@include border-radius(4px);
@@ -532,7 +526,7 @@ body > footer{
 		}
 	}
 
-	#map{
+	.map{
 		height: 500px;
 		
 		.iwindow{
@@ -555,10 +549,6 @@ body > footer{
 	.e-board{
 		background-color: $mainBlue;
 		text-align: center;
-
-		.e-board-title{
-			margin-bottom: 49px;
-		}
 		
 		h1{
 			color: white;
@@ -664,6 +654,47 @@ body > footer{
 	}
 }
 
+//Rush page styles
+.rush{
+	h1{
+		line-height: 70px;
+	}
+
+	.calendar, .why{
+		padding: 42px 0px 70px 0px;
+		overflow: hidden;
+
+		header{
+			margin-bottom: 49px;
+		}
+	}
+
+	.calendar{
+		background-color: #EEEEEE;
+
+		h1{
+			color: $mainOrange;
+		 	&:before, &:after{
+				background-color: $mainOrange;
+		 	}
+		}
+	}
+
+	.why{
+		background-color: $mainOrange;
+
+		h1{
+			color: white;
+		 	&:before, &:after{
+				background-color: white;
+		 	}
+		}
+
+		p{
+			color: white;
+		}
+	}
+}
 
 //Cyclone slider stuff
 .cycloneslider-template-standard{

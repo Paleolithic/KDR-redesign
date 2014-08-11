@@ -1,12 +1,7 @@
-/* line 5, ../../sass/calendario/demo.scss */
-html {
-  height: 100%;
-}
-
-/* line 9, ../../sass/calendario/demo.scss */
-.calendar *,
-.calendar *:after,
-.calendar *:before {
+/* line 6, ../../sass/calendario/demo.scss */
+.main *,
+.main *:after,
+.main *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -15,7 +10,7 @@ html {
 }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-/* line 17, ../../sass/calendario/demo.scss */
+/* line 14, ../../sass/calendario/demo.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -24,17 +19,17 @@ html {
   /* 2 */
 }
 
-/* line 22, ../../sass/calendario/demo.scss */
+/* line 19, ../../sass/calendario/demo.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 26, ../../sass/calendario/demo.scss */
+/* line 23, ../../sass/calendario/demo.scss */
 .clearfix {
   *zoom: 1;
 }
 
-/* line 31, ../../sass/calendario/demo.scss */
+/* line 28, ../../sass/calendario/demo.scss */
 .main {
   padding: 0 30px 50px 30px;
   width: 100%;

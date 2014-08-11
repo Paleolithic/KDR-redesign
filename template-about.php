@@ -6,20 +6,20 @@ Template Name: About us page
 <?php get_header(); ?>
 <main class="about">	
 	<section class="top">
-		<div class="container">
+		<header class="container">
 			<div class="six columns offset-by-five">
 				<h5 class='lobster'>Welcome to</h5>
 				<h1>KDR</h1>
 				<h5 class='lobster'>Iota Beta Chapter</h5>
 			</div>
-		</div>
+		</header>
 	</section>
 	<section class="info">
 		<div class="container">
-			<div class="fourteen columns offset-by-one info-title">
+			<header class="fourteen columns offset-by-one info-title">
 				<h1 class='lobster'>About our Fraternity</h1>
 				<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at.</p>
-			</div>
+			</header>
 			<div class="one-third column info-thirds">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
 					<g>
@@ -68,7 +68,6 @@ Template Name: About us page
 				</svg>
 				<h2>Honor</h2>
 				<p>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci.</p>
-
 			</div>
 			<div class="one-third column info-thirds">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -115,15 +114,15 @@ Template Name: About us page
 		</div>
 	</section>
 	<section class="where">
-		<div id="map"></div>
+		<div class="map" id="map"></div>
 	</section>
 	<section class="e-board">
 		<div class="container">
-			<div class="fourteen columns offset-by-one e-board-title">
+			<header class="fourteen columns offset-by-one e-board-title">
 				<h1 class='lobster'>Meet Our E-Board</h1>
 				<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.
 				</p>
-			</div>
+			</header>
 			<div class="one-fifth column e-board-fifths">
 				<img src="http://lorempixel.com/140/140/cats"/>
 				<h4>Praetor</h4>
@@ -158,10 +157,9 @@ Template Name: About us page
 	</section>
 	<section class="blogs">
 		<div id="container" class="container">
-			<div class="fourteen columns offset-by-one">
-				<h1 class='lobster'r>What We've Been Up To</h1>
-			</div>
-
+			<header class="fourteen columns offset-by-one blogs-title">
+				<h1 class='lobster'>What We've Been Up To</h1>
+			</header>
 			<?php $my_query = new WP_Query( 'posts_per_page=-1' ); $imgs = 0; ?>
 			<?php if ($my_query->have_posts()) : while ($my_query->have_posts() && $imgs < 3) : $my_query->the_post(); echo($i);?>
 				<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>

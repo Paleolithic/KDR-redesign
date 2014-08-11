@@ -1,12 +1,9 @@
-@import "vars"; // import _global_variables.scss
-@import "mixins"; // import _mixins.scss
 @import "compass/css3";
 
-html { height: 100%; }
 
-.calendar *,
-.calendar *:after,
-.calendar *:before {
+.main *,
+.main *:after,
+.main *:before {
 	@include box-sizing("border-box");
 	padding: 0;
 	margin: 0;
