@@ -4,8 +4,8 @@ Template Name: About us page
 */
 ?>
 <?php get_header(); ?>
-<div class="about">	
-	<div class="top">
+<main class="about">	
+	<section class="top">
 		<div class="container">
 			<div class="six columns offset-by-five">
 				<h5 class='lobster'>Welcome to</h5>
@@ -13,8 +13,8 @@ Template Name: About us page
 				<h5 class='lobster'>Iota Beta Chapter</h5>
 			</div>
 		</div>
-	</div>
-	<div class="info">
+	</section>
+	<section class="info">
 		<div class="container">
 			<div class="fourteen columns offset-by-one info-title">
 				<h1 class='lobster'>About our Fraternity</h1>
@@ -113,11 +113,11 @@ Template Name: About us page
 				<p>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in.</p>
 			</div>
 		</div>
-	</div>
-	<div class="where">
+	</section>
+	<section class="where">
 		<div id="map"></div>
-	</div>
-	<div class="e-board">
+	</section>
+	<section class="e-board">
 		<div class="container">
 			<div class="fourteen columns offset-by-one e-board-title">
 				<h1 class='lobster'>Meet Our E-Board</h1>
@@ -155,8 +155,8 @@ Template Name: About us page
 				<p>Xavier Hocquet</p>
 			</div>
 		</div>
-	</div>
-	<div class="blogs">
+	</section>
+	<section class="blogs">
 		<div id="container" class="container">
 			<div class="fourteen columns offset-by-one">
 				<h1 class='lobster'r>What We've Been Up To</h1>
@@ -185,36 +185,10 @@ Template Name: About us page
 					<?php endif; ?>						
 			<?php endwhile; // end of one post ?>
 			<?php endif; //end of loop ?>
-<!-- 			<div class="sixteen columns blog">
-				<div class="eight columns alpha blog-image">
-					<img src="http://lorempixel.com/460/200">
-				</div>
-				<div class="eight columns omega blog-post">
-					<h2 class="entry-title"><a>Suspendisse enim turpis dictum</a></h2>
-					<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.</p>
-				</div>
-			</div>
-			<div class="sixteen columns blog">
-				<div class="eight columns alpha blog-post">
-					<h2 class="entry-title"><a>Maecenas vestibulum mollis</a></h2>
-					<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.</p>
-				</div>
-				<div class="eight columns omega blog-image">
-					<img src="http://lorempixel.com/460/200/cats">
-				</div>
-			</div>	
-			<div class="sixteen columns blog">
-				<div class="eight columns alpha blog-image">
-					<img src="http://lorempixel.com/460/200">
-				</div>
-				<div class="eight columns omega blog-post">
-					<h2 class="entry-title"><a>Suspendisse enim turpis dictum</a></h2>
-					<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.</p>
-				</div> -->
 			</div>		
 		</div>
-	</div>
-</div>
+	</section>
+</main>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

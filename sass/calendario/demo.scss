@@ -1,0 +1,36 @@
+@import "vars"; // import _global_variables.scss
+@import "mixins"; // import _mixins.scss
+@import "compass/css3";
+
+html { height: 100%; }
+
+.calendar *,
+.calendar *:after,
+.calendar *:before {
+	@include box-sizing("border-box");
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+.main {
+	padding: 0 30px 50px 30px;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}

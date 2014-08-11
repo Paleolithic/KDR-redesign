@@ -1,0 +1,43 @@
+/* line 5, ../../sass/calendario/demo.scss */
+html {
+  height: 100%;
+}
+
+/* line 9, ../../sass/calendario/demo.scss */
+.calendar *,
+.calendar *:after,
+.calendar *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 17, ../../sass/calendario/demo.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 22, ../../sass/calendario/demo.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 26, ../../sass/calendario/demo.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 31, ../../sass/calendario/demo.scss */
+.main {
+  padding: 0 30px 50px 30px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}

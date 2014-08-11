@@ -1,0 +1,139 @@
+@import url("demo.css");
+@font-face {
+  font-family: 'fontawesome-selected';
+  src: url("../font/fontawesome-selected.eot");
+  src: url("../font/fontawesome-selected.eot?#iefix") format("embedded-opentype"), url("../font/fontawesome-selected.woff") format("woff"), url("../font/fontawesome-selected.ttf") format("truetype"), url("../font/fontawesome-selected.svg#fontawesome-selected") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 11, ../../sass/calendario/calendar.scss */
+.fc-calendar-container {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+/* line 17, ../../sass/calendario/calendar.scss */
+.fc-calendar {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 22, ../../sass/calendario/calendar.scss */
+.fc-calendar .fc-head {
+  height: 30px;
+  line-height: 30px;
+  background: #ccc;
+  color: #fff;
+}
+
+/* line 29, ../../sass/calendario/calendar.scss */
+.fc-calendar .fc-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  height: -moz-calc(100% - 30px);
+  height: -webkit-calc(100% - 30px);
+  height: calc(100% - 30px);
+  border: 1px solid #ddd;
+}
+
+/* line 39, ../../sass/calendario/calendar.scss */
+.fc-calendar .fc-row {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 44, ../../sass/calendario/calendar.scss */
+.fc-four-rows .fc-row {
+  height: 25%;
+}
+
+/* line 48, ../../sass/calendario/calendar.scss */
+.fc-five-rows .fc-row {
+  height: 20%;
+}
+
+/* line 52, ../../sass/calendario/calendar.scss */
+.fc-six-rows .fc-row {
+  height: 16.66%;
+  height: -moz-calc(100%/6);
+  height: -webkit-calc(100%/6);
+  height: calc(100%/6);
+}
+
+/* line 60, ../../sass/calendario/calendar.scss */
+.fc-calendar .fc-row > div,
+.fc-calendar .fc-head > div {
+  float: left;
+  height: 100%;
+  width: 14.28%;
+  /* 100% / 7 */
+  width: -moz-calc(100%/7);
+  width: -webkit-calc(100%/7);
+  width: calc(100%/7);
+  position: relative;
+}
+
+/* IE 9 is rounding up the calc it seems */
+/* line 72, ../../sass/calendario/calendar.scss */
+.ie9 .fc-calendar .fc-row > div,
+.ie9 .fc-calendar .fc-head > div {
+  width: 14.2%;
+}
+
+/* line 76, ../../sass/calendario/calendar.scss */
+.fc-calendar .fc-row > div {
+  border-right: 1px solid #ddd;
+  padding: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 83, ../../sass/calendario/calendar.scss */
+.fc-calendar .fc-head > div {
+  text-align: center;
+}
+
+/* line 87, ../../sass/calendario/calendar.scss */
+.fc-calendar .fc-row > div > span.fc-date {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ddd;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8);
+  bottom: 5px;
+  right: 5px;
+  text-align: right;
+}
+
+/* line 101, ../../sass/calendario/calendar.scss */
+.fc-calendar .fc-row > div > span.fc-weekday {
+  padding-left: 5px;
+  display: none;
+}
+
+/* line 106, ../../sass/calendario/calendar.scss */
+.fc-calendar .fc-row > div.fc-today {
+  background: #fff4c3;
+}
+
+/* line 110, ../../sass/calendario/calendar.scss */
+.fc-calendar .fc-row > div.fc-out {
+  opacity: 0.6;
+}
+
+/* line 115, ../../sass/calendario/calendar.scss */
+.fc-calendar .fc-row > div:last-child,
+.fc-calendar .fc-head > div:last-child {
+  border-right: none;
+}
+
+/* line 119, ../../sass/calendario/calendar.scss */
+.fc-calendar .fc-row:last-child {
+  border-bottom: none;
+}
