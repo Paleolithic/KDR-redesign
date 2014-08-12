@@ -43,6 +43,46 @@ Template Name: Rush page
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/calendario/jquery.calendario.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/calendario/data.js"></script>
+<script type="text/javascript">
+	var mykey = 'AIzaSyBHaekAYx15wxw9tDU_tbvX-2z1Hhim0F8'; // typically like Gtg-rtZdsreUr_fLfhgPfgff
+	var calendarid = 'paleolithicster@gmail.com'; // will look somewhat like 3ruy234vodf6hf4sdf5sd84f@group.calendar.google.com
+
+	$.ajax({
+	    type: 'GET',
+	    url: encodeURI('https://www.googleapis.com/calendar/v3/calendars/paleolithicster@gmail.com/events?key=AIzaSyBHaekAYx15wxw9tDU_tbvX-2z1Hhim0F8'),
+	    dataType: 'json',
+	    success: function (response) {
+	        events = response.items;
+	        formatEventsArray(events);
+	    },
+	    error: function (response) {
+	        console.log("OH GOD NO"); 
+	    }
+	});
+
+	console.log(codropsEvents);
+	// var codropsEvents = [];
+	
+	function formatEventsArray (events_array){
+
+
+		jQuery.each( events_array, function(index, value){
+			console.log("start.dateTime: " + value.start.dateTime + " summary: " + value.summary );
+			
+			full_date = value.start.dateTime;
+			split_date = full_date.split(/[-T]+/)
+			organized_date = split_date[1] + "-" + split_date[2] + "-" + split_date[0];
+			summary = value.summary;
+
+			// console.log(organized_date);
+
+			codropsEvents[organized_date] = summary;
+		});
+		
+		console.log(codropsEvents);
+	
+	}
+</script>
 <script type="text/javascript">	
 	$(function() {
 	
@@ -109,24 +149,6 @@ Template Name: Rush page
 
 		}
 	
-	});
-</script>
-<script type="text/javascript">
-	var mykey = 'AIzaSyBHaekAYx15wxw9tDU_tbvX-2z1Hhim0F8'; // typically like Gtg-rtZdsreUr_fLfhgPfgff
-	var calendarid = 'paleolithicster@gmail.com'; // will look somewhat like 3ruy234vodf6hf4sdf5sd84f@group.calendar.google.com
-
-	$.ajax({
-	    type: 'GET',
-	    url: encodeURI('https://www.googleapis.com/calendar/v3/calendars/paleolithicster@gmail.com/events?key=AIzaSyBHaekAYx15wxw9tDU_tbvX-2z1Hhim0F8'),
-	    dataType: 'json',
-	    success: function (response) {
-	        //do whatever you want with each
-	        console.log(response);
-	    },
-	    error: function (response) {
-	        //tell that an error has occurred
-	        console.log("OH GOD NO"); 
-	    }
 	});
 </script>
 
