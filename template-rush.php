@@ -36,6 +36,7 @@ Template Name: Rush page
 			</div>
 		</header>		
 	</section>
+	<div id="results"></div>
 </main>
 
 <script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/scripts/calendario/modernizr.custom.63321.js"></script>
@@ -110,4 +111,24 @@ Template Name: Rush page
 	
 	});
 </script>
+<script type="text/javascript">
+	var mykey = 'AIzaSyBHaekAYx15wxw9tDU_tbvX-2z1Hhim0F8'; // typically like Gtg-rtZdsreUr_fLfhgPfgff
+	var calendarid = 'paleolithicster@gmail.com'; // will look somewhat like 3ruy234vodf6hf4sdf5sd84f@group.calendar.google.com
+
+	$.ajax({
+	    type: 'GET',
+	    url: encodeURI('https://www.googleapis.com/calendar/v3/calendars/paleolithicster@gmail.com/events?key=AIzaSyBHaekAYx15wxw9tDU_tbvX-2z1Hhim0F8'),
+	    dataType: 'json',
+	    success: function (response) {
+	        //do whatever you want with each
+	        console.log(response);
+	    },
+	    error: function (response) {
+	        //tell that an error has occurred
+	        console.log("OH GOD NO"); 
+	    }
+	});
+</script>
+
+
 <?php get_footer(); ?>
