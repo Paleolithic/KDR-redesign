@@ -1,0 +1,38 @@
+/* line 8, ../../sass/vendor/demo.scss */
+.main *,
+.main *:after,
+.main *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 16, ../../sass/vendor/demo.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 21, ../../sass/vendor/demo.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 25, ../../sass/vendor/demo.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 30, ../../sass/vendor/demo.scss */
+.main {
+  padding: 0 30px 50px 30px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}

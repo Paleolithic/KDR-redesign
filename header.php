@@ -9,12 +9,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<?php if (is_page('rush') ) { ?>
-		<!--home page custom JS-->
-	    <script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/scripts/calendario/modernizr.custom.63321.js"></script>
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/stylesheets/calendario/calendar.css" />
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/stylesheets/calendario/custom_2.css" />
-	<?php } ?>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

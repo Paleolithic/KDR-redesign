@@ -13,13 +13,8 @@ Text Domain: blankslate
 BlankSlate WordPress Theme © 2011-2014 TidyThemes
 BlankSlate is distributed under the terms of the GNU GPL
 */
-
-
-
-// IMPORTS
-@import "vars"; // import _global_variables.scss
-@import "mixins"; // import _mixins.scss
 @import "compass/css3";
+@import "modules/vars";
 
 /* SITE STYLES
  * ------------------------------------------------ */
@@ -94,6 +89,8 @@ h2{
 	display: block;
 	margin: 7px 0 0 0;
 }
+
+
 
 /* PAGE STYLES
  * ------------------------------------------------ */
@@ -677,6 +674,21 @@ body > footer{
 		 	&:before, &:after{
 				background-color: $mainOrange;
 		 	}
+		}
+
+		table{
+			border-left: 1px solid #dddddd;
+			border-right: 1px solid #dddddd;
+			border-bottom: 1px solid #dddddd;
+		}
+		thead{
+			background-color: white;
+			border-top: 4px solid $mainOrange;
+		}
+		.table-hover > tbody > tr:hover > td,
+		.table-hover > tbody > tr:hover > th{
+			background-color: $mainOrange;
+			cursor: pointer;
 		}
 	}
 

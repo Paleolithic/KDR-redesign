@@ -1,14 +1,10 @@
 /*
-Syntax error: Undefined variable: "$mainOrange".
-        on line 40 of /Applications/MAMP/htdocs/wordpress/wp-content/themes/KDR-redesign/sass/calendario/custom_2.scss
+Syntax error: Undefined variable: "$baseWidth".
+        on line 22 of /Applications/MAMP/htdocs/wordpress/wp-content/themes/KDR-redesign/sass/partials/skeleton.scss
 
 Backtrace:
-/Applications/MAMP/htdocs/wordpress/wp-content/themes/KDR-redesign/sass/calendario/custom_2.scss:40
+/Applications/MAMP/htdocs/wordpress/wp-content/themes/KDR-redesign/sass/partials/skeleton.scss:22
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/list.rb:71:in `block in _perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/list.rb:71:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/list.rb:71:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
@@ -78,4 +74,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$mainOrange\".\A         on line 40 of /Applications/MAMP/htdocs/wordpress/wp-content/themes/KDR-redesign/sass/calendario/custom_2.scss"; }
+  content: "Syntax error: Undefined variable: \"$baseWidth\".\A         on line 22 of /Applications/MAMP/htdocs/wordpress/wp-content/themes/KDR-redesign/sass/partials/skeleton.scss"; }
