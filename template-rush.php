@@ -49,7 +49,7 @@ Template Name: Rush page
 
 	$.ajax({
 	    type: 'GET',
-	    url: encodeURI('https://www.googleapis.com/calendar/v3/calendars/paleolithicster@gmail.com/events?key=AIzaSyBHaekAYx15wxw9tDU_tbvX-2z1Hhim0F8'),
+	    url: encodeURI('https://www.googleapis.com/calendar/v3/calendars/paleolithicster@gmail.com/events?singleEvents=true&key=AIzaSyBHaekAYx15wxw9tDU_tbvX-2z1Hhim0F8'),
 	    dataType: 'json',
 	    success: function (response) {
 	        events = response.items;
@@ -60,12 +60,7 @@ Template Name: Rush page
 	    }
 	});
 
-	console.log(codropsEvents);
-	// var codropsEvents = [];
-	
 	function formatEventsArray (events_array){
-
-
 		jQuery.each( events_array, function(index, value){
 			console.log("start.dateTime: " + value.start.dateTime + " summary: " + value.summary );
 			
@@ -75,16 +70,12 @@ Template Name: Rush page
 			summary = value.summary;
 
 			// console.log(organized_date);
-
+			//TODO: Handle two events on the same day
 			codropsEvents[organized_date] = summary;
 		});
-		
-		console.log(codropsEvents);
-	
 	}
-</script>
-<script type="text/javascript">	
-	$(function() {
+
+	$(document).ajaxComplete(function() {
 	
 		var transEndEventNames = {
 				'WebkitTransition' : 'webkitTransitionEnd',
@@ -146,9 +137,7 @@ Template Name: Rush page
 				Modernizr.csstransitions ? $events.on( transEndEventName, function() { $( this ).remove(); } ) : $events.remove();
 
 			}
-
 		}
-	
 	});
 </script>
 
