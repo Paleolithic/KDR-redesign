@@ -418,29 +418,23 @@ body > footer{
 	}
 }
 
-
-//Specific categories
-.category-picture{
-	
-}
-
-//About page styles
-.about{
-	h1{
-		text-align: center;
-		line-height: 70px;
-		overflow: hidden;
-	}
-		
-	.info, .e-board, .blogs{
+main{
+	section{
 		padding: 42px 0px 70px 0px;
 		overflow: hidden;
 
 		header{
 			margin-bottom: 49px;
+			
+			h1{
+				line-height: 70px;
+			}
 		}
 	}
+}
 
+//About page styles
+.about{
 	.top{
 		background: linear-gradient(0deg, rgba(34,41,57,.4), rgba(34,41,57,.4));
 		background-image: linear-gradient(0deg, rgba(34,41,57,.6), rgba(27,33,47,.6)), url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII="), url("http://127.0.0.1/wordpress/wp-content/uploads/2014/07/402819_10151055549982107_436206485_n.jpg");
@@ -523,9 +517,13 @@ body > footer{
 		}
 	}
 
-	.map{
+	.where{
+		padding: 0;
 		height: 500px;
 		
+		.map{
+			height: 100%;
+		}
 		.iwindow{
 	    	text-align: center;
 	        background-color: white;
@@ -541,8 +539,9 @@ body > footer{
 	    .lobster, .lobster:before, .lobster:after{
 			color: $mainOrange;
 		}
+		
 	}
-	
+
 	.e-board{
 		background-color: $mainBlue;
 		text-align: center;
@@ -653,20 +652,7 @@ body > footer{
 
 //Rush page styles
 .rush{
-	h1{
-		line-height: 70px;
-	}
-
-	.calendar, .why{
-		padding: 42px 0px 70px 0px;
-		overflow: hidden;
-
-		header{
-			margin-bottom: 49px;
-		}
-	}
-
-	.calendar{
+	.schedule{
 		background-color: #EEEEEE;
 
 		h1{
@@ -694,7 +680,23 @@ body > footer{
 
 	.why{
 		background-color: $mainOrange;
+		padding: 0px;
 
+		.gradient{
+			position: absolute;
+			background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(3,3,3,1) 1%, rgba(255,255,255,0) 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(1%,rgba(3,3,3,1)), color-stop(100%,rgba(255,255,255,0)));
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(3,3,3,1) 1%,rgba(255,255,255,0) 100%);
+			background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(3,3,3,1) 1%,rgba(255,255,255,0) 100%);
+			background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(3,3,3,1) 1%,rgba(255,255,255,0) 100%);
+			background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(3,3,3,1) 1%,rgba(255,255,255,0) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00ffffff',GradientType=0 );
+
+			width: 100%;
+			height: 210px;
+			z-index: 4;
+		}
+		
 		h1{
 			color: white;
 		 	&:before, &:after{
@@ -708,89 +710,18 @@ body > footer{
 	}
 }
 
-//Cyclone slider stuff
-.cycloneslider-template-standard{
-	p{
-		.cycloneslider-prev, .cycloneslider-next{
-			opacity: 1;
-			background: $mainOrange;
-			border-bottom: 3px solid $borderOrange;
-			box-shadow: none;
-			height: 35px;
-			width: 35px;
 
-			&:hover{
-				background: $borderOrange;
-			}
-
-			.arrow{
-				border: none;
-				top: 12%;
-				left: 30%;
-				margin-top: 0px;
-				margin-left: 0px;
-			}
-		}
-		.cycloneslider-prev{
-			left: 0px;
-			@include border-radius(0px 3px 3px 0px);
-			.arrow:before{
-				font-family: "FontAwesome";
-				content: "\f053";
-				color: white;
-				
-			}		
-		}
-		.cycloneslider-next{
-			right: 0px;
-			@include border-radius(3px 0px 0px 3px);
-			.arrow:before{
-				font-family: "FontAwesome";
-				content: "\f054";
-				color: white;
-				margin-right: 0px;
-			}		
-		}
-	}
-
-	&:hover{
-		p{
-			.cycloneslider-prev, .cycloneslider-next{
-				opacity: 1;
-			}
+//Calendar page styles
+.calendar{
+	.calendar-section{
+		h1{
+			color: $mainOrange;
+		 	&:before, &:after{
+				background-color: $mainOrange;
+		 	}
 		}
 	}
 }
-
-//Soliloquy stuff
-// .soliloquy-container{
-// 	.soliloquy-wrapper{
-// 		.soliloquy-controls{
-// 			.soliloquy-pager{
-// 				display: none;
-// 			}
-
-// 			.soliloquy-controls-direction{
-// 				.soliloquy-prev, .soliloquy-next{
-// 					height: 35px;
-// 					background-color: $mainOrange;
-// 					border-bottom: 3px solid $borderOrange;
-// 				}			
-// 				.soliloquy-prev:hover, .soliloquy-next:hover{
-// 					color: $borderOrange;
-// 				}
-// 				.soliloquy-prev{
-// 					left: 0px;
-// 					@include border-radius(0px 3px 3px 0px);
-// 				}
-// 				.soliloquy-next{
-// 					right: 0px;
-// 					@include border-radius(3px 0px 0px 3px);
-// 				}
-// 			}
-// 		}
-// 	}
-// }
 
 /* MEDIA QUERIES
  * ------------------------------------------------ */
