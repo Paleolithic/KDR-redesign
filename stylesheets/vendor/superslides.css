@@ -1,0 +1,117 @@
+/* line 5, ../../sass/vendor/superslides.scss */
+#slides {
+  position: relative;
+  height: 700px !important;
+}
+/* line 8, ../../sass/vendor/superslides.scss */
+#slides .slides-container {
+  display: none;
+}
+/* line 11, ../../sass/vendor/superslides.scss */
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+/* line 38, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 20, ../../sass/vendor/superslides.scss */
+#slides header {
+  margin-bottom: -194px;
+  z-index: 5;
+}
+/* line 25, ../../sass/vendor/superslides.scss */
+#slides header h1 {
+  padding-top: 56px;
+}
+
+/* line 33, ../../sass/vendor/superslides.scss */
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+}
+/* line 39, ../../sass/vendor/superslides.scss */
+.slides-navigation a {
+  color: white;
+  position: absolute;
+  display: block;
+}
+/* line 43, ../../sass/vendor/superslides.scss */
+.slides-navigation a.prev {
+  left: 28px;
+}
+/* line 46, ../../sass/vendor/superslides.scss */
+.slides-navigation a.next {
+  right: 28px;
+}
+
+/* line 52, ../../sass/vendor/superslides.scss */
+.desc {
+  top: 85%;
+}
+/* line 55, ../../sass/vendor/superslides.scss */
+.desc p {
+  padding: 7px 14px;
+  background-color: #304269;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-bottom: 4px solid #1d273f;
+}
+/* line 63, ../../sass/vendor/superslides.scss */
+.desc .fourteen:after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #304269;
+  border-width: 20px;
+  margin-left: 10px;
+}
+
+/* line 78, ../../sass/vendor/superslides.scss */
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 1%;
+  text-align: center;
+  width: 100%;
+}
+/* line 84, ../../sass/vendor/superslides.scss */
+.slides-pagination a {
+  border: 2px solid #222;
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+  margin: 2px;
+  overflow: hidden;
+  text-indent: -100%;
+}
+/* line 94, ../../sass/vendor/superslides.scss */
+.slides-pagination a.current {
+  background: #222;
+}

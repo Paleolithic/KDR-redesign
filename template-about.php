@@ -6,13 +6,13 @@ Template Name: About us page
 <?php get_header(); ?>
 <main class="about">	
 	<section class="top">
-		<header class="container">
-			<div class="six columns offset-by-five">
+		<div class="container">
+			<header class="six columns offset-by-five">
 				<h5 class='lobster'>Welcome to</h5>
 				<h1>KDR</h1>
 				<h5 class='lobster'>Iota Beta Chapter</h5>
-			</div>
-		</header>
+			</header>
+		</div>
 	</section>
 	<section class="info">
 		<div class="container">

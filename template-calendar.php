@@ -5,7 +5,13 @@ Template Name: Calendar Page
 ?>
 <?php get_header(); ?>
 <main class="calendar">
-	<section class="calendar">
+	<section class="calendar-section">
+		<div class="container">
+			<header class="fourteen columns offset-by-one info-title">
+				<h1 class='lobster'>Calendar of Events</h1>
+				<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at.</p>
+			</header>
+		</div>
 		<div class="main">
 			<div class="custom-calendar-wrap">
 				<div id="custom-inner" class="custom-inner">

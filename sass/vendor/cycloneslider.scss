@@ -1,0 +1,55 @@
+@import "modules/all";
+@import "compass/css3";
+//Cyclone slider stuff
+.cycloneslider-template-standard{
+	p{
+		.cycloneslider-prev, .cycloneslider-next{
+			opacity: 1;
+			background: $mainOrange;
+			border-bottom: 3px solid $borderOrange;
+			box-shadow: none;
+			height: 35px;
+			width: 35px;
+
+			&:hover{
+				background: $borderOrange;
+			}
+
+			.arrow{
+				border: none;
+				top: 12%;
+				left: 30%;
+				margin-top: 0px;
+				margin-left: 0px;
+			}
+		}
+		.cycloneslider-prev{
+			left: 0px;
+			@include border-radius(0px 3px 3px 0px);
+			.arrow:before{
+				font-family: "FontAwesome";
+				content: "\f053";
+				color: white;
+				
+			}		
+		}
+		.cycloneslider-next{
+			right: 0px;
+			@include border-radius(3px 0px 0px 3px);
+			.arrow:before{
+				font-family: "FontAwesome";
+				content: "\f054";
+				color: white;
+				margin-right: 0px;
+			}		
+		}
+	}
+
+	&:hover{
+		p{
+			.cycloneslider-prev, .cycloneslider-next{
+				opacity: 1;
+			}
+		}
+	}
+}

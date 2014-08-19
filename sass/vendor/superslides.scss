@@ -1,0 +1,100 @@
+// Required
+@import "compass";
+@import "modules/all";
+
+#slides {
+  position: relative;
+  height: 700px !important;
+  .slides-container {
+    display: none;
+  }
+  .scrollable {
+    @include pie-clearfix;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+  }
+  header{
+    // position: absolute;
+    margin-bottom: -194px;
+    z-index: 5;
+
+    h1{
+      padding-top: 56px;
+    }
+  }
+}
+
+
+// Optional
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+  a {
+    color: white;
+    position: absolute;
+    display: block;
+    &.prev {
+      left: 28px;
+    }
+    &.next {
+      right: 28px;
+    }
+  }
+}
+
+.desc{
+  top: 85%;
+ 
+  p{
+    padding: 7px 14px;
+    background-color: $mainBlue;
+    @include border-radius(4px);
+    border-bottom: 4px solid $borderBlue;
+
+  }
+
+  .fourteen:after{
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: $mainBlue;
+    border-width: 20px;
+    margin-left: 10px;
+  }
+}
+
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 1%;
+  text-align: center;
+  width: 100%;
+  a {
+    border: 2px solid #222;
+    border-radius: 15px;
+    width: 10px;
+    height: 10px;
+    @include inline-block;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=');
+    margin: 2px;
+    overflow: hidden;
+    text-indent: -100%;
+    &.current {
+      background: #222;
+    }
+  }
+}
+
+

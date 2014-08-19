@@ -679,7 +679,7 @@ main{
 	}
 
 	.why{
-		background-color: $mainOrange;
+		// background-color: $mainOrange;
 		padding: 0px;
 
 		.gradient{
@@ -706,6 +706,29 @@ main{
 
 		p{
 			color: white;
+		}
+	}
+	.who{
+		background-color: $mainOrange;
+
+		h1{
+			color: white;
+		 	&:before, &:after{
+				background-color: white;
+		 	}
+		}
+
+		h2{
+			color: white;
+		}
+
+		p{
+			color: white;
+		}
+
+		img{
+			width: 100%;
+			@include border-radius(4px);
 		}
 	}
 }
