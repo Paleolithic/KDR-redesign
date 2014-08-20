@@ -25,37 +25,37 @@ Template Name: Rush page
 					<tbody>
 						<tr>
 							<td>Monday</td>
-							<td>March 4th</td>
+							<td>Sept 1st</td>
 							<td>Dodgeball</td>
 							<td>4pm - 6pm</td>
 						</tr>
 						<tr>
 							<td>Wednesday</td>
-							<td>March 6th</td>
+							<td>Sept 3rd</td>
 							<td>Open House</td>
 							<td>9pm - 11pm</td>
 						</tr>
 						<tr>
 							<td>Friday</td>
-							<td>March 8th</td>
+							<td>Sept 5th</td>
 							<td>Taco Night!</td>
 							<td>7pm - 10pm</td>
 						</tr>
 						<tr>
-							<td>Monday</td>
-							<td>March 11th</td>
+							<td>Tuesday</td>
+							<td>Sept 9th</td>
 							<td>Ultimate Frisbee</td>
 							<td>7:30pm - 12am</td>
 						</tr>
 						<tr>
-							<td>Wednesday</td>
-							<td>March 13th</td>
+							<td>Thursday</td>
+							<td>Sept 11th</td>
 							<td>Bacon Night</td>
 							<td>7pm - 11:30pm</td>
 						</tr>
 						<tr>
-							<td>Friday</td>
-							<td>March 15th</td>
+							<td>Saturday</td>
+							<td>Sept 13th</td>
 							<td>Formal Dinner (Invite Only)</td>
 							<td>5:30pm - 9pm</td>
 						</tr>
@@ -74,15 +74,15 @@ Template Name: Rush page
 		</div>
 		<ul class='slides-container'>
             <li>
-                <img src='https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpa1/t31.0-8/10348732_10203207198636901_344317692563442004_o.jpg' width='1366' height='911' alt='Bright Day'>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/bbq.jpg" width='1366' height='911' alt='Bright Day'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
-                    	<p>We like to hold hands</p>
+                    	<p>A common rush event that we have is an outdoor open house, complete with hot tub, bbq, and foursquare</p>
                     </div>
                 </div>
             </li>
             <li>
-                <img src='https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/10171774_765517800134563_7759203079191405283_n.jpg' width='1366' height='911' alt='Glassblowing'>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/bbq_carlos.jpg" width='1366' height='911' alt='Glassblowing'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
                     	<p>We like to put our various body parts in boxes at Christmas parties!</p>
@@ -90,7 +90,7 @@ Template Name: Rush page
                 </div>
             </li>
             <li>
-                <img src='http://unsplash.it/1366/911/?random=3' width='1366' height='911' alt='Gallaudet'>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/bbq_drawing.jpg" width='1366' height='911' alt='Gallaudet'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
                     	<p>The library had one of our camera and television
@@ -100,7 +100,7 @@ Template Name: Rush page
                 </div>
             </li>
             <li>
-                <img src='http://unsplash.it/1366/911/?random=4' width='1366' height='911' alt='Library'>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/bbq_far.jpg" width='1366' height='911' alt='Library'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
                     	<p>The library had one of our camera and television
@@ -110,7 +110,7 @@ Template Name: Rush page
                 </div>
             </li>
             <li>
-                <img src='http://unsplash.it/1366/911/?random=5' width='1366' height='911' alt='Gordon Field House'>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/bowling.jpg" width='1366' height='911' alt='Gordon Field House'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
                         <p>The library had one of our camera and television
@@ -120,7 +120,7 @@ Template Name: Rush page
                 </div>
             </li>
             <li>
-                <img src='http://unsplash.it/1366/911/?random=6' width='1366' height='911' alt='Justin Peterson'>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/carlos_bowling.jpg" width='1366' height='911' alt='Justin Peterson'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
                         <p>The library had one of our camera and television
@@ -130,7 +130,7 @@ Template Name: Rush page
                 </div>
             </li>
             <li>
-                <img src='http://unsplash.it/1366/911/?random=7' width='1366' height='911' alt='TJ Boyle'>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/group_skyzone.jpg" width='1366' height='911' alt='TJ Boyle'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
                         <p>The library had one of our camera and television
@@ -140,7 +140,27 @@ Template Name: Rush page
                 </div>
             </li>
             <li>
-                <img src='http://unsplash.it/1366/911/?random=8' width='1366' height='911' alt='Really annoying kid'>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/vg_night.jpg" width='1366' height='911' alt='Really annoying kid'>
+                <div class='container desc'>
+                    <div class='fourteen columns offset-by-one'>
+                        <p>The library had one of our camera and television
+                        screen set ups, so that passerbys could see persons at our other
+                        exhibits and they could be seen as well.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/weinke.jpg" width='1366' height='911' alt='Really annoying kid'>
+                <div class='container desc'>
+                    <div class='fourteen columns offset-by-one'>
+                        <p>The library had one of our camera and television
+                        screen set ups, so that passerbys could see persons at our other
+                        exhibits and they could be seen as well.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/zach_skyzone.jpg" width='1366' height='911' alt='Really annoying kid'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
                         <p>The library had one of our camera and television
@@ -164,19 +184,19 @@ Template Name: Rush page
         </div>
         <div class="container">
             <div class="one-third column rush-thirds">
-                <img src="http://lorempixel.com/140/140/nature"/>
+                <div class="rush-photo" id="rush"></div>
                 <h4>Senior Tribune</h4>
                 <div class="border-bottom transition-right"></div>
-                <p>Xavier Hocquet</p>
+                <p>Kyle Chrystler</p>
             </div>
             <div class="one-third column rush-thirds">
-                <img src="http://lorempixel.com/140/140/nightlife"/>
+                <div class="rush-photo" id="st"></div>
                 <h4>Rush Chair</h4>
                 <div class="border-bottom transition-center"></div>
-                <p>Xavier Hocquet</p>
+                <p>Michael Kenworthy</p>
             </div>
             <div class="one-third column rush-thirds">
-                <img src="http://lorempixel.com/140/140/cats"/>
+                <div class="rush-photo" id="brother"></div>
                 <h4>Any Brother</h4>
                 <div class="border-bottom transition-left"></div>
                 <p>???</p>

@@ -555,11 +555,17 @@ main{
 		p{
 			color: white;
 		}
-		img{
-			display: block;
-			margin: 0 auto 7px auto;
-			border-radius: 50%;
+
+		.e-board-photo{
+			width: 100%;
+			height: 172px;
+			@include border-radius(50%);
 		}
+		#praetor{  	background-image: url("images/brothers/kenworthy.jpg"); }
+		#jt{ 		background-image: url("images/brothers/jaime.jpg"); }
+		#consul{ 	background-image: url("images/brothers/justin.jpg"); }
+		#st{ 		background-image: url("images/brothers/kyle.jpg"); }
+		#quaestor{ 	background-image: url("images/brothers/xavier.jpg"); }
 
 		h4{
 			color: white;
@@ -729,6 +735,16 @@ main{
 			border-radius: 50%;
 		}
 
+		.rush-photo{
+			width: 172px;
+			height: 172px;
+			margin: 0 auto;
+			@include border-radius(50%);
+		}
+		#rush{  	background-image: url("images/brothers/kenworthy.jpg"); }
+		#st{ 		background-image: url("images/brothers/kyle.jpg"); }
+		#brother{ 	background-image: url("images/brothers/xavier.jpg"); }
+
 		.rush-thirds p{
 			text-transform: uppercase;
 			font-size: 18px;
@@ -820,6 +836,24 @@ main{
 /* Tablet Portrait size to standard #{strip-units($baseWidthMQ)} (devices and browsers) */
 @media only screen and (min-width: $tabletWidth) and (max-width: $baseWidthMQ - 1) {
 	/* add code here */
+	.about{
+		.e-board{
+			.e-board-photo{
+				height: 132px;
+				background-size: 132px 170px;
+			}			
+		}
+	}
+
+	.rush{
+		.who{
+			.rush-photo{
+				height: 132px;
+				width: 132px;
+				background-size: 132px 170px;
+			}
+		}
+	}
 }
 
 /* All Mobile Sizes (devices and browser) */

@@ -124,31 +124,31 @@ Template Name: About us page
 				</p>
 			</header>
 			<div class="one-fifth column e-board-fifths">
-				<img src="http://lorempixel.com/140/140/cats"/>
+				<div class="e-board-photo" id="praetor"></div>
 				<h4>Praetor</h4>
 				<div class="border-bottom transition-right"></div>
 				<p>Will Hammond</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<img src="http://lorempixel.com/140/140/nightlife"/>
+				<div class="e-board-photo" id="jt"></div>
 				<h4>Junior Tribune</h4>
 				<div class="border-bottom transition-right"></div>
 				<p>Jaime Geiger</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<img src="http://lorempixel.com/140/140/sports"/>
+				<div class="e-board-photo" id="consul"></div>
 				<h4>Consul</h4>
 				<div class="border-bottom transition-center"></div>
 				<p>Justin Peterson</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<img src="http://lorempixel.com/140/140/technics"/>
+				<div class="e-board-photo" id="st"></div>
 				<h4>Senior Tribune</h4>
 				<div class="border-bottom transition-left"></div>
 				<p>Kyle Chrystler</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<img src="http://lorempixel.com/140/140/nature"/>
+				<div class="e-board-photo" id="quaestor"></div>
 				<h4>Quaestor</h4>
 				<div class="border-bottom transition-left"></div>
 				<p>Xavier Hocquet</p>
