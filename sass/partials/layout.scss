@@ -710,6 +710,11 @@ main{
 	}
 	.who{
 		background-color: $mainOrange;
+		text-align: center;
+
+		*{
+			color: white;
+		}
 
 		h1{
 			color: white;
@@ -718,18 +723,67 @@ main{
 		 	}
 		}
 
-		h2{
-			color: white;
-		}
-
-		p{
-			color: white;
-		}
-
 		img{
-			width: 100%;
-			@include border-radius(4px);
+			display: block;
+			margin: 0 auto 7px auto;
+			border-radius: 50%;
 		}
+
+		.rush-thirds p{
+			text-transform: uppercase;
+			font-size: 18px;
+			font-family: Lato, sans-serif;
+			letter-spacing: 1px;
+			text-align: center;
+		}
+		.border-bottom{
+			background-color: #919191;
+			width: 35%;
+			height: 1px;
+			margin: 10px auto;
+			background-color: rgba(255,255,255, .2);
+
+			&:after{
+				content: "";
+				width: 100%;
+				margin: 0;
+				display: block;
+				height: 1px;
+
+				background-color: $borderBlue;
+				@include scaleX(0);
+				@include transition-property(all);
+				@include transition-duration(.5s);
+				@include transition-timing-function(linear);
+			}
+			&.transition-right:after{
+				@include transform-origin(right);
+			}
+			&.transition-center:after{
+				@include transform-origin(center);
+			}
+			&.transition-left:after{
+				@include transform-origin(left);
+			}
+		}	
+		.rush-thirds:hover .border-bottom{
+			&:after{
+				@include scaleX(1);
+				@include transform-origin(left);
+				@include transition-property(all);
+				@include transition-duration(.5s);
+				@include transition-timing-function(linear);
+			}
+			&.transition-right:after{
+				@include transform-origin(right);
+			}
+			&.transition-center:after{
+				@include transform-origin(center);
+			}
+			&.transition-left:after{
+				@include transform-origin(left);
+			}
+		}			
 	}
 }
 

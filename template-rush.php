@@ -74,22 +74,18 @@ Template Name: Rush page
 		</div>
 		<ul class='slides-container'>
             <li>
-                <img src='http://unsplash.it/1366/911/?random=1' width='1366' height='911' alt='Bright Day'>
+                <img src='https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpa1/t31.0-8/10348732_10203207198636901_344317692563442004_o.jpg' width='1366' height='911' alt='Bright Day'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
-                    	<p>The library had one of our camera and television
-                     	screen set ups, so that passerbys could see persons at our other
-                      	exhibits and they could be seen as well.</p>
+                    	<p>We like to hold hands</p>
                     </div>
                 </div>
             </li>
             <li>
-                <img src='http://unsplash.it/1366/911/?random=2' width='1366' height='911' alt='Glassblowing'>
+                <img src='https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/10171774_765517800134563_7759203079191405283_n.jpg' width='1366' height='911' alt='Glassblowing'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
-                    	<p>The library had one of our camera and television
-                     	screen set ups, so that passerbys could see persons at our other
-                      	exhibits and they could be seen as well.</p>
+                    	<p>We like to put our various body parts in boxes at Christmas parties!</p>
                     </div>
                 </div>
             </li>
@@ -167,6 +163,26 @@ Template Name: Rush page
             </header>
         </div>
         <div class="container">
+            <div class="one-third column rush-thirds">
+                <img src="http://lorempixel.com/140/140/nature"/>
+                <h4>Senior Tribune</h4>
+                <div class="border-bottom transition-right"></div>
+                <p>Xavier Hocquet</p>
+            </div>
+            <div class="one-third column rush-thirds">
+                <img src="http://lorempixel.com/140/140/nightlife"/>
+                <h4>Rush Chair</h4>
+                <div class="border-bottom transition-center"></div>
+                <p>Xavier Hocquet</p>
+            </div>
+            <div class="one-third column rush-thirds">
+                <img src="http://lorempixel.com/140/140/cats"/>
+                <h4>Any Brother</h4>
+                <div class="border-bottom transition-left"></div>
+                <p>???</p>
+            </div>
+        </div>
+<!--         <div class="container">
             <div class="six columns offset-by-five">
                 <img src="http://unsplash.it/1366/911/?random=1">
             </div>
@@ -174,7 +190,7 @@ Template Name: Rush page
                 <h2>Who Should You Contact?</h2>
                 <p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at. Duis vel nibh at velit scelerisque suscipit. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Donec posuere vulputate arcu.</p>                
             </div>
-        </div>
+        </div> -->
     </section>
 </main>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/superslides/superslides.js"></script>
