@@ -35,28 +35,39 @@ Template Name: Calendar Page
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/calendario/data.js"></script>
 <script type="text/javascript">
 	var mykey = 'AIzaSyBHaekAYx15wxw9tDU_tbvX-2z1Hhim0F8'; // typically like Gtg-rtZdsreUr_fLfhgPfgff
-	var calendarid = 'paleolithicster@gmail.com'; // will look somewhat like 3ruy234vodf6hf4sdf5sd84f@group.calendar.google.com
+	var calendarid = 'kdrib.org_mg82e9o9tu5ku4oltr2a6s2p2k@group.calendar.google.com'; // will look somewhat like 3ruy234vodf6hf4sdf5sd84f@group.calendar.google.com
+	var today = new Date();
 
+	var nextYear = new Date();
+	var lastMonth = new Date();
+	nextYear.setDate(today.getDate() + 365);
+	lastMonth.setDate(today.getDate() - 31);
+	var startDateMax = nextYear.toISOString();
+	var startDateMin = '2014-8-01T00:00:00.000Z';
+
+	console.log(startDateMax);
 	$.ajax({
 	    type: 'GET',
-	    url: encodeURI('https://www.googleapis.com/calendar/v3/calendars/paleolithicster@gmail.com/events?singleEvents=true&key=AIzaSyBHaekAYx15wxw9tDU_tbvX-2z1Hhim0F8'),
+	    url: encodeURI('https://www.googleapis.com/calendar/v3/calendars/kdrib.org_mg82e9o9tu5ku4oltr2a6s2p2k@group.calendar.google.com/events?singleEvents=true&timeMin=' + startDateMin + '&timeMax=' + startDateMax + '&key=' + mykey),
 	    dataType: 'json',
 	    success: function (response) {
 	        events = response.items;
 	        formatEventsArray(events);
 	    },
 	    error: function (response) {
-	        console.log("OH GOD NO"); 
+	        console.log("OH GOD NO:");
+	        console.log(response); 
 	    }
 	});
 
+
 	function formatEventsArray (events_array){
 		jQuery.each( events_array, function(index, value){
-			console.log("start.dateTime: " + value.start.dateTime + " summary: " + value.summary );
-			
-			full_date = value.start.dateTime;
+			console.log(value);
+			full_date = ((value.start.date != undefined) ? value.start.date : value.start.dateTime);
 			split_date = full_date.split(/[-T]+/)
 			organized_date = split_date[1] + "-" + split_date[2] + "-" + split_date[0];
+			console.log("organized_date: " + organized_date + " summary: " + value.summary );
 			summary = '<a>' + value.summary + '</a>';
 
 			// console.log(organized_date);
