@@ -69,7 +69,6 @@ Template Name: Rush page
 		<div class="container">
 			<header class="fourteen columns offset-by-one why-title">
 				<h1 class='lobster'>Why Should You Join Us?</h1>
-				<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at.</p>
 			</header>
 		</div>
 		<ul class='slides-container'>
@@ -77,7 +76,7 @@ Template Name: Rush page
                 <img src="<?php bloginfo('template_directory'); ?>/images/rush/bbq.jpg" width='1366' height='911' alt='Bright Day'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
-                    	<p>A common rush event that we have is an outdoor open house, complete with hot tub, bbq, and foursquare</p>
+                    	<p>A common rush event that we have is an outdoor block party, complete with hot tub, bbq, and foursquare</p>
                     </div>
                 </div>
             </li>
@@ -85,17 +84,7 @@ Template Name: Rush page
                 <img src="<?php bloginfo('template_directory'); ?>/images/rush/bbq_carlos.jpg" width='1366' height='911' alt='Glassblowing'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
-                    	<p>We like to put our various body parts in boxes at Christmas parties!</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="<?php bloginfo('template_directory'); ?>/images/rush/bbq_drawing.jpg" width='1366' height='911' alt='Gallaudet'>
-                <div class='container desc'>
-                    <div class='fourteen columns offset-by-one'>
-                    	<p>The library had one of our camera and television
-                     	screen set ups, so that passerbys could see persons at our other
-                      	exhibits and they could be seen as well.</p>
+                    	<p>A bunch of brothers can be seen here with RIT students hanging out during the block party</p>
                     </div>
                 </div>
             </li>
@@ -103,9 +92,7 @@ Template Name: Rush page
                 <img src="<?php bloginfo('template_directory'); ?>/images/rush/bbq_far.jpg" width='1366' height='911' alt='Library'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
-                    	<p>The library had one of our camera and television
-                     	screen set ups, so that passerbys could see persons at our other
-                      	exhibits and they could be seen as well.</p>
+                    	<p>We've previously had bowling rush events</p>
                     </div>
                 </div>
             </li>
@@ -113,29 +100,7 @@ Template Name: Rush page
                 <img src="<?php bloginfo('template_directory'); ?>/images/rush/bowling.jpg" width='1366' height='911' alt='Gordon Field House'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
-                        <p>The library had one of our camera and television
-                        screen set ups, so that passerbys could see persons at our other
-                        exhibits and they could be seen as well.</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="<?php bloginfo('template_directory'); ?>/images/rush/carlos_bowling.jpg" width='1366' height='911' alt='Justin Peterson'>
-                <div class='container desc'>
-                    <div class='fourteen columns offset-by-one'>
-                        <p>The library had one of our camera and television
-                        screen set ups, so that passerbys could see persons at our other
-                        exhibits and they could be seen as well.</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="<?php bloginfo('template_directory'); ?>/images/rush/group_skyzone.jpg" width='1366' height='911' alt='TJ Boyle'>
-                <div class='container desc'>
-                    <div class='fourteen columns offset-by-one'>
-                        <p>The library had one of our camera and television
-                        screen set ups, so that passerbys could see persons at our other
-                        exhibits and they could be seen as well.</p>
+                        <p>We've also done rush events at Sky Zone, a huge trampoline park</p>
                     </div>
                 </div>
             </li>
@@ -143,9 +108,23 @@ Template Name: Rush page
                 <img src="<?php bloginfo('template_directory'); ?>/images/rush/vg_night.jpg" width='1366' height='911' alt='Really annoying kid'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
-                        <p>The library had one of our camera and television
-                        screen set ups, so that passerbys could see persons at our other
-                        exhibits and they could be seen as well.</p>
+                        <p>As you can see, skyzone is a ton of fun.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/carlos_bowling.jpg" width='1366' height='911' alt='Justin Peterson'>
+                <div class='container desc'>
+                    <div class='fourteen columns offset-by-one'>
+                        <p>Another fan favorite is video game night, where we chill inside and play video games and board games.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/group_skyzone.jpg" width='1366' height='911' alt='TJ Boyle'>
+                <div class='container desc'>
+                    <div class='fourteen columns offset-by-one'>
+                        <p>We like sports too. Seen here is Andrew Weinke going hard at Dodgeball.</p>
                     </div>
                 </div>
             </li>
@@ -184,16 +163,16 @@ Template Name: Rush page
         </div>
         <div class="container">
             <div class="one-third column rush-thirds">
-                <div class="rush-photo" id="rush"></div>
+                <div class="rush-photo" id="st"></div>
                 <h4>Senior Tribune</h4>
                 <div class="border-bottom transition-right"></div>
-                <p>Kyle Chrystler</p>
+                <p>Kyle Chrystler <a>seniortribune@kdrib.org</a></p>
             </div>
             <div class="one-third column rush-thirds">
-                <div class="rush-photo" id="st"></div>
+                <div class="rush-photo" id="rush"></div>
                 <h4>Rush Chair</h4>
                 <div class="border-bottom transition-center"></div>
-                <p>Michael Kenworthy</p>
+                <p>Michael Kenworthy <a>skywalker@kdrib.org</a></p>
             </div>
             <div class="one-third column rush-thirds">
                 <div class="rush-photo" id="brother"></div>

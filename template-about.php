@@ -18,7 +18,7 @@ Template Name: About us page
 		<div class="container">
 			<header class="fourteen columns offset-by-one info-title">
 				<h1 class='lobster'>About our Fraternity</h1>
-				<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at.</p>
+				<p>The Kappa Delta Rho Iota Beta Chapter is a Social Fraternity on the Rochester Institute of Technology campus, originally formed in 1989 and brought to full status May of 1990.</p>
 			</header>
 			<div class="one-third column info-thirds">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
@@ -67,7 +67,7 @@ Template Name: About us page
 					</g>
 				</svg>
 				<h2>Honor</h2>
-				<p>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci.</p>
+				<p>Gentleman leading lives where we believe in "Honor Above All Things" and live by that goal every day</p>
 			</div>
 			<div class="one-third column info-thirds">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -85,7 +85,7 @@ Template Name: About us page
 					</g>
 				</svg>
 				<h2>Super</h2>
-				<p>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+				<p>Gentleman who put a ton of energy into raising thousands of dollars each year to Childrens Charities</p>
 			</div>
 			<div class="one-third column info-thirds">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -109,7 +109,7 @@ Template Name: About us page
 					</g>
 				</svg>
 				<h2>Omnia</h2>
-				<p>Pellentesque commodo eros a enim. Vestibulum ante ipsum primis in.</p>
+				<p>Gentlemen that give back to our community, volunteering wherever and whenever we can</p>
 			</div>
 		</div>
 	</section>
@@ -205,7 +205,7 @@ Template Name: About us page
             streetViewControl: false,
             panControl: false,
             mapTypeControl: false,
-            center: new google.maps.LatLng(40.814, -73.9597),
+            center: new google.maps.LatLng(44, -77.669495),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             zoomControlOptions: {
                 style: google.maps.ZoomControlStyle.SMALL
@@ -241,7 +241,7 @@ Template Name: About us page
 		});
 
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(40.795, -73.9597),
+            position: new google.maps.LatLng(43.084218, -77.669495),
             map: map,
             animation: google.maps.Animation.DROP,
             title: 'Field House'
