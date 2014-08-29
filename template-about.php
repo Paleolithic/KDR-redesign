@@ -8,6 +8,7 @@ Template Name: About us page
 	<section class="top">
 		<div class="container">
 			<header class="six columns offset-by-five">
+				<div class="crest"></div>
 				<h5 class='lobster'>Welcome to</h5>
 				<h1>KDR</h1>
 				<h5 class='lobster'>Iota Beta Chapter</h5>
@@ -120,7 +121,7 @@ Template Name: About us page
 		<div class="container">
 			<header class="fourteen columns offset-by-one e-board-title">
 				<h1 class='lobster'>Meet Our E-Board</h1>
-				<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Nullam vel sem. Aliquam eu nunc.
+				<p>These are the gentlemen who keep our fraternity alive and well. They each have a specific job in managing our day to day activities, and do their best to keep us efficient
 				</p>
 			</header>
 			<div class="one-fifth column e-board-fifths">
@@ -205,7 +206,7 @@ Template Name: About us page
             streetViewControl: false,
             panControl: false,
             mapTypeControl: false,
-            center: new google.maps.LatLng(44, -77.669495),
+            center: new google.maps.LatLng(43.1, -77.669495),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             zoomControlOptions: {
                 style: google.maps.ZoomControlStyle.SMALL
@@ -230,7 +231,7 @@ Template Name: About us page
 				'<img src="">'+
 				'<h1 id="firstHeading" class="lobster">Where We\'re Located</h1>'+
 				'<div id="bodyContent">'+
-					'<p>Nam eget dui. Praesent blandit laoreet nibh. Etiam ultricies nisi vel augue. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Phasellus volutpat, metus eget egestas mollis.</p>'+
+					'<p>Our house is located in Res Hall A on the residential side of the Rochester Institute of Technology campus. Come hang out with us whenever, you can identify us by the lit up letters in our lounge window.</p>'+
 				'</div>'+
 				'<div class="bottom"></div>'+
 			'</div>';
@@ -239,13 +240,14 @@ Template Name: About us page
 		  content: contentString,
 		  maxWidth: 460
 		});
-
-        var marker = new google.maps.Marker({
+		
+		var marker = new google.maps.Marker({
             position: new google.maps.LatLng(43.084218, -77.669495),
             map: map,
             animation: google.maps.Animation.DROP,
             title: 'Field House'
         });
+        
 
         infowindow.open(map,marker);
 
