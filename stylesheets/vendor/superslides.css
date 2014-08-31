@@ -70,6 +70,7 @@
   -o-border-radius: 4px;
   border-radius: 4px;
   border-bottom: 4px solid #1d273f;
+  text-align: center;
 }
 /* line 63, ../../sass/vendor/superslides.scss */
 .desc .fourteen:after {

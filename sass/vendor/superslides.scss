@@ -57,7 +57,7 @@
     background-color: $mainBlue;
     @include border-radius(4px);
     border-bottom: 4px solid $borderBlue;
-
+    text-align: center;
   }
 
   .fourteen:after{

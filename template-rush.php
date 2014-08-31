@@ -9,7 +9,7 @@ Template Name: Rush page
 		<div class="container">
 			<header class="fourteen columns offset-by-one calendar-title">
 				<h1 class='lobster'>Our Rush Schedule</h1>
-				<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at.</p>
+				<p>Below you'll find our rush schedule</p>
 			</header>
 			<div class="twelve columns offset-by-two">
 				<table class="table table-striped table-hover">
@@ -26,38 +26,38 @@ Template Name: Rush page
 						<tr>
 							<td>Monday</td>
 							<td>Sept 1st</td>
-							<td>Dodgeball</td>
-							<td>4pm - 6pm</td>
-						</tr>
-						<tr>
-							<td>Wednesday</td>
-							<td>Sept 3rd</td>
-							<td>Open House</td>
-							<td>9pm - 11pm</td>
+							<td>Block Party</td>
+                            <td>3pm - 7pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Sept 3rd</td>
+                            <td>Dodgeball</td>
+							<td>7pm - End</td>
 						</tr>
 						<tr>
 							<td>Friday</td>
 							<td>Sept 5th</td>
-							<td>Taco Night!</td>
-							<td>7pm - 10pm</td>
+							<td>Sky Zone Trampoline Park</td>
+							<td>8pm - End</td>
 						</tr>
 						<tr>
 							<td>Tuesday</td>
 							<td>Sept 9th</td>
-							<td>Ultimate Frisbee</td>
-							<td>7:30pm - 12am</td>
+							<td>Video Game Night</td>
+							<td>7pm - End</td>
 						</tr>
 						<tr>
 							<td>Thursday</td>
 							<td>Sept 11th</td>
 							<td>Bacon Night</td>
-							<td>7pm - 11:30pm</td>
+							<td>8:30 - End</td>
 						</tr>
 						<tr>
 							<td>Saturday</td>
 							<td>Sept 13th</td>
 							<td>Formal Dinner (Invite Only)</td>
-							<td>5:30pm - 9pm</td>
+							<td>6pm - End</td>
 						</tr>
 					</tbody>
 				</table>
@@ -92,7 +92,7 @@ Template Name: Rush page
                 <img src="<?php bloginfo('template_directory'); ?>/images/rush/bbq_far.jpg" width='1366' height='911' alt='Library'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
-                    	<p>We've previously had bowling rush events</p>
+                        <p>You can see our outdoor hot tub set up for our block party here.</p>
                     </div>
                 </div>
             </li>
@@ -100,20 +100,19 @@ Template Name: Rush page
                 <img src="<?php bloginfo('template_directory'); ?>/images/rush/bowling.jpg" width='1366' height='911' alt='Gordon Field House'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
-                        <p>We've also done rush events at Sky Zone, a huge trampoline park</p>
+                    	<p>We've previously had bowling rush events</p>
                     </div>
+                </div>
+            </li>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/carlos_bowling.jpg" width='1366' height='911' alt='Justin Peterson'>
+                <div class='container desc'>
+                    <div class='fourteen columns offset-by-one'>
+                        <p>Some brothers are definitely better than others at bowling.</p>
+                    </div>                    
                 </div>
             </li>
             <li>
                 <img src="<?php bloginfo('template_directory'); ?>/images/rush/vg_night.jpg" width='1366' height='911' alt='Really annoying kid'>
-                <div class='container desc'>
-                    <div class='fourteen columns offset-by-one'>
-                        <p>As you can see, skyzone is a ton of fun.</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="<?php bloginfo('template_directory'); ?>/images/rush/carlos_bowling.jpg" width='1366' height='911' alt='Justin Peterson'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
                         <p>Another fan favorite is video game night, where we chill inside and play video games and board games.</p>
@@ -121,7 +120,8 @@ Template Name: Rush page
                 </div>
             </li>
             <li>
-                <img src="<?php bloginfo('template_directory'); ?>/images/rush/group_skyzone.jpg" width='1366' height='911' alt='TJ Boyle'>
+            <li>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/weinke.jpg" width='1366' height='911' alt='Really annoying kid'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
                         <p>We like sports too. Seen here is Andrew Weinke going hard at Dodgeball.</p>
@@ -129,12 +129,10 @@ Template Name: Rush page
                 </div>
             </li>
             <li>
-                <img src="<?php bloginfo('template_directory'); ?>/images/rush/weinke.jpg" width='1366' height='911' alt='Really annoying kid'>
+                <img src="<?php bloginfo('template_directory'); ?>/images/rush/group_skyzone.jpg" width='1366' height='911' alt='TJ Boyle'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
-                        <p>The library had one of our camera and television
-                        screen set ups, so that passerbys could see persons at our other
-                        exhibits and they could be seen as well.</p>
+                        <p>We've also done rush events at Sky Zone, a huge trampoline park</p>
                     </div>
                 </div>
             </li>
@@ -142,9 +140,7 @@ Template Name: Rush page
                 <img src="<?php bloginfo('template_directory'); ?>/images/rush/zach_skyzone.jpg" width='1366' height='911' alt='Really annoying kid'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
-                        <p>The library had one of our camera and television
-                        screen set ups, so that passerbys could see persons at our other
-                        exhibits and they could be seen as well.</p>
+                        <p>As you can see, skyzone is a ton of fun.</p>
                     </div>
                 </div>
             </li>
@@ -178,7 +174,7 @@ Template Name: Rush page
                 <div class="rush-photo" id="brother"></div>
                 <h4>Any Brother</h4>
                 <div class="border-bottom transition-left"></div>
-                <p>???</p>
+                <p>Mr. Gentleman</p>
             </div>
         </div>
 <!--         <div class="container">
