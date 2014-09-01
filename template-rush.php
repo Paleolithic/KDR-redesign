@@ -9,7 +9,7 @@ Template Name: Rush page
 		<div class="container">
 			<header class="fourteen columns offset-by-one calendar-title">
 				<h1 class='lobster'>Our Rush Schedule</h1>
-				<p>Below you'll find our rush schedule, come hang out !</p>
+				<p>Below you'll find our rush schedule, come hang out with us! All events start KDR House, located in Res Hall A.</p>
 			</header>
 			<div class="twelve columns offset-by-two">
 				<table class="table table-striped table-hover">
@@ -162,13 +162,13 @@ Template Name: Rush page
                 <div class="rush-photo" id="st"></div>
                 <h4>Senior Tribune</h4>
                 <div class="border-bottom transition-right"></div>
-                <p>Kyle Chrystler <a>seniortribune@kdrib.org</a></p>
+                <p>Kyle Chrystler <a href="mailto:seniortribune@kdrib.org">seniortribune@kdrib.org</a></p>
             </div>
             <div class="one-third column rush-thirds">
                 <div class="rush-photo" id="rush"></div>
                 <h4>Rush Chair</h4>
                 <div class="border-bottom transition-center"></div>
-                <p>Michael Kenworthy <a href="mailto:skywalker@kdrib.org">skywalker@kdrib.org</a></p>
+                <p>Michael Kenworthy <a href="mailto:skywalker@kdrib.org">skywalker@kdrib.org</a><a></p>
             </div>
             <div class="one-third column rush-thirds">
                 <div class="rush-photo" id="brother"></div>
