@@ -168,7 +168,7 @@ Template Name: Rush page
                 <div class="rush-photo" id="rush"></div>
                 <h4>Rush Chair</h4>
                 <div class="border-bottom transition-center"></div>
-                <p>Michael Kenworthy <a href="mailto:skywalker@kdrib.org">skywalker@kdrib.org</a><a></p>
+                <p>Michael Kenworthy <a href="mailto:skywalker@kdrib.org">skywalker@kdrib.org</a><a>(716) 400 - 0742</a></p>
             </div>
             <div class="one-third column rush-thirds">
                 <div class="rush-photo" id="brother"></div>
