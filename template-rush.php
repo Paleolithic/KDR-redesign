@@ -9,7 +9,7 @@ Template Name: Rush page
 		<div class="container">
 			<header class="fourteen columns offset-by-one calendar-title">
 				<h1 class='lobster'>Our Rush Schedule</h1>
-				<p>Below you'll find our rush schedule</p>
+				<p>Below you'll find our rush schedule, come hang out !</p>
 			</header>
 			<div class="twelve columns offset-by-two">
 				<table class="table table-striped table-hover">
@@ -33,13 +33,13 @@ Template Name: Rush page
                             <td>Wednesday</td>
                             <td>Sept 3rd</td>
                             <td>Dodgeball</td>
-							<td>7pm - End</td>
+							<td>8pm - End</td>
 						</tr>
 						<tr>
 							<td>Friday</td>
 							<td>Sept 5th</td>
 							<td>Sky Zone Trampoline Park</td>
-							<td>8pm - End</td>
+							<td>5pm - End</td>
 						</tr>
 						<tr>
 							<td>Tuesday</td>
@@ -154,7 +154,7 @@ Template Name: Rush page
         <div class="container">
             <header class="fourteen columns offset-by-one who-title">
                 <h1 class='lobster'>Who Should You Contact?</h1>
-                <p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at.</p>
+                <p>Don't be afraid to reach out to us if you have any questions. We're open to talking any time.</p>
             </header>
         </div>
         <div class="container">
@@ -168,7 +168,7 @@ Template Name: Rush page
                 <div class="rush-photo" id="rush"></div>
                 <h4>Rush Chair</h4>
                 <div class="border-bottom transition-center"></div>
-                <p>Michael Kenworthy <a>skywalker@kdrib.org</a></p>
+                <p>Michael Kenworthy <a href="mailto:skywalker@kdrib.org">skywalker@kdrib.org</a></p>
             </div>
             <div class="one-third column rush-thirds">
                 <div class="rush-photo" id="brother"></div>
