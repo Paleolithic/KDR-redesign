@@ -104,6 +104,7 @@ Template Name: Rush page
                     </div>
                 </div>
             </li>
+            <li>
                 <img src="<?php bloginfo('template_directory'); ?>/images/rush/carlos_bowling.jpg" width='1366' height='911' alt='Justin Peterson'>
                 <div class='container desc'>
                     <div class='fourteen columns offset-by-one'>
@@ -119,7 +120,6 @@ Template Name: Rush page
                     </div>
                 </div>
             </li>
-            <li>
             <li>
                 <img src="<?php bloginfo('template_directory'); ?>/images/rush/weinke.jpg" width='1366' height='911' alt='Really annoying kid'>
                 <div class='container desc'>
