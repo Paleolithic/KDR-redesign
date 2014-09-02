@@ -68,7 +68,7 @@ Template Name: About us page
 					</g>
 				</svg>
 				<h2>Honor</h2>
-				<p>Gentleman leading lives where we believe in "Honor Above All Things" and live by that goal every day</p>
+				<p>Gentlemen leading lives where we believe in "Honor Above All Things" and live by that goal every day</p>
 			</div>
 			<div class="one-third column info-thirds">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -146,7 +146,7 @@ Template Name: About us page
 				<div class="e-board-photo" id="st"></div>
 				<h4>Senior Tribune</h4>
 				<div class="border-bottom transition-left"></div>
-				<p>Kyle Chrystler</p>
+				<p>Kyle Chrysler</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<div class="e-board-photo" id="quaestor"></div>

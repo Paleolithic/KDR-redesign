@@ -9,7 +9,7 @@ Template Name: Calendar Page
 		<div class="container">
 			<header class="fourteen columns offset-by-one info-title">
 				<h1 class='lobster'>Calendar of Events</h1>
-				<p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at.</p>
+				<p>We've got a lot going on. Check out the calendar below to see what events we've got planned.</p>
 			</header>
 		</div>
 		<div class="main">

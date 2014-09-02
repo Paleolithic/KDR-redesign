@@ -111,6 +111,7 @@ body{
 
 header#header{
 	// height: 77px; 
+	margin-top: 0px;
 	background-color: $mainBlue;
 	background-image: url("ruler.gif");
 	background-position: left bottom;
@@ -188,7 +189,9 @@ header#header{
 
 
 #container.container{
-	margin-top: 49px;
+	article:first-child{
+		margin-top: 49px;
+	}
 
 	p{
 		// color: #7F8C8C;
@@ -951,4 +954,10 @@ main{
 			}
 		}
 	}
+}
+
+@-moz-document url-prefix() { 
+  .selector {
+     color:lime;
+  }
 }
