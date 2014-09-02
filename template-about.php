@@ -86,7 +86,7 @@ Template Name: About us page
 					</g>
 				</svg>
 				<h2>Super</h2>
-				<p>Gentleman who put a ton of energy into raising thousands of dollars each year to Childrens Charities</p>
+				<p>Gentlemen who put a ton of energy into raising thousands of dollars each year to Children's Charities</p>
 			</div>
 			<div class="one-third column info-thirds">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -116,6 +116,13 @@ Template Name: About us page
 	</section>
 	<section class="where">
 		<div class="map" id="map"></div>
+		<div class="container mobile">
+			<header class="fourteen columns offset-by-one e-board-title">
+				<h1 class='lobster'>Where We're Located</h1>
+				<p>Our house is located in Res Hall A on the residential side of the Rochester Institute of Technology campus. Come hang out with us whenever, you can identify us by the lit up letters in our lounge window.
+				</p>
+			</header>
+		</div>
 	</section>
 	<section class="e-board">
 		<div class="container">
