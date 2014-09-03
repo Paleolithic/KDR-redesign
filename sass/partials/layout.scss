@@ -848,6 +848,10 @@ main{
 
 //Calendar page styles
 .calendar{
+	.main{
+		@include box-sizing(border-box);
+	}
+
 	.calendar-section{
 		h1{
 			color: $mainOrange;

@@ -2147,11 +2147,17 @@ main section header p {
   transform-origin: left 50%;
 }
 
-/* line 852, ../sass/partials/layout.scss */
+/* line 851, ../sass/partials/layout.scss */
+.calendar .main {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 856, ../sass/partials/layout.scss */
 .calendar .calendar-section h1 {
   color: #e5655d;
 }
-/* line 854, ../sass/partials/layout.scss */
+/* line 858, ../sass/partials/layout.scss */
 .calendar .calendar-section h1:before, .calendar .calendar-section h1:after {
   background-color: #e5655d;
 }
@@ -2165,7 +2171,7 @@ main section header p {
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   /* add code here */
-  /* line 872, ../sass/partials/layout.scss */
+  /* line 876, ../sass/partials/layout.scss */
   header#header h1 {
     font-size: 21px;
   }
@@ -2173,17 +2179,17 @@ main section header p {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   /* add code here */
-  /* line 883, ../sass/partials/layout.scss */
+  /* line 887, ../sass/partials/layout.scss */
   .about .top h1 {
     font-size: 91px;
   }
-  /* line 888, ../sass/partials/layout.scss */
+  /* line 892, ../sass/partials/layout.scss */
   .about .e-board .e-board-photo {
     height: 132px;
     background-size: 132px 170px;
   }
 
-  /* line 897, ../sass/partials/layout.scss */
+  /* line 901, ../sass/partials/layout.scss */
   .rush .who .rush-photo {
     height: 132px;
     width: 132px;
@@ -2193,35 +2199,35 @@ main section header p {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   /* add code here */
-  /* line 912, ../sass/partials/layout.scss */
+  /* line 916, ../sass/partials/layout.scss */
   main section header h1 {
     font-size: 42px;
   }
 
-  /* line 921, ../sass/partials/layout.scss */
+  /* line 925, ../sass/partials/layout.scss */
   .about .e-board .e-board-fifths {
     width: 100%;
     margin-top: 14px;
     margin-bottom: 14px;
   }
-  /* line 926, ../sass/partials/layout.scss */
+  /* line 930, ../sass/partials/layout.scss */
   .about .e-board .e-board-photo {
     height: 132px;
     width: 132px;
     background-size: 132px 170px;
     margin: 0 auto;
   }
-  /* line 935, ../sass/partials/layout.scss */
+  /* line 939, ../sass/partials/layout.scss */
   .about .blogs .blog {
     margin-top: 14px;
     margin-bottom: 14px;
   }
-  /* line 938, ../sass/partials/layout.scss */
+  /* line 942, ../sass/partials/layout.scss */
   .about .blogs .blog .blog-image {
     display: none;
   }
 
-  /* line 947, ../sass/partials/layout.scss */
+  /* line 951, ../sass/partials/layout.scss */
   .rush .who .rush-thirds {
     width: 100%;
     margin-top: 14px;
@@ -2235,7 +2241,7 @@ main section header p {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   /* add code here */
-  /* line 966, ../sass/partials/layout.scss */
+  /* line 970, ../sass/partials/layout.scss */
   .about .top h1 {
     font-size: 91px;
   }
