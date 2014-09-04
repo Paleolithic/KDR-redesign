@@ -9,7 +9,7 @@ Template Name: Rush page
 		<div class="container">
 			<header class="fourteen columns offset-by-one calendar-title">
 				<h1 class='lobster'>Our Rush Schedule</h1>
-				<p>Below you'll find our rush schedule, come hang out with us! All events start KDR House, located in Res Hall A.</p>
+				<p>Below you'll find our rush schedule, come hang out with us! All events start KDR House, located in Res Hall A</p>
 			</header>
 			<div class="twelve columns offset-by-two">
 				<table class="table table-striped table-hover">

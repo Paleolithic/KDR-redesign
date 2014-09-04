@@ -95,6 +95,10 @@ h2{
 	@include border-radius(50%);
 }
 
+.delta{
+	font-size: 109%;
+}
+
 /* PAGE STYLES
  * ------------------------------------------------ */
 /* Add page styles here */
@@ -128,6 +132,10 @@ header#header{
 		position: relative;
 		top: 9px;
 		margin-right: 14px;
+	}
+
+	.delta{
+		margin: 0 -1px 0 2px;
 	}
 
 	h1{
@@ -476,6 +484,10 @@ main{
 			margin: 0 auto;
 		}
 
+		.delta{
+			margin: 0 -11px 0 7px;
+		}
+
 		h1{
 			font-size: 140px;
 			line-height: 151px;
@@ -566,8 +578,11 @@ main{
 	        }
 	    }
 
-	    .lobster, .lobster:before, .lobster:after{
+	    h1{
 			color: $mainOrange;
+			&:before, &:after {
+			    background-color: $mainOrange;
+			}
 		}
 		
 	}
@@ -910,8 +925,15 @@ main{
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: $tabletWidth - 1) {
 	/* add code here */
+	.lobster{
+		&:before, &:after{
+			display: none;
+		}
+	}
 	main{
 		section{
+			padding: 35px 0 56px 0;
+
 			header{
 				h1{
 					font-size: 42px;
@@ -965,10 +987,39 @@ main{
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 	/* add code here */
+	#container.container a.more-link {
+		text-align: left;
+	}
+	
 	.about{
 		.top{
 			h1{
 				font-size: 91px;
+			}
+		}
+
+		.where{
+			height: auto;
+			padding: 42px 0px 70px 0px;
+			background-color: $mainOrange;
+
+			header{
+				margin-bottom: 0px;
+			}
+
+			h1{
+				color: white;
+			 	&:before, &:after{
+					background-color: white;
+			 	}
+			}
+
+			p{
+				color: white;
+			}
+
+			.map{
+				display: none;
 			}
 		}
 	}

@@ -10,7 +10,7 @@ Template Name: About us page
 			<header class="six columns offset-by-five">
 				<div class="crest"></div>
 				<h5 class='lobster'>Welcome to</h5>
-				<h1>KDR</h1>
+				<h1>K<span class="delta">&Delta;</span>P</h1>
 				<h5 class='lobster'>Iota Beta Chapter</h5>
 			</header>
 		</div>
@@ -86,7 +86,7 @@ Template Name: About us page
 					</g>
 				</svg>
 				<h2>Super</h2>
-				<p>Gentlemen who put a ton of energy into raising thousands of dollars each year to Children's Charities</p>
+				<p>Gentlemen who put a ton of energy into raising thousands of dollars each year to children's charities</p>
 			</div>
 			<div class="one-third column info-thirds">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -119,7 +119,7 @@ Template Name: About us page
 		<div class="container mobile">
 			<header class="fourteen columns offset-by-one e-board-title">
 				<h1 class='lobster'>Where We're Located</h1>
-				<p>Our house is located in Res Hall A on the residential side of the Rochester Institute of Technology campus. Come hang out with us whenever, you can identify us by the lit up letters in our lounge window.
+				<p>Our house is located in Res Hall A on the residential side of the Rochester Institute of Technology campus. Come hang out with us whenever, you can identify us by the lit up letters in our lounge window
 				</p>
 			</header>
 		</div>
@@ -211,6 +211,7 @@ Template Name: About us page
             zoom: 13,
             scrollwheel: false,
             streetViewControl: false,
+            draggable: false,
             panControl: false,
             mapTypeControl: false,
             center: new google.maps.LatLng(43.1, -77.669495),
@@ -256,13 +257,14 @@ Template Name: About us page
         });
         
 
+        
+
         infowindow.open(map,marker);
-
-
 	    google.maps.event.addListener(infowindow, 'domready', function() {
 	    	$l = $('#iwindow-descriptor').parent().parent().parent();
 	        $l.addClass('iwindow');
 	     });
+
         // var mapWidth = document.getElementById('map').style.width;
         // document.getElementById('map').style.height = mapWidth * .5;
 
