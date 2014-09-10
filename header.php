@@ -18,7 +18,7 @@
 		<section class='five columns' id="branding">
 			<!-- <div id="site-title"><?php if ( ! is_singular() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'blankslate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( ! is_singular() ) { echo '</h1>'; } ?></div> -->
 			<div class="crest"></div>
-			<h1><a href='http://www.kdrib.org'><span>K<span class="delta">&Delta;</span>P </span>Iota Beta</a></h1>
+			<h1><a href='http://www.kdrib.org'><span>&Kappa;<span class="delta">&Delta;</span>&Rho; </span>Iota Beta</a></h1>
 			<!-- <div id="site-description"><?php bloginfo( 'description' ); ?></div> -->
 		</section>
 		<nav class='eleven columns' id="menu" role="navigation">

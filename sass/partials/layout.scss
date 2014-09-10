@@ -58,6 +58,21 @@ h2{
 	font-weight: 600;
 }
 
+table{
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+thead{
+	background-color: white;
+	border-top: 4px solid $mainOrange;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th{
+	background-color: $mainOrange;
+	cursor: pointer;
+}
+
 .lobster{
 	font-family: 'Lobster', cursive;
 	text-align: center;
@@ -95,9 +110,80 @@ h2{
 	@include border-radius(50%);
 }
 
-.delta{
-	font-size: 109%;
+.brothers, .e-board{
+	text-align: center;
+
+	h4{
+		text-align: center;
+		font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+	}
+	.one-fifth.column p{
+		text-transform: uppercase;
+		font-size: 18px;
+		font-family: Lato, sans-serif;
+		letter-spacing: 1px;
+	}
+	
+	.portrait{
+		width: 100%;
+		height: 172px;
+		
+	}
+	#praetor{  	background-image: url("images/brothers/hammond.jpg"); }
+	#jt{ 		background-image: url("images/brothers/jaime.jpg"); }
+	#consul{ 	background-image: url("images/brothers/justin.jpg"); }
+	#st{ 		background-image: url("images/brothers/kyle.jpg"); }
+	#quaestor{ 	background-image: url("images/brothers/xavier.jpg"); }
 }
+
+.e-board{
+	.border-bottom{
+		width: 35%;
+		height: 1px;
+		margin: 10px auto;
+
+		&:after{
+			content: "";
+			width: 100%;
+			margin: 0;
+			display: block;
+			height: 1px;
+
+			@include scaleX(0);
+			@include transition-property(all);
+			@include transition-duration(.5s);
+			@include transition-timing-function(linear);
+		}
+		&.transition-right:after{
+			@include transform-origin(right);
+		}
+		&.transition-center:after{
+			@include transform-origin(center);
+		}
+		&.transition-left:after{
+			@include transform-origin(left);
+		}
+	}	
+	.one-fifth.column:hover .border-bottom{
+		&:after{
+			@include scaleX(1);
+			@include transform-origin(left);
+			@include transition-property(all);
+			@include transition-duration(.5s);
+			@include transition-timing-function(linear);
+		}
+		&.transition-right:after{
+			@include transform-origin(right);
+		}
+		&.transition-center:after{
+			@include transform-origin(center);
+		}
+		&.transition-left:after{
+			@include transform-origin(left);
+		}
+	}			
+}
+
 
 /* PAGE STYLES
  * ------------------------------------------------ */
@@ -132,10 +218,6 @@ header#header{
 		position: relative;
 		top: 9px;
 		margin-right: 14px;
-	}
-
-	.delta{
-		margin: 0 -1px 0 2px;
 	}
 
 	h1{
@@ -484,10 +566,6 @@ main{
 			margin: 0 auto;
 		}
 
-		.delta{
-			margin: 0 -11px 0 7px;
-		}
-
 		h1{
 			font-size: 140px;
 			line-height: 151px;
@@ -589,8 +667,8 @@ main{
 
 	.e-board{
 		background-color: $mainBlue;
-		text-align: center;
-		
+
+
 		h1{
 			color: white;
 			&:before, &:after{
@@ -600,79 +678,21 @@ main{
 		p{
 			color: white;
 		}
-
-		.e-board-photo{
-			width: 100%;
-			height: 172px;
-			@include border-radius(50%);
-		}
-		#praetor{  	background-image: url("images/brothers/hammond.jpg"); }
-		#jt{ 		background-image: url("images/brothers/jaime.jpg"); }
-		#consul{ 	background-image: url("images/brothers/justin.jpg"); }
-		#st{ 		background-image: url("images/brothers/kyle.jpg"); }
-		#quaestor{ 	background-image: url("images/brothers/xavier.jpg"); }
-
 		h4{
 			color: white;
-			text-align: center;
-			font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
-		}
-		.e-board-fifths p{
-			text-transform: uppercase;
-			font-size: 18px;
-			font-family: Lato, sans-serif;
-			letter-spacing: 1px;
 		}
 		.border-bottom{
-			background-color: #919191;
-			width: 35%;
-			height: 1px;
-			margin: 10px auto;
-			background-color: rgba(255,255,255, .2);
+			background-color: rgba(255,255,255, .2);	
 
 			&:after{
-				content: "";
-				width: 100%;
-				margin: 0;
-				display: block;
-				height: 1px;
-
 				background-color: $borderOrange;
-				@include scaleX(0);
-				@include transition-property(all);
-				@include transition-duration(.5s);
-				@include transition-timing-function(linear);
 			}
-			&.transition-right:after{
-				@include transform-origin(right);
-			}
-			&.transition-center:after{
-				@include transform-origin(center);
-			}
-			&.transition-left:after{
-				@include transform-origin(left);
-			}
-		}	
-		.e-board-fifths:hover .border-bottom{
-			&:after{
-				@include scaleX(1);
-				@include transform-origin(left);
-				@include transition-property(all);
-				@include transition-duration(.5s);
-				@include transition-timing-function(linear);
-			}
-			&.transition-right:after{
-				@include transform-origin(right);
-			}
-			&.transition-center:after{
-				@include transform-origin(center);
-			}
-			&.transition-left:after{
-				@include transform-origin(left);
-			}
-		}			
-	}
+		}
 
+		.portrait{
+			@include border-radius(50%);
+		}
+	}
 	.blogs{
 		background-color: #EEEEEE;
 
@@ -704,6 +724,7 @@ main{
 	}
 }
 
+
 //Rush page styles
 .rush{
 	.schedule{
@@ -714,21 +735,6 @@ main{
 		 	&:before, &:after{
 				background-color: $mainOrange;
 		 	}
-		}
-
-		table{
-			border-left: 1px solid #dddddd;
-			border-right: 1px solid #dddddd;
-			border-bottom: 1px solid #dddddd;
-		}
-		thead{
-			background-color: white;
-			border-top: 4px solid $mainOrange;
-		}
-		.table-hover > tbody > tr:hover > td,
-		.table-hover > tbody > tr:hover > th{
-			background-color: $mainOrange;
-			cursor: pointer;
 		}
 	}
 
@@ -877,6 +883,41 @@ main{
 	}
 }
 
+.brothers{
+	h2{
+		margin-bottom: 14px;
+	}
+
+	.one-fifth{
+		margin-top: 7px;
+		margin-bottom: 7px;
+
+		h1{
+			// color: white;
+			&:before, &:after{
+				// background-color: white;
+			}
+		}	
+		p{
+			// color: white;
+		}
+		h4{
+			// color: white;
+		}
+
+		span{
+			display: block;
+		}
+		.border-bottom{
+			background-color: rgba(175,175,175, .6);	
+
+			&:after{
+				background-color: $borderOrange;
+			}
+		}
+	}
+}
+
 /* MEDIA QUERIES
  * ------------------------------------------------ */
 /* Otherwise known as custom responsive code! Write it here! */
@@ -897,17 +938,18 @@ main{
 /* Tablet Portrait size to standard #{strip-units($baseWidthMQ)} (devices and browsers) */
 @media only screen and (min-width: $tabletWidth) and (max-width: $baseWidthMQ - 1) {
 	/* add code here */
+	.brothers, .e-board{
+		.portrait{
+			height: 132px;
+			background-size: 132px 170px;
+		}			
+	}
+	
 	.about{
 		.top{
 			h1{
 				font-size: 91px;
 			}
-		}
-		.e-board{
-			.e-board-photo{
-				height: 132px;
-				background-size: 132px 170px;
-			}			
 		}
 	}
 
@@ -930,6 +972,20 @@ main{
 			display: none;
 		}
 	}
+	.brothers, .e-board{
+		.one-fifth.column{
+			width: 100%;
+			margin-top: 14px;
+			margin-bottom: 14px;
+		}
+		.portrait{
+			height: 132px;
+			width: 132px;
+			background-size: 132px 170px;
+			margin: 0 auto;
+		}	
+	}
+	
 	main{
 		section{
 			padding: 35px 0 56px 0;
@@ -943,19 +999,6 @@ main{
 	}
 
 	.about{
-		.e-board{
-			.e-board-fifths{
-				width: 100%;
-				margin-top: 14px;
-				margin-bottom: 14px;
-			}
-			.e-board-photo{
-				height: 132px;
-				width: 132px;
-				background-size: 132px 170px;
-				margin: 0 auto;
-			}	
-		}
 
 		.blogs{
 			.blog{
@@ -990,7 +1033,7 @@ main{
 	#container.container a.more-link {
 		text-align: left;
 	}
-	
+
 	.about{
 		.top{
 			h1{

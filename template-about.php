@@ -10,7 +10,7 @@ Template Name: About us page
 			<header class="six columns offset-by-five">
 				<div class="crest"></div>
 				<h5 class='lobster'>Welcome to</h5>
-				<h1>K<span class="delta">&Delta;</span>P</h1>
+				<h1>&Kappa;<span class="delta">&Delta;</span>&Rho;</h1>
 				<h5 class='lobster'>Iota Beta Chapter</h5>
 			</header>
 		</div>
@@ -132,31 +132,31 @@ Template Name: About us page
 				</p>
 			</header>
 			<div class="one-fifth column e-board-fifths">
-				<div class="e-board-photo" id="praetor"></div>
+				<div class="portrait" id="praetor"></div>
 				<h4>Praetor</h4>
 				<div class="border-bottom transition-right"></div>
 				<p>Will Hammond</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<div class="e-board-photo" id="jt"></div>
+				<div class="portrait" id="jt"></div>
 				<h4>Junior Tribune</h4>
 				<div class="border-bottom transition-right"></div>
 				<p>Jaime Geiger</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<div class="e-board-photo" id="consul"></div>
+				<div class="portrait" id="consul"></div>
 				<h4>Consul</h4>
 				<div class="border-bottom transition-center"></div>
 				<p>Justin Peterson</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<div class="e-board-photo" id="st"></div>
+				<div class="portrait" id="st"></div>
 				<h4>Senior Tribune</h4>
 				<div class="border-bottom transition-left"></div>
 				<p>Kyle Chrysler</p>
 			</div>
 			<div class="one-fifth column e-board-fifths">
-				<div class="e-board-photo" id="quaestor"></div>
+				<div class="portrait" id="quaestor"></div>
 				<h4>Quaestor</h4>
 				<div class="border-bottom transition-left"></div>
 				<p>Xavier Hocquet</p>
