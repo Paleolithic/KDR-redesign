@@ -64,6 +64,15 @@ Template Name: Rush page
 			</div>
 		</div>
 	</section>
+    <section class="interview">
+        <div class="container">
+            <div class="sixteen columns">
+                <div class="link">
+                    <a href="http://kdrib.youcanbook.me">Schedule an Interview</a>
+                </div>
+            </div>
+        </div>
+    </section>
 	<section class="why" id="slides">
 		<div class='gradient'></div>
 		<div class="container">

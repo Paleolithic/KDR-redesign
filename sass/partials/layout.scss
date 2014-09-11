@@ -738,6 +738,37 @@ main{
 		}
 	}
 
+	.interview{
+		padding-top: 56px;
+		padding-bottom: 56px;
+		background-color: $mainBlue;
+		text-align: center;
+
+		.link{
+			@include box-sizing(border-box);
+			
+			a{
+				@include transition-property(all);
+				@include transition-duration(.1s);
+				@include transition-timing-function(ease-in);
+
+				text-transform: uppercase;
+				font-size: 28px;
+				padding: 7px 14px;
+				background-color: #EEEEEE;
+				color: $mainBlue;
+				text-decoration: none;
+	
+				&:hover{
+					color: #EEEEEE;
+					background: none;
+					border: 2px solid #EEEEEE;
+				}
+			}
+
+		}
+	}
+
 	.why{
 		// background-color: $mainOrange;
 		padding: 0px;
