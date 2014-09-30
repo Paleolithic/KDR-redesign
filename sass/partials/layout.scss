@@ -201,6 +201,7 @@ body{
 
 header#header{
 	// height: 77px; 
+	z-index: 5;
 	margin-top: 0px;
 	background-color: $mainBlue;
 	background-image: url("ruler.gif");
@@ -915,8 +916,16 @@ main{
 }
 
 .brothers{
+	h1{
+		color: $mainOrange;
+		&:before, &:after {
+		    background-color: $mainOrange;
+		}
+	}
+
 	h2{
 		margin-bottom: 14px;
+		color: $mainOrange;
 	}
 
 	.one-fifth{
@@ -946,6 +955,126 @@ main{
 				background-color: $borderOrange;
 			}
 		}
+	}
+}
+
+.history{
+	.header{
+		background-color: #EEEEEE;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+		h1{
+			color: $mainOrange;
+			&:before, &:after {
+			    background-color: $mainOrange;
+			}
+		}
+	}
+
+	#filler{
+		width: 100%;
+		background-color: #EEEEEE;
+		position: absolute;
+		z-index: -2;
+	}
+
+	.timeline{
+		//background-color: $mainBlue;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		&::before, &::after {
+			display: block;
+			top: 0px;
+			/* the 2 underneath colored sections */
+			content: '';
+			position: fixed;
+			/* trick to remove some annoying flickering on webkit browsers */
+			width: 940px;
+			// max-width: 1170px;
+			left: 50%;
+			right: auto;
+			transform: translateX(-50%);
+			z-index: -1;
+		}
+		 
+		&::before {
+			// top: 89px;
+			height: 35%;
+			background-color: $mainOrange;
+			transition: all 0.8s;
+		}
+		 
+		&::after {
+			top: 35%;
+			height: 65%;
+			background-color: $mainBlue;
+		}		
+	}
+
+	.cd-container{
+		margin-bottom: 0px;
+	}
+
+	.cd-service {
+		position: relative;
+		z-index: 2;
+		min-height: 50px;
+		margin-left: 56px;
+		background-color: #EEEEEE;
+		padding: 0 1em 4em;
+		margin-bottom: 0px;
+	}
+	 
+	.cd-service::before, .cd-service::after {
+		content: '';
+		position: absolute;
+		width: 56px;
+		right: 100%;
+		z-index: 2;
+	}
+	 
+	.cd-service::before {
+		top: 0;
+		height: 50px;
+		background-repeat: no-repeat;
+	}
+	 
+	.cd-service::after {
+		top: 50px;
+		bottom: 0;
+		background-image: url("images/timeline/cd-pattern-small.svg");
+		background-repeat: repeat-y;
+	}
+	 
+	.cd-service.cd-service-1::before {
+		background-image: url("images/timeline/cd-icon-1-small.svg");
+	}
+	 
+	.cd-service.cd-service-2::before {
+		background-image: url("images/timeline/cd-icon-2-small.svg");
+	}
+	 
+	.cd-service.cd-service-3::before {
+		background-image: url("images/timeline/cd-icon-3-small.svg");
+	}
+	 
+	.cd-service.cd-service-4::before {
+		background-image: url("images/timeline/cd-icon-4-small.svg");
+	}
+
+	.cd-service.cd-service-divider::after {
+		top: 0;
+	}
+
+	.cd-service.cd-service-divider:last-child {
+		display: none;
+	}
+
+	footer{
+		position: relative;
+		height: 250px;
+		background: #EEEEEE;
+		z-index: 2;
 	}
 }
 
