@@ -2272,18 +2272,22 @@ main section header p {
   background-color: #e5655d;
 }
 /* line 974, ../sass/partials/layout.scss */
+.history h2 {
+  color: #304269;
+}
+/* line 978, ../sass/partials/layout.scss */
 .history #filler {
   width: 100%;
   background-color: #EEEEEE;
   position: absolute;
   z-index: -2;
 }
-/* line 981, ../sass/partials/layout.scss */
+/* line 985, ../sass/partials/layout.scss */
 .history .timeline {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-/* line 985, ../sass/partials/layout.scss */
+/* line 989, ../sass/partials/layout.scss */
 .history .timeline::before, .history .timeline::after {
   display: block;
   top: 0px;
@@ -2297,23 +2301,23 @@ main section header p {
   transform: translateX(-50%);
   z-index: -1;
 }
-/* line 1000, ../sass/partials/layout.scss */
+/* line 1004, ../sass/partials/layout.scss */
 .history .timeline::before {
   height: 35%;
   background-color: #e5655d;
   transition: all 0.8s;
 }
-/* line 1007, ../sass/partials/layout.scss */
+/* line 1011, ../sass/partials/layout.scss */
 .history .timeline::after {
   top: 35%;
   height: 65%;
   background-color: #304269;
 }
-/* line 1014, ../sass/partials/layout.scss */
+/* line 1018, ../sass/partials/layout.scss */
 .history .cd-container {
   margin-bottom: 0px;
 }
-/* line 1018, ../sass/partials/layout.scss */
+/* line 1022, ../sass/partials/layout.scss */
 .history .cd-service {
   position: relative;
   z-index: 2;
@@ -2323,7 +2327,7 @@ main section header p {
   padding: 0 1em 4em;
   margin-bottom: 0px;
 }
-/* line 1028, ../sass/partials/layout.scss */
+/* line 1032, ../sass/partials/layout.scss */
 .history .cd-service::before, .history .cd-service::after {
   content: '';
   position: absolute;
@@ -2331,47 +2335,47 @@ main section header p {
   right: 100%;
   z-index: 2;
 }
-/* line 1036, ../sass/partials/layout.scss */
+/* line 1040, ../sass/partials/layout.scss */
 .history .cd-service::before {
   top: 0;
   height: 50px;
   background-repeat: no-repeat;
 }
-/* line 1042, ../sass/partials/layout.scss */
+/* line 1046, ../sass/partials/layout.scss */
 .history .cd-service::after {
   top: 50px;
   bottom: 0;
   background-image: url("images/timeline/cd-pattern-small.svg");
   background-repeat: repeat-y;
 }
-/* line 1049, ../sass/partials/layout.scss */
+/* line 1053, ../sass/partials/layout.scss */
 .history .cd-service.cd-service-1::before {
   background-image: url("images/timeline/cd-icon-1-small.svg");
 }
-/* line 1053, ../sass/partials/layout.scss */
+/* line 1057, ../sass/partials/layout.scss */
 .history .cd-service.cd-service-2::before {
   background-image: url("images/timeline/cd-icon-2-small.svg");
 }
-/* line 1057, ../sass/partials/layout.scss */
+/* line 1061, ../sass/partials/layout.scss */
 .history .cd-service.cd-service-3::before {
   background-image: url("images/timeline/cd-icon-3-small.svg");
 }
-/* line 1061, ../sass/partials/layout.scss */
+/* line 1065, ../sass/partials/layout.scss */
 .history .cd-service.cd-service-4::before {
   background-image: url("images/timeline/cd-icon-4-small.svg");
 }
-/* line 1065, ../sass/partials/layout.scss */
+/* line 1069, ../sass/partials/layout.scss */
 .history .cd-service.cd-service-divider::after {
   top: 0;
 }
-/* line 1069, ../sass/partials/layout.scss */
+/* line 1073, ../sass/partials/layout.scss */
 .history .cd-service.cd-service-divider:last-child {
   display: none;
 }
-/* line 1073, ../sass/partials/layout.scss */
+/* line 1077, ../sass/partials/layout.scss */
 .history footer {
   position: relative;
-  height: 250px;
+  height: 500px;
   background: #EEEEEE;
   z-index: 2;
 }
@@ -2385,7 +2389,7 @@ main section header p {
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   /* add code here */
-  /* line 1092, ../sass/partials/layout.scss */
+  /* line 1096, ../sass/partials/layout.scss */
   header#header h1 {
     font-size: 21px;
   }
@@ -2393,39 +2397,44 @@ main section header p {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   /* add code here */
-  /* line 1102, ../sass/partials/layout.scss */
+  /* line 1106, ../sass/partials/layout.scss */
   .brothers .portrait, .e-board .portrait {
     height: 132px;
     background-size: 132px 170px;
   }
 
-  /* line 1110, ../sass/partials/layout.scss */
+  /* line 1114, ../sass/partials/layout.scss */
   .about .top h1 {
     font-size: 91px;
   }
 
-  /* line 1118, ../sass/partials/layout.scss */
+  /* line 1122, ../sass/partials/layout.scss */
   .rush .who .rush-photo {
     height: 132px;
     width: 132px;
     background-size: 132px 170px;
   }
+
+  /* line 1131, ../sass/partials/layout.scss */
+  .history .timeline:before, .history .timeline:after {
+    width: 748px;
+  }
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   /* add code here */
-  /* line 1131, ../sass/partials/layout.scss */
+  /* line 1141, ../sass/partials/layout.scss */
   .lobster:before, .lobster:after {
     display: none;
   }
 
-  /* line 1136, ../sass/partials/layout.scss */
+  /* line 1146, ../sass/partials/layout.scss */
   .brothers .one-fifth.column, .e-board .one-fifth.column {
     width: 100%;
     margin-top: 14px;
     margin-bottom: 14px;
   }
-  /* line 1141, ../sass/partials/layout.scss */
+  /* line 1151, ../sass/partials/layout.scss */
   .brothers .portrait, .e-board .portrait {
     height: 132px;
     width: 132px;
@@ -2433,30 +2442,35 @@ main section header p {
     margin: 0 auto;
   }
 
-  /* line 1150, ../sass/partials/layout.scss */
+  /* line 1160, ../sass/partials/layout.scss */
   main section {
     padding: 35px 0 56px 0;
   }
-  /* line 1154, ../sass/partials/layout.scss */
+  /* line 1164, ../sass/partials/layout.scss */
   main section header h1 {
     font-size: 42px;
   }
 
-  /* line 1164, ../sass/partials/layout.scss */
+  /* line 1174, ../sass/partials/layout.scss */
   .about .blogs .blog {
     margin-top: 14px;
     margin-bottom: 14px;
   }
-  /* line 1167, ../sass/partials/layout.scss */
+  /* line 1177, ../sass/partials/layout.scss */
   .about .blogs .blog .blog-image {
     display: none;
   }
 
-  /* line 1176, ../sass/partials/layout.scss */
+  /* line 1186, ../sass/partials/layout.scss */
   .rush .who .rush-thirds {
     width: 100%;
     margin-top: 14px;
     margin-bottom: 14px;
+  }
+
+  /* line 1195, ../sass/partials/layout.scss */
+  .history .timeline:before, .history .timeline:after {
+    width: 420px;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -2466,40 +2480,45 @@ main section header p {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   /* add code here */
-  /* line 1193, ../sass/partials/layout.scss */
+  /* line 1209, ../sass/partials/layout.scss */
   #container.container a.more-link {
     text-align: left;
   }
 
-  /* line 1199, ../sass/partials/layout.scss */
+  /* line 1215, ../sass/partials/layout.scss */
   .about .top h1 {
     font-size: 91px;
   }
-  /* line 1204, ../sass/partials/layout.scss */
+  /* line 1220, ../sass/partials/layout.scss */
   .about .where {
     height: auto;
     padding: 42px 0px 70px 0px;
     background-color: #e5655d;
   }
-  /* line 1209, ../sass/partials/layout.scss */
+  /* line 1225, ../sass/partials/layout.scss */
   .about .where header {
     margin-bottom: 0px;
   }
-  /* line 1213, ../sass/partials/layout.scss */
+  /* line 1229, ../sass/partials/layout.scss */
   .about .where h1 {
     color: white;
   }
-  /* line 1215, ../sass/partials/layout.scss */
+  /* line 1231, ../sass/partials/layout.scss */
   .about .where h1:before, .about .where h1:after {
     background-color: white;
   }
-  /* line 1220, ../sass/partials/layout.scss */
+  /* line 1236, ../sass/partials/layout.scss */
   .about .where p {
     color: white;
   }
-  /* line 1224, ../sass/partials/layout.scss */
+  /* line 1240, ../sass/partials/layout.scss */
   .about .where .map {
     display: none;
+  }
+
+  /* line 1247, ../sass/partials/layout.scss */
+  .history .timeline:before, .history .timeline:after {
+    width: 300px;
   }
 }
 /* line 8, ../sass/vendor/demo.scss */

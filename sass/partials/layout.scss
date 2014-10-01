@@ -971,6 +971,10 @@ main{
 		}
 	}
 
+	h2{
+		color: $mainBlue;
+	}
+
 	#filler{
 		width: 100%;
 		background-color: #EEEEEE;
@@ -1072,7 +1076,7 @@ main{
 
 	footer{
 		position: relative;
-		height: 250px;
+		height: 500px;
 		background: #EEEEEE;
 		z-index: 2;
 	}
@@ -1120,6 +1124,12 @@ main{
 				width: 132px;
 				background-size: 132px 170px;
 			}
+		}
+	}
+
+	.history{
+		.timeline:before, .timeline:after{
+			width: 748px;
 		}
 	}
 }
@@ -1180,6 +1190,12 @@ main{
 			}
 		}
 	}
+
+	.history{
+		.timeline:before, .timeline:after{
+			width: 420px;
+		}
+	}
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -1224,6 +1240,12 @@ main{
 			.map{
 				display: none;
 			}
+		}
+	}
+
+	.history{
+		.timeline:before, .timeline:after{
+			width: 300px;
 		}
 	}
 }
