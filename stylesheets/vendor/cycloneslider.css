@@ -2,14 +2,14 @@
 .cycloneslider-template-standard p .cycloneslider-prev, .cycloneslider-template-standard p .cycloneslider-next {
   opacity: 1;
   background: #e5655d;
-  border-bottom: 3px solid #e25850;
+  border-bottom: 3px solid #c54a43;
   box-shadow: none;
   height: 35px;
   width: 35px;
 }
 /* line 14, ../../sass/vendor/cycloneslider.scss */
 .cycloneslider-template-standard p .cycloneslider-prev:hover, .cycloneslider-template-standard p .cycloneslider-next:hover {
-  background: #e25850;
+  background: #c54a43;
 }
 /* line 18, ../../sass/vendor/cycloneslider.scss */
 .cycloneslider-template-standard p .cycloneslider-prev .arrow, .cycloneslider-template-standard p .cycloneslider-next .arrow {

@@ -78,7 +78,7 @@ Template Name: History page
 					<p>In 1921, KDR became a Junior Member of the North-American Interfraternity Conference (NIC) and in 1929 a Senior Member. </p>
 				</li> <!-- cd-service -->
 
-				<li class="cd-service cd-service-4">
+				<li class="cd-service cd-service-5">
 					<h2>The Depression</h2>
 					<p>By 1930 there were nineteen (19) chapters in ten (10) states and the Fraternities' first full time paid National Executive Secretary [later National Executive Director], Reginald M. Savage, Alpha '24, was hired </p>
 
@@ -90,7 +90,7 @@ Template Name: History page
 
 				</li> <!-- cd-service -->
 
-				<li class="cd-service cd-service-4">
+				<li class="cd-service cd-service-6">
 					<h2>World War II</h2>
 					<p>The Quill and Scroll continued publication and eventually included stories from the front and addresses of brothers overseas, resulting in reunions of brothers and chapters on the battlefield.</p>
 
@@ -98,7 +98,7 @@ Template Name: History page
 
 				</li> <!-- cd-service -->
 
-				<li class="cd-service cd-service-4">
+				<li class="cd-service cd-service-7">
 					<h2>After 1946, Reactivation, Expansion, and Innovation</h2>
 					<p>The 1946 Convention focused on restoration of KDR's chapters and fifteen (15) reopened that fall.</p>
 
@@ -116,7 +116,7 @@ Template Name: History page
 
 				</li> <!-- cd-service -->
 
-				<li class="cd-service cd-service-4">
+				<li class="cd-service cd-service-8">
 					<h2>On To The Centennial</h2>
 					<p>James F. Edgeworth, Sr., Psi \'56 becomes National President/Grand Worthy Consul in 1988, serving until 1998. 
 					The National Executive Secretarytitle is changed to National Executive Director, who also serves as Grand Senior Tribune.</p>
@@ -138,7 +138,7 @@ Template Name: History page
 
 				</li> <!-- cd-service -->
 
-				<li class="cd-service cd-service-4">
+				<li class="cd-service cd-service-9">
 					<h2>The Centennial and Beyond</h2>
 					<p>Since 1905, KDR has initiated over 23,000 Members with some 17,000 Living Alumni.</p>
 
@@ -157,32 +157,33 @@ Template Name: History page
 				<li class="cd-service cd-service-divider"></li>
 			</ul> <!-- cd-services -->
 		</div>
+		<div class="filler">
+		</div>
 	</section>
 </main>
-<footer>	
-</footer>
+<?php get_footer(); ?>
 <script src="<?php bloginfo('template_directory'); ?>/scripts/icons-filling-effect/jquery-2.1.1.js"></script>
 <script>
 	jQuery(document).ready(function($) {
-		//store service items
-		var fillingBlocks = $('.cd-service').not('.cd-service-divider');
+		// //store service items
+		// var fillingBlocks = $('.cd-service').not('.cd-service-divider');
 
-		//store service items top position into an array
-		var topValueFillingBlocks = [];
-		fillingBlocks.each(function(index){
-			var topValue = $(this).offset().top;
-			topValueFillingBlocks[topValueFillingBlocks.length] = topValue;
-		});
+		// //store service items top position into an array
+		// var topValueFillingBlocks = [];
+		// fillingBlocks.each(function(index){
+		// 	var topValue = $(this).offset().top;
+		// 	topValueFillingBlocks[topValueFillingBlocks.length] = topValue;
+		// });
 
-		//add the .focus class to the first service item
-		fillingBlocks.eq(0).addClass('focus');
+		// //add the .focus class to the first service item
+		// fillingBlocks.eq(0).addClass('focus');
 
-		$(window).on('scroll', function(){
-			//check which service item is in the viewport and add the .focus class to it
-			updateOnFocusItem(fillingBlocks.slice(1));
-			//evaluate the $(window).scrollTop value and change the body::after and body::before background accordingly (using the new-color-n classes)
-			bodyBackground(topValueFillingBlocks);
-		});
+		// $(window).on('scroll', function(){
+		// 	//check which service item is in the viewport and add the .focus class to it
+		// 	updateOnFocusItem(fillingBlocks.slice(1));
+		// 	//evaluate the $(window).scrollTop value and change the body::after and body::before background accordingly (using the new-color-n classes)
+		// 	bodyBackground(topValueFillingBlocks);
+		// });
 
 		$("#filler").css("height",$("#cd-container").height());
 	});
@@ -191,19 +192,19 @@ Template Name: History page
 		$("#filler").css("height",$("#cd-container").height());
 	})
 
-	function updateOnFocusItem(items) {
-		items.each(function(){
-			( $(this).offset().top - $(window).scrollTop() <= $(window).height()/2 ) ? $(this).addClass('focus') : $(this).removeClass('focus');
-		});
-	}
+	// function updateOnFocusItem(items) {
+	// 	items.each(function(){
+	// 		( $(this).offset().top - $(window).scrollTop() <= $(window).height()/2 ) ? $(this).addClass('focus') : $(this).removeClass('focus');
+	// 	});
+	// }
 
-	function bodyBackground(itemsTopValues) {
-		var topPosition = $(window).scrollTop() + $(window).height()/2,
-			servicesNumber = itemsTopValues.length;
-		$.each(itemsTopValues, function(key, value){
-			if ( (itemsTopValues[key] <= topPosition && itemsTopValues[key+1] > topPosition) || (itemsTopValues[key] <= topPosition && key+1 == servicesNumber ) ) {	
-				$('body').removeClass('new-color-'+(key-1)+' new-color-'+(key+1)).addClass('new-color-'+key);
-			}
-		});
-	}
+	// function bodyBackground(itemsTopValues) {
+	// 	var topPosition = $(window).scrollTop() + $(window).height()/2,
+	// 		servicesNumber = itemsTopValues.length;
+	// 	$.each(itemsTopValues, function(key, value){
+	// 		if ( (itemsTopValues[key] <= topPosition && itemsTopValues[key+1] > topPosition) || (itemsTopValues[key] <= topPosition && key+1 == servicesNumber ) ) {	
+	// 			$('body').removeClass('new-color-'+(key-1)+' new-color-'+(key+1)).addClass('new-color-'+key);
+	// 		}
+	// 	});
+	// }
 </script>
