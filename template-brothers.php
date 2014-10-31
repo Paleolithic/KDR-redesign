@@ -65,7 +65,13 @@ Template Name: Brothers page
 						}
 					}
 				}
-				echo "numBrothers = ".$numBrothersPHP.";"
+				echo "numBrothers = ".$numBrothersPHP.";";
+
+				$blogusers = get_users(  );
+				// Array of WP_User objects.
+				foreach ( $blogusers as $user ) {
+					echo '<span>' . esc_html( $user->user_email ) . '</span>';
+				}
 			?>
 			<h2 class="sixteen columns">Active Chapter</h2>
 			<div class="one-fifth column active-fifths">

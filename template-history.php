@@ -9,7 +9,7 @@ Template Name: History page
 	<section class="header">
 		<div class="container">
 			<header class="fourteen columns offset-by-one calendar-title">
-				<h1 class='lobster'>Chapter History</h1>
+				<h1 class='lobster'>National History</h1>
 				<p>Read all about our vibrant history to find out more about how we became who we are today.</p>
 			</header>
 		</div>
