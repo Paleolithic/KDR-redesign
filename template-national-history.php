@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: History page
+Template Name: National history page
 */
 ?>
 <?php get_header(); ?>
@@ -119,7 +119,7 @@ Template Name: History page
 				<li class="cd-service cd-service-8">
 					<h2>On To The Centennial</h2>
 					<p>James F. Edgeworth, Sr., Psi \'56 becomes National President/Grand Worthy Consul in 1988, serving until 1998. 
-					The National Executive Secretarytitle is changed to National Executive Director, who also serves as Grand Senior Tribune.</p>
+					The National Executive Secretary title is changed to National Executive Director, who also serves as Grand Senior Tribune.</p>
 
 					<p>Risk Management and poor image issues resulted in problems for all fraternities and the closing of Greek Systems at several college and universities due to risk and image issues. In 1983, Xi chapter is closed when Colby College eliminates their entire Greek system.</p>
 
@@ -138,7 +138,7 @@ Template Name: History page
 
 				</li> <!-- cd-service -->
 
-				<li class="cd-service cd-service-9">
+				<li class="cd-service cd-service-9 cd-service-last">
 					<h2>The Centennial and Beyond</h2>
 					<p>Since 1905, KDR has initiated over 23,000 Members with some 17,000 Living Alumni.</p>
 
@@ -146,15 +146,15 @@ Template Name: History page
 
 					<p>KDR continues to develop new advancements in chapter operations, educational programming, and long term member development including implementation of the KDR Wilderness Institute and The Path membership development programs in 2007. </p>
 
-					<p>The current National President/Grand Worthy Consul is Shawn Hoke, Phi Alpha, \'95. </p>
+					<p>The current National President/Grand Worthy Consul is Gene Spencer, Iota, \'76. </p>
 
-					<p>Michael Mueller, Eta \'95, serves as the current President of the Kappa Delta Rho Foundation. </p>
+					<p>Gregg M. Klein, Omicron Alpha \'95, serves as the current President of the Kappa Delta Rho Foundation. </p>
 
 					<p>In 2007, Joseph Rosenberg, Xi Alpha \'96, was hired as the new Executive Director of Kappa Delta Rho. </p>
 
 				</li> <!-- cd-service -->
 
-				<li class="cd-service cd-service-divider"></li>
+				<!-- <li class="cd-service cd-service-divider"></li> -->
 			</ul> <!-- cd-services -->
 		</div>
 		<div class="filler">

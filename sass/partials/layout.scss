@@ -20,6 +20,25 @@ BlankSlate is distributed under the terms of the GNU GPL
  * ------------------------------------------------ */
 /* Add site styles here */
 /* For example: a { color: #000; } */
+main{
+	section{
+		padding: 42px 0px 70px 0px;
+		overflow: hidden;
+
+		header{
+			margin-bottom: 49px;
+			
+			h1{
+				line-height: 70px;
+			}
+
+			p{
+				text-align: center;
+			}
+		}
+	}
+}
+
 code{
 	display: block;
 	margin: .4em 0;
@@ -633,26 +652,7 @@ body > footer{
 	}
 }
 
-main{
-	section{
-		padding: 42px 0px 70px 0px;
-		overflow: hidden;
-
-		header{
-			margin-bottom: 49px;
-			
-			h1{
-				line-height: 70px;
-			}
-
-			p{
-				text-align: center;
-			}
-		}
-	}
-}
-
-//About page styles
+//Home page styles
 .about{
 	.top{
 		background: linear-gradient(0deg, rgba(34,41,57,.4), rgba(34,41,57,.4));
@@ -699,6 +699,11 @@ main{
 		.container{
 			top: 50%;
 			margin-top: -205px;
+		}
+
+		.delta{
+			position: relative;
+			left: 3px;
 		}
 	}
 
@@ -1022,6 +1027,8 @@ main{
 	}
 }
 
+
+//Brothers page styles
 .brothers{
 	h1{
 		color: $mainOrange;
@@ -1065,6 +1072,8 @@ main{
 	}
 }
 
+
+//National history page styles
 .history{
 	.header{
 		background-color: #EEEEEE;
@@ -1193,6 +1202,10 @@ main{
 		background-image: url("images/timeline/centennial_beyond.svg");
 	}
 
+	.cd-service:last-child::after{
+		// background-image: url("images/timeline/cd-pattern-last.svg");
+	}
+
 	.cd-service.cd-service-divider::after {
 		top: 0;
 	}
@@ -1203,12 +1216,14 @@ main{
 
 	.filler{
 		position: relative;
-		height: 518px;
+		height: 259px;
 		background: #EEEEEE;
 		z-index: 2;
 	}
 }
 
+
+//Local history page styles
 .local{
 
 	.local-description{
@@ -1229,6 +1244,7 @@ main{
 		margin-bottom: 35px;
 	}
 }
+
 /* MEDIA QUERIES
  * ------------------------------------------------ */
 /* Otherwise known as custom responsive code! Write it here! */
