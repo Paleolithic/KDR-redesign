@@ -165,7 +165,7 @@ thead {
   letter-spacing: 1px;
 }
 /* line 145, ../../sass/partials/layout.scss */
-.brothers .one-fifth.column p:first-child, .e-board .one-fifth.column p:first-child {
+.brothers .one-fifth.column p span:first-child, .e-board .one-fifth.column p span:first-child {
   margin-top: 7px;
 }
 /* line 150, ../../sass/partials/layout.scss */
