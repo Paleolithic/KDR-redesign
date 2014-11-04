@@ -955,6 +955,7 @@ body > footer{
 			display: block;
 		}
 		.portrait{
+			width: 172px;
 			@include border-radius(50%);
 			margin: 0 auto;
 		}
