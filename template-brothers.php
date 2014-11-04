@@ -65,14 +65,16 @@ Template Name: Brothers page
 				// Active Chapter
 				foreach ( $approvedusers as $user ) {
 					$user_info = get_userdata($user->ID);
-					if($user_info->first_name && $user_info->last_name && $user_info->active_member == "active"){
-						echo '<div class="one-fifth column active-fifths">';
-							echo '<div class="portrait" id="praetor"></div>'; 
-							echo '<p><span>' . $user_info->first_name . "</span><span>" . $user_info->last_name . "</span><span> #" . $user_info->pin . "</span></p>"; 
-						echo '</div>';						
-					}
+					if($user_info->first_name && $user_info->last_name && $user_info->active_member == "active"){ ?>
+						<div class="one-fifth column active-fifths">
+							<!-- $directory = bloginfo('stylesheet_directory') . '/images/brothers/test/' . $user_info->pin . '.jpg' -->
+							<?php $url = get_template_directory_uri() . "/images/brothers/test/" . $user_info->pin . ".jpg"; ?>
+							<div class="portrait" style="background-image: url('<?php echo $url; ?>');"></div>
+							<p><span><?php echo $user_info->first_name ?></span><span><?php echo $user_info->last_name ?></span><span>#<?php echo $user_info->pin ?></span></p> 
+						</div>				
+			<?php
+				 	}
 				}
-
 			?>
 		</div>
 	</section>
@@ -80,15 +82,18 @@ Template Name: Brothers page
 		<div class="container">
 			<h2 class='sixteen columns'>Inactive / Alumni</h2>
 			<?php
-				// Inactive / Alumnia
+				// Active Chapter
 				foreach ( $approvedusers as $user ) {
 					$user_info = get_userdata($user->ID);
-					if($user_info->first_name && $user_info->last_name && $user_info->active_member != "active"){
-						echo '<div class="one-fifth column active-fifths">';
-							echo '<div class="portrait" id="praetor"></div>'; 
-							echo '<p><span>' . $user_info->first_name . "</span><span>" . $user_info->last_name . "</span><span> #" . $user_info->pin . "</span></p>"; 
-						echo '</div>';						
-					}
+					if($user_info->first_name && $user_info->last_name && $user_info->active_member != "active"){ ?>
+						<div class="one-fifth column active-fifths">
+							<!-- $directory = bloginfo('stylesheet_directory') . '/images/brothers/test/' . $user_info->pin . '.jpg' -->
+							<?php $url = get_template_directory_uri() . "/images/brothers/test/" . $user_info->pin . ".jpg"; ?>
+							<div class="portrait" style="background-image: url('<?php echo $url; ?>');"></div>
+							<p><span><?php echo $user_info->first_name ?></span><span><?php echo $user_info->last_name ?></span><span>#<?php echo $user_info->pin ?></span></p> 
+						</div>				
+			<?php
+				 	}
 				}
 			?>
 		</div>
