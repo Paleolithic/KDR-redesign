@@ -802,6 +802,9 @@ body > footer{
 			}
 		}
 
+		span{
+			display: block;
+		}
 		.portrait{
 			@include border-radius(50%);
 		}
