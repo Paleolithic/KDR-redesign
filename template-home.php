@@ -183,12 +183,12 @@ Template Name: Home page
 								<div class="eight columns alpha blog-image" style="background-image: url('<?php echo $url; ?>');"></div>
 								<div class="eight columns omega blog-post">
 									<h2 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?> </a></h2>
-									<?php the_excerpt(); ?>
+									<?php the_excerpt(); ?>...
 								</div>
 							<?php else: ?>
 								<div class="eight columns alpha blog-post">
 									<h2 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?> </a></h2>
-									<?php the_excerpt(); ?>
+									<?php the_excerpt(); ?>...
 								</div>
 								<div class="eight columns omega blog-image" style="background-image: url('<?php echo $url; ?>');"></div>
 							<?php endif; ?>
