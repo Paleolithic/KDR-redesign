@@ -4,6 +4,7 @@ Template Name: Brothers page
 */
 ?>
 <?php get_header(); ?>
+<?php include (TEMPLATEPATH . '/includes/eboard-variables.php'); ?>
 <main class="brothers">
 	<section class="e-board">
 		<div class="container">
@@ -17,308 +18,79 @@ Template Name: Brothers page
 				<div class="portrait" id="praetor"></div>
 				<h4>Praetor</h4>
 				<div class="border-bottom transition-right"></div>
-				<p>Will Hammond <span>#xxx</span></p>
+				<p><span><?php echo $praetor_info->first_name; ?></span><span><?php echo $praetor_info->last_name; ?></span><span>#<?php echo $praetor_info->pin; ?></span></p>		
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<div class="portrait" id="jt"></div>
 				<h4>Junior Tribune</h4>
 				<div class="border-bottom transition-right"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
+				<p><span><?php echo $jt_info->first_name; ?></span><span><?php echo $jt_info->last_name; ?></span><span>#<?php echo $jt_info->pin; ?></span></p>		
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<div class="portrait" id="consul"></div>
 				<h4>Consul</h4>
 				<div class="border-bottom transition-center"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
+				<p><span><?php echo $consul_info->first_name; ?></span><span><?php echo $consul_info->last_name; ?></span><span>#<?php echo $consul_info->pin; ?></span></p>		
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<div class="portrait" id="st"></div>
 				<h4>Senior Tribune</h4>
 				<div class="border-bottom transition-left"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
+				<p><span><?php echo $st_info->first_name; ?></span><span><?php echo $st_info->last_name; ?></span><span>#<?php echo $st_info->pin; ?></span></p>	
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<div class="portrait" id="quaestor"></div>
 				<h4>Quaestor</h4>
 				<div class="border-bottom transition-left"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
+				<p><span><?php echo $quaestor_info->first_name; ?></span><span><?php echo $quaestor_info->last_name; ?></span><span>#<?php echo $quaestor_info->pin; ?></span></p>	
 			</div>
 		</div>
 	</section>
+	<?php $approvedusers = get_users(array(
+			    'meta_query' => array(
+			   		array(
+				   		'key' => 'pw_user_status',
+				   		'value' => 'approved',
+				   		'compare' => '='
+		   			)
+			   	),
+			   'orderby' => 'meta_value',
+			   'order' => 'ASC'
+			));
+	?>
 	<section class="active">
 		<div class="container">
+			<h2 class='sixteen columns'>Active Chapter</h2>
 			<?php
-				$allusers = $wpdb->get_results("SELECT DISTINCT um1.meta_value 'pin', um2.meta_value 'big_pin', um3.meta_value 'first_name', um4.meta_value 'last_name' FROM wp_users");
-				// $allusers= $wpdb->get_results("
-				// 	SELECT DISTINCT um1.meta_value 'pin', um2.meta_value 'big_pin', um3.meta_value 'first_name', um4.meta_value 'last_name' FROM wp_users u LEFT JOIN ( SELECT * FROM wp_usermeta wum WHERE wum.meta_key = 'pin' ) um1 ON u.ID = um1.user_id LEFT JOIN ( SELECT * FROM wp_usermeta wum WHERE wum.meta_key = 'big_pin' ) um2 ON u.ID = um2.user_id LEFT JOIN ( SELECT * FROM wp_usermeta wum WHERE wum.meta_key = 'first_name' ) um3 ON u.ID = um3.user_id LEFT JOIN ( SELECT * FROM wp_usermeta wum WHERE wum.meta_key = 'last_name' ) um4 ON u.ID = um4.user_id WHERE um1.meta_value IS NOT NULL ORDER BY `um1`.`meta_value` ASC 
-				// 	");
-					
-				$numBrothersPHP = 0;
-					
-					var_dump($allusers);
-				foreach($allusers as $user) {
-					if ($user->pin != null) {
-						echo "brotherArray[Number('".$user->pin."')] = \"".$user->first_name." ".$user->last_name."\";\r\n";
-						echo "bigArray[Number('".$user->pin."')] = Number('".$user->big_pin."');\r\n";
-						if ($user->pin > $numBrothersPHP) {
-							$numBrothersPHP = $user->pin;
-						}
+				// Active Chapter
+				foreach ( $approvedusers as $user ) {
+					$user_info = get_userdata($user->ID);
+					if($user_info->first_name && $user_info->last_name && $user_info->active_member == "active"){
+						echo '<div class="one-fifth column active-fifths">';
+							echo '<div class="portrait" id="praetor"></div>'; 
+							echo '<p><span>' . $user_info->first_name . "</span><span>" . $user_info->last_name . "</span><span> #" . $user_info->pin . "</span></p>"; 
+						echo '</div>';						
 					}
 				}
-				echo "numBrothers = ".$numBrothersPHP.";";
 
-				$blogusers = get_users(  );
-				// Array of WP_User objects.
-				foreach ( $blogusers as $user ) {
-					echo '<span>' . esc_html( $user->user_email ) . '</span>';
-				}
 			?>
-			<h2 class="sixteen columns">Active Chapter</h2>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="praetor"></div>
-				<p>Will Hammond <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="jt"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="consul"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="st"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="quaestor"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="praetor"></div>
-				<p>Will Hammond <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="jt"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="consul"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="st"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="quaestor"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="praetor"></div>
-				<p>Will Hammond <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="jt"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="consul"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="st"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="quaestor"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="praetor"></div>
-				<p>Will Hammond <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="jt"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="consul"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="st"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="quaestor"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="praetor"></div>
-				<p>Will Hammond <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="jt"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="consul"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="st"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="quaestor"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="praetor"></div>
-				<p>Will Hammond <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="jt"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="consul"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="st"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="quaestor"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
-			</div>
 		</div>
 	</section>
 	<section class="alumni">
 		<div class="container">
-			<h2 class="sixteen columns">Alumni</h2>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="praetor"></div>
-				<p>Will Hammond <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="jt"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="consul"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="st"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="quaestor"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="praetor"></div>
-				<p>Will Hammond <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="jt"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="consul"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="st"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="quaestor"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="praetor"></div>
-				<p>Will Hammond <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="jt"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="consul"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="st"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="quaestor"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="praetor"></div>
-				<p>Will Hammond <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="jt"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="consul"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="st"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="quaestor"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="praetor"></div>
-				<p>Will Hammond <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="jt"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="consul"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="st"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="quaestor"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="praetor"></div>
-				<p>Will Hammond <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="jt"></div>
-				<p>Jaime Geiger <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="consul"></div>
-				<p>Justin Peterson <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="st"></div>
-				<p>Kyle Chrysler <span>#xxx</span></p>
-			</div>
-			<div class="one-fifth column active-fifths">
-				<div class="portrait" id="quaestor"></div>
-				<p>Xavier Hocquet <span>#xxx</span></p>
-			</div>
+			<h2 class='sixteen columns'>Inactive / Alumni</h2>
+			<?php
+				// Inactive / Alumnia
+				foreach ( $approvedusers as $user ) {
+					$user_info = get_userdata($user->ID);
+					if($user_info->first_name && $user_info->last_name && $user_info->active_member != "active"){
+						echo '<div class="one-fifth column active-fifths">';
+							echo '<div class="portrait" id="praetor"></div>'; 
+							echo '<p><span>' . $user_info->first_name . "</span><span>" . $user_info->last_name . "</span><span> #" . $user_info->pin . "</span></p>"; 
+						echo '</div>';						
+					}
+				}
+			?>
 		</div>
 	</section>
 </main>
