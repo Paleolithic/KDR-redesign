@@ -4,6 +4,7 @@ Template Name: Rush page
 */
 ?>
 <?php get_header(); ?>
+<?php include (TEMPLATEPATH . '/includes/eboard-variables.php'); ?>
 <main class="rush">
 	<section class="schedule">
 		<div class="container">
@@ -168,16 +169,17 @@ Template Name: Rush page
         </div>
         <div class="container">
             <div class="one-third column rush-thirds">
-                <div class="rush-photo" id="st"></div>
+                <?php $url = get_template_directory_uri() . "/images/brothers/" . $st_info->pin . ".jpg"; ?>
+                <div class="rush-photo" style="background-image: url('<?php echo $url; ?>');"></div>
                 <h4>Senior Tribune</h4>
                 <div class="border-bottom transition-right"></div>
-                <p>Kyle Chrystler <a href="mailto:seniortribune@kdrib.org">seniortribune@kdrib.org</a></p>
+                <p><span><?php echo $st_info->first_name; ?></span><span><?php echo $st_info->last_name; ?></span><span<a href="mailto:seniortribune@kdrib.org">seniortribune@kdrib.org</a></span></p>
             </div>
             <div class="one-third column rush-thirds">
                 <div class="rush-photo" id="rush"></div>
                 <h4>Rush Chair</h4>
                 <div class="border-bottom transition-center"></div>
-                <p>Michael Kenworthy <a href="mailto:skywalker@kdrib.org">skywalker@kdrib.org</a><a>(716) 400 - 0742</a></p>
+                <p><span>Michael</span><span>Kenworthy</span><span><a href="mailto:skywalker@kdrib.org">skywalker@kdrib.org</a></span><span><a>(716) 400 - 0742</a></span></p>
             </div>
             <div class="one-third column rush-thirds">
                 <div class="rush-photo" id="brother"></div>
@@ -186,15 +188,6 @@ Template Name: Rush page
                 <p>Mr. Gentleman</p>
             </div>
         </div>
-<!--         <div class="container">
-            <div class="six columns offset-by-five">
-                <img src="http://unsplash.it/1366/911/?random=1">
-            </div>
-            <div class="eight columns offset-by-four">
-                <h2>Who Should You Contact?</h2>
-                <p>Nam adipiscing. Nullam dictum felis eu pede mollis pretium. Donec mi odio, faucibus at. Duis vel nibh at velit scelerisque suscipit. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Donec posuere vulputate arcu.</p>                
-            </div>
-        </div> -->
     </section>
 </main>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/superslides/superslides.js"></script>
