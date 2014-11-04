@@ -132,7 +132,7 @@ Template Name: Home page
 				<p>These are the gentlemen who keep our fraternity alive and well. They each have a specific job in managing our day to day activities, and do their best to keep us efficient
 				</p>
 			</header>
-			<div class="one-fifth column e-board-fifths">
+			<div class="one-fifth column e-board-fifths"> 
 				<?php $url = get_template_directory_uri() . "/images/brothers/test/" . $praetor_info->pin . ".jpg"; ?>
 				<div class="portrait" style="background-image: url('<?php echo $url; ?>');"></div>
 				<h4>Praetor</h4>
