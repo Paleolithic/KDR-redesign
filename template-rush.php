@@ -170,19 +170,19 @@ Template Name: Rush page
         <div class="container">
             <div class="one-third column rush-thirds">
                 <?php $url = get_template_directory_uri() . "/images/brothers/" . $st_info->pin . ".jpg"; ?>
-                <div class="rush-photo" style="background-image: url('<?php echo $url; ?>');"></div>
+                <div class="portrait" style="background-image: url('<?php echo $url; ?>');"></div>
                 <h4>Senior Tribune</h4>
                 <div class="border-bottom transition-right"></div>
                 <p><span><?php echo $st_info->first_name; ?></span><span><?php echo $st_info->last_name; ?></span><span<a href="mailto:seniortribune@kdrib.org">seniortribune@kdrib.org</a></span></p>
             </div>
             <div class="one-third column rush-thirds">
-                <div class="rush-photo" id="rush"></div>
+                <div class="portrait" id="rush"></div>
                 <h4>Rush Chair</h4>
                 <div class="border-bottom transition-center"></div>
                 <p><span>Michael</span><span>Kenworthy</span><span><a href="mailto:skywalker@kdrib.org">skywalker@kdrib.org</a></span><span><a>(716) 400 - 0742</a></span></p>
             </div>
             <div class="one-third column rush-thirds">
-                <div class="rush-photo" id="brother"></div>
+                <div class="portrait" id="brother"></div>
                 <h4>Any Brother</h4>
                 <div class="border-bottom transition-left"></div>
                 <p>Mr. Gentleman</p>

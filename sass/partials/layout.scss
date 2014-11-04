@@ -114,6 +114,7 @@ thead{
 	}
 }
 
+
 #container.container a.more-link{
 	font-size: 14px;
 	font-family: $fontFamily;
@@ -144,7 +145,7 @@ thead{
 
 		span{
 			line-height: 26px;
-			
+
 			&:first-child{
 				margin-top: 7px;
 			}
@@ -152,12 +153,13 @@ thead{
 
 	}
 	
-	.portrait{
-		width: 100%;
-		height: 172px;
-		background-size: 172px;
-		background-repeat: no-repeat;
-	}
+}
+
+.portrait{
+	width: 100%;
+	height: 172px;
+	background-size: 172px;
+	background-repeat: no-repeat;
 }
 
 .e-board{
