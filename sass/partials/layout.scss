@@ -141,6 +141,10 @@ thead{
 		font-size: 18px;
 		font-family: Lato, sans-serif;
 		letter-spacing: 1px;
+
+		&:first-child{
+			margin-top: 7px;
+		}
 	}
 	
 	.portrait{
