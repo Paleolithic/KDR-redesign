@@ -73,7 +73,7 @@ Template Name: Brothers page
 					if($user_info->first_name && $user_info->last_name && $user_info->active_member == "active"){ ?>
 						<div class="one-fifth column active-fifths">
 							<!-- $directory = bloginfo('stylesheet_directory') . '/images/brothers/test/' . $user_info->pin . '.jpg' -->
-							<?php $url = get_template_directory_uri() . "/images/brothers/test/" . $user_info->pin . ".jpg"; ?>
+							<?php $url = get_template_directory_uri() . "/images/brothers/" . $user_info->pin . ".jpg"; ?>
 							<div class="portrait" style="background-image: url('<?php echo $url; ?>');"></div>
 							<p><span><?php echo $user_info->first_name ?></span><span><?php echo $user_info->last_name ?></span><span>#<?php echo $user_info->pin ?></span></p> 
 						</div>				
@@ -93,7 +93,7 @@ Template Name: Brothers page
 					if($user_info->first_name && $user_info->last_name && $user_info->active_member != "active"){ ?>
 						<div class="one-fifth column active-fifths">
 							<!-- $directory = bloginfo('stylesheet_directory') . '/images/brothers/test/' . $user_info->pin . '.jpg' -->
-							<?php $url = get_template_directory_uri() . "/images/brothers/test/" . $user_info->pin . ".jpg"; ?>
+							<?php $url = get_template_directory_uri() . "/images/brothers/" . $user_info->pin . ".jpg"; ?>
 							<div class="portrait" style="background-image: url('<?php echo $url; ?>');"></div>
 							<p><span><?php echo $user_info->first_name ?></span><span><?php echo $user_info->last_name ?></span><span>#<?php echo $user_info->pin ?></span></p> 
 						</div>				
