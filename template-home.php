@@ -4,6 +4,7 @@ Template Name: Home page
 */
 ?>
 <?php get_header(); ?>
+<?php include (TEMPLATEPATH . '/includes/eboard-variables.php'); ?>
 <main class="about">	
 	<section class="top">
 		<div class="container">
@@ -135,31 +136,31 @@ Template Name: Home page
 				<div class="portrait" id="praetor"></div>
 				<h4>Praetor</h4>
 				<div class="border-bottom transition-right"></div>
-				<p>Will Hammond</p>
+				<p><span><?php echo $praetor_info->first_name; ?></span><span><?php echo $praetor_info->last_name; ?></span><span>#<?php echo $praetor_info->pin; ?></span></p>		
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<div class="portrait" id="jt"></div>
 				<h4>Junior Tribune</h4>
 				<div class="border-bottom transition-right"></div>
-				<p>Jaime Geiger</p>
+				<p><span><?php echo $jt_info->first_name; ?></span><span><?php echo $jt_info->last_name; ?></span><span>#<?php echo $jt_info->pin; ?></span></p>		
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<div class="portrait" id="consul"></div>
 				<h4>Consul</h4>
 				<div class="border-bottom transition-center"></div>
-				<p>Justin Peterson</p>
+				<p><span><?php echo $consul_info->first_name; ?></span><span><?php echo $consul_info->last_name; ?></span><span>#<?php echo $consul_info->pin; ?></span></p>		
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<div class="portrait" id="st"></div>
 				<h4>Senior Tribune</h4>
 				<div class="border-bottom transition-left"></div>
-				<p>Kyle Chrysler</p>
+				<p><span><?php echo $st_info->first_name; ?></span><span><?php echo $st_info->last_name; ?></span><span>#<?php echo $st_info->pin; ?></span></p>	
 			</div>
 			<div class="one-fifth column e-board-fifths">
 				<div class="portrait" id="quaestor"></div>
 				<h4>Quaestor</h4>
 				<div class="border-bottom transition-left"></div>
-				<p>Xavier Hocquet</p>
+				<p><span><?php echo $quaestor_info->first_name; ?></span><span><?php echo $quaestor_info->last_name; ?></span><span>#<?php echo $quaestor_info->pin; ?></span></p>	
 			</div>
 		</div>
 	</section>
