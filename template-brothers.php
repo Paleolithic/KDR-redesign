@@ -54,6 +54,11 @@ Template Name: Brothers page
 	<?php $approvedusers = get_users(array(
 			    'meta_query' => array(
 			   		array(
+				   		'key' => 'pin',
+				   		'value' => '000',
+				   		'compare' => '>'
+		   			),
+		   			array(
 				   		'key' => 'pw_user_status',
 				   		'value' => 'approved',
 				   		'compare' => '='
@@ -89,7 +94,7 @@ Template Name: Brothers page
 	</section>
 	<section class="alumni">
 		<div class="container">
-			<h2 class='sixteen columns'>Inactive / Alumni</h2>
+			<h2 class='sixteen columns'>Inactive and Alumni</h2>
 			<?php
 				// Active Chapter
 				foreach ( $approvedusers as $user ) {
