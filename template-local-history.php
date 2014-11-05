@@ -27,7 +27,7 @@ Template Name: Local History page
 				<h2>Some of our Quirks</h2>
 	            <p>Facts, considering our local history need explanation - and what better person to explain these quirks then one of the initial members of the JPF, Rafi Isaac. </p>
 
-				<blockquote><p>“It is important to note that although the historical facts of the JPF tend to be humorous, or at least light-hearted. They came about as a result of the changes and stages the group underwent in its first year. They might even be considered the result of the humorous temperament which we adopted while facing a Greek system that has been slow to change and often un-accepting of the “progressive” nature which sparked our inception. Therefore, these facts should be learned and understood by all pledges in the interest of informing them of how and why this chapter came to be.” -Rafi Isaac</p></blockquote>
+				<blockquote><p>“It is important to note that although the historical facts of the JPF tend to be humorous, or at least light-hearted, they came about as a result of the changes and stages the group underwent in its first year. They might even be considered the result of the humorous temperament which we adopted while facing a Greek system that has been slow to change and often un-accepting of the “progressive” nature which sparked our inception. Therefore, these facts should be learned and understood by all pledges in the interest of informing them of how and why this chapter came to be.” -Rafi Isaac</p></blockquote>
 
 			</div>
 			<div class="twelve columns offset-by-two ">

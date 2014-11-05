@@ -57,11 +57,6 @@ Template Name: Brothers page
 				   		'key' => 'pin',
 				   		'value' => '000',
 				   		'compare' => '>'
-		   			),
-		   			array(
-				   		'key' => 'pw_user_status',
-				   		'value' => 'approved',
-				   		'compare' => '='
 		   			)
 			   	),
 			   'orderby' => 'meta_value',
@@ -94,7 +89,7 @@ Template Name: Brothers page
 	</section>
 	<section class="alumni">
 		<div class="container">
-			<h2 class='sixteen columns'>Inactive and Alumni</h2>
+			<h2 class='sixteen columns'>Inactive / Alumni</h2>
 			<?php
 				// Active Chapter
 				foreach ( $approvedusers as $user ) {
