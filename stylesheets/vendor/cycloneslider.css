@@ -1,15 +1,15 @@
 /* line 6, ../../sass/vendor/cycloneslider.scss */
 .cycloneslider-template-standard p .cycloneslider-prev, .cycloneslider-template-standard p .cycloneslider-next {
   opacity: 1;
-  background: #e5655d;
-  border-bottom: 3px solid #c54a43;
+  background: #E5655D;
+  border-bottom: 3px solid #C54A43;
   box-shadow: none;
   height: 35px;
   width: 35px;
 }
 /* line 14, ../../sass/vendor/cycloneslider.scss */
 .cycloneslider-template-standard p .cycloneslider-prev:hover, .cycloneslider-template-standard p .cycloneslider-next:hover {
-  background: #c54a43;
+  background: #C54A43;
 }
 /* line 18, ../../sass/vendor/cycloneslider.scss */
 .cycloneslider-template-standard p .cycloneslider-prev .arrow, .cycloneslider-template-standard p .cycloneslider-next .arrow {
@@ -22,10 +22,8 @@
 /* line 26, ../../sass/vendor/cycloneslider.scss */
 .cycloneslider-template-standard p .cycloneslider-prev {
   left: 0px;
-  -webkit-border-radius: 0px 3px 3px 0px;
   -moz-border-radius: 0px 3px 3px 0px;
-  -ms-border-radius: 0px 3px 3px 0px;
-  -o-border-radius: 0px 3px 3px 0px;
+  -webkit-border-radius: 0px;
   border-radius: 0px 3px 3px 0px;
 }
 /* line 29, ../../sass/vendor/cycloneslider.scss */
@@ -37,10 +35,8 @@
 /* line 36, ../../sass/vendor/cycloneslider.scss */
 .cycloneslider-template-standard p .cycloneslider-next {
   right: 0px;
-  -webkit-border-radius: 3px 0px 0px 3px;
   -moz-border-radius: 3px 0px 0px 3px;
-  -ms-border-radius: 3px 0px 0px 3px;
-  -o-border-radius: 3px 0px 0px 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px 0px 0px 3px;
 }
 /* line 39, ../../sass/vendor/cycloneslider.scss */

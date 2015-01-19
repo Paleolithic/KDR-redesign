@@ -1,16 +1,16 @@
-/* line 8, ../../sass/vendor/demo.scss */
+/* line 6, ../../sass/vendor/demo.scss */
 .main *,
 .main *:after,
 .main *:before {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-/* line 16, ../../sass/vendor/demo.scss */
+/* line 15, ../../sass/vendor/demo.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";

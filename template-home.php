@@ -117,7 +117,7 @@ Template Name: Home page
 	</section>
 	<section class="where">
 		<div class="map" id="map"></div>
-		<div class="container mobile">
+		<div class="container">
 			<header class="fourteen columns offset-by-one e-board-title">
 				<h1 class='lobster'>Where We're Located</h1>
 				<p>Our house is located in Res Hall A on the residential side of the Rochester Institute of Technology campus. Come hang out with us whenever, you can identify us by the lit up letters in our lounge window

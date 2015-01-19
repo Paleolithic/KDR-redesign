@@ -17,7 +17,7 @@
   -webkit-overflow-scrolling: touch;
   height: 100%;
 }
-/* line 38, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
 #slides .scrollable:after {
   content: "";
   display: table;
@@ -64,12 +64,10 @@
 .desc p {
   padding: 7px 14px;
   background-color: #304269;
-  -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
-  border-bottom: 4px solid #1d273f;
+  border-bottom: 4px solid #1D273F;
   text-align: center;
 }
 /* line 63, ../../sass/vendor/superslides.scss */
@@ -101,11 +99,10 @@
   border-radius: 15px;
   width: 10px;
   height: 10px;
-  display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
-  zoom: 1;
+  *zoom: 1;
   *display: inline;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
   margin: 2px;

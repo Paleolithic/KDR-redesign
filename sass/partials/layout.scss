@@ -210,6 +210,36 @@ thead{
 	}			
 }
 
+.blogs{
+		background-color: #EEEEEE;
+
+		#container.container{
+			margin-top: 0px;
+		}
+
+		h1{
+			color: $mainOrange;
+			&:before, &:after {
+			    background-color: $mainOrange;
+			}
+		}
+
+		.blog{
+			margin-top: 42px;
+			margin-bottom: 42px;
+
+			.blog-image{
+				// width: 100%;
+				height: 301px;
+				background-position: 50% 50%;
+				background-size: 100% auto;
+				background-color: white;
+				background-repeat: no-repeat;
+				@include border-radius(4px);
+			}
+		}
+	}
+
 
 /* PAGE STYLES
  * ------------------------------------------------ */
@@ -659,6 +689,10 @@ body > footer{
 	}
 }
 
+
+
+
+
 //Home page styles
 .about{
 	.top{
@@ -816,35 +850,7 @@ body > footer{
 			@include border-radius(50%);
 		}
 	}
-	.blogs{
-		background-color: #EEEEEE;
-
-		#container.container{
-			margin-top: 0px;
-		}
-
-		h1{
-			color: $mainOrange;
-			&:before, &:after {
-			    background-color: $mainOrange;
-			}
-		}
-
-		.blog{
-			margin-top: 42px;
-			margin-bottom: 42px;
-
-			.blog-image{
-				// width: 100%;
-				height: 301px;
-				background-position: 50% 50%;
-				background-size: 100% auto;
-				background-color: white;
-				background-repeat: no-repeat;
-				@include border-radius(4px);
-			}
-		}
-	}
+	
 }
 
 
@@ -1255,6 +1261,28 @@ body > footer{
 	}
 }
 
+
+//IBAC page styles
+.ibac{
+	.info{
+		h1{
+			color: white;
+			&:before, &:after {
+			    background-color: white;
+			}
+		}
+
+		p{
+			color: white;
+		}
+
+		background: linear-gradient(0deg, rgba(34,41,57,.4), rgba(34,41,57,.4));
+		background-image: linear-gradient(0deg, rgba(34,41,57,.6), rgba(27,33,47,.6)), url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII="), url("images/IBAC_photo.jpg");
+		background-repeat: no-repeat, repeat, no-repeat center center;
+		background-position: 0 0;
+		background-size: cover, 4px 4px, cover;
+	}
+}
 /* MEDIA QUERIES
  * ------------------------------------------------ */
 /* Otherwise known as custom responsive code! Write it here! */
