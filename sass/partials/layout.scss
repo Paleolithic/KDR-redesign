@@ -48,12 +48,12 @@ code{
 	box-shadow: 1px 1px 0 #fff, 2px 2px 0 #ddd;
 }
 
-input[type="button"],input[type="submit"]{
+input[type="button"],input[type="submit"],.custom-radio label{
     background: none;
     border: none;
     text-shadow: none !important;
 }
-input[type="button"]:hover,input[type="submit"]:hover{
+input[type="button"]:hover,input[type="submit"]:hover, .custom-radio label{
     background: none;
     border: none;
     color: white;
@@ -1281,6 +1281,108 @@ body > footer{
 		background-repeat: no-repeat, repeat, no-repeat center center;
 		background-position: 0 0;
 		background-size: cover, 4px 4px, cover;
+	}
+
+	.mailing{
+		background-color: $mainBlue;
+
+		h1{
+			color: white;
+			&:before, &:after{
+				background-color: white;
+			} 
+		}
+
+		input, select{
+			@include box-sizing(border-box);
+		}
+	}
+
+	.support{
+		background-color: #F3F3F3;
+
+		h1{
+			color: $mainOrange;
+			&:before, &:after{
+				background-color: $mainOrange;
+			}
+		}
+
+		.custom-radio {
+		    list-style-type:none;
+	
+			li {
+			    // float:left;
+			    // margin:0 5px 0 0;
+			    // width:100px;
+			    height:14px;
+			    padding-top: 7px;
+			    padding-bottom: 7px;
+			    // position:relative;
+
+				text-decoration: none;
+				display: inline-block;
+				@include border-radius(4px);
+				color: white;
+				font-weight: 800;
+
+				
+			}
+
+			label, input {
+			    display:block;
+			    position:absolute;
+			    top:0;
+			    left:0;
+			    right:0;
+			    bottom:0;
+			}
+
+			input[type="radio"] {
+			    opacity:0.011;
+			    z-index:100;
+			}
+
+			input[type="radio"]:checked + label {
+			    background-color: $borderBlue;
+			    border-bottom: 3px solid $borderBlue;
+
+			    &:hover{
+			    	border-bottom: 3px solid $borderBlue;
+			    }
+			}
+
+			label {
+			    padding:5px;
+			    cursor:pointer;
+			    z-index:90;
+
+			    @include border-radius(4px);
+			    background-color: $mainBlue;
+			    border-bottom: 3px solid $borderBlue;
+
+			    &:hover{
+			    	background-color: $mainOrange;
+			    	border-bottom: 3px solid $borderOrange;
+			    }
+			}
+
+			// label:hover {
+			//     background:#DDD;
+			// }
+		}
+
+	}
+
+	.dues{
+		background-color: $mainOrange;
+
+		h1{
+			color: white;
+			&:before, &:after{
+				background-color: white;
+			}
+		}
 	}
 }
 /* MEDIA QUERIES

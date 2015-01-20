@@ -26,37 +26,37 @@ Template Name: Rush page
 					<tbody>
 						<tr>
 							<td>Monday</td>
-							<td>Sept 1st</td>
-							<td>Block Party</td>
-                            <td>3pm - 7pm</td>
+							<td>Feb 2nd</td>
+							<td>Ritchies</td>
+                            <td>5pm - 7pm</td>
                         </tr>
                         <tr>
                             <td>Wednesday</td>
-                            <td>Sept 3rd</td>
+                            <td>Feb 4th</td>
                             <td>Dodgeball</td>
-							<td>8pm - End</td>
+							<td>TBD</td>
 						</tr>
 						<tr>
 							<td>Friday</td>
-							<td>Sept 5th</td>
-							<td>Sky Zone Trampoline Park</td>
-							<td>5pm - End</td>
+							<td>Feb 6th</td>
+							<td>Sledding at Glacier Ridge Tubing</td>
+							<td>TBD</td>
 						</tr>
 						<tr>
 							<td>Tuesday</td>
-							<td>Sept 9th</td>
-							<td>Video Game Night</td>
-							<td>7pm - End</td>
+							<td>Feb 10th</td>
+							<td>DIY Pizza Night</td>
+							<td>TBD</td>
 						</tr>
 						<tr>
 							<td>Thursday</td>
-							<td>Sept 11th</td>
-							<td>Bacon Night</td>
-							<td>8:30 - End</td>
+							<td>Feb 12th</td>
+							<td>Game Night</td>
+							<td>TBD</td>
 						</tr>
 						<tr>
 							<td>Saturday</td>
-							<td>Sept 13th</td>
+							<td>Feb 14th</td>
 							<td>Formal Dinner (Invite Only)</td>
 							<td>6pm - End</td>
 						</tr>
