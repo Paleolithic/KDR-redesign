@@ -1296,6 +1296,10 @@ body > footer{
 		input, select{
 			@include box-sizing(border-box);
 		}
+
+		select{
+			text-align: center;
+		}
 	}
 
 	.support{
