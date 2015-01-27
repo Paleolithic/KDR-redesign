@@ -179,7 +179,7 @@ Template Name: Rush page
                 <div class="portrait" id="rush"></div>
                 <h4>Rush Chair</h4>
                 <div class="border-bottom transition-center"></div>
-                <p><span>Michael</span><span>Kenworthy</span><span><a href="mailto:skywalker@kdrib.org">skywalker@kdrib.org</a></span><span><a>(716) 400 - 0742</a></span></p>
+                <p><span>Matthew</span><span>Leahy</span><span><a href="mailto:mtl1739@kdrib.org">mtl1739@kdrib.org</a></span><span><a>(716) 479 - 7643</a></span></p>
             </div>
             <div class="one-third column rush-thirds">
                 <div class="portrait" id="brother"></div>
