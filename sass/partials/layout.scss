@@ -45,6 +45,7 @@ main{
 	min-height: 100%;
 	/*equal to footer height*/
 	margin-bottom: -38px;
+	background-color: #EEEEEE;
 
 	&:after{
 		content: "";
@@ -1489,7 +1490,6 @@ body > footer{
 	}
 
 	.about{
-
 		.blogs{
 			.blog{
 				margin-top: 14px;

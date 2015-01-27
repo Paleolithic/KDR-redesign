@@ -20,7 +20,7 @@ Template Name: Alumni page
 				<h1 class='lobster'>Upcoming Alumni Events</h1>
 			</header>
 			<div class="sixteen columns blog">
-				<div class="eight columns alpha blog-image" style="background-image: url('<?php echo $url; ?>');"></div>
+				<div class="eight columns omega blog-image" style="background-image: url('<?php echo TEMPLATEPATH . "/images/rrf.jpg"; ?>');"></div>
 				<div class="eight columns omega blog-post">
 					<h2 class="entry-title"><a href="http://kdrib.org/25rrf/">25th Red Rose Formal </a></h2>
 					<p>On May 2nd, 2015 we will celebrate our 25th Anniversary at the Rochester Doubletree. We have a block of rooms at the DoubleTree at a rate of $109.00/night.
@@ -35,7 +35,7 @@ Template Name: Alumni page
 					<a class="more-link" href="http://kdrib.org/2014-oktoberfest-alumni-weekend/">Continue reading <i class="fa fa-arrow-right"></i></a>
 					</p>
 				</div>
-				<div class="eight columns omega blog-image" style="background-image: url('<?php echo $url; ?>');"></div>
+				<div class="eight columns omega blog-image" style="background-image: url('<?php echo TEMPLATEPATH . "/images/rrf.jpg"; ?>');"></div>
 			</div>
 		</div>
 	</section>
