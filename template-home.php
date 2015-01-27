@@ -4,7 +4,7 @@ Template Name: Home page
 */
 ?>
 <?php get_header(); ?>
-<?php include (TEMPLATEPATH . '/includes/eboard-variables.php'); ?>
+<?php include (TEMPLATEPATH . '/includes/position-variables.php'); ?>
 <main class="about">	
 	<section class="top">
 		<div class="container">
