@@ -34,38 +34,38 @@ Template Name: Rush page
                             <td>Wednesday</td>
                             <td>Feb 4th</td>
                             <td>Dodgeball</td>
-							<td>TBD</td>
+							<td>7pm - 9pm</td>
 						</tr>
 						<tr>
 							<td>Friday</td>
 							<td>Feb 6th</td>
 							<td>Sledding at Glacier Ridge Tubing</td>
-							<td>TBD</td>
+							<td>7pm - 9pm. Meet at house at 6pm</td>
 						</tr>
 						<tr>
 							<td>Tuesday</td>
 							<td>Feb 10th</td>
 							<td>DIY Pizza Night</td>
-							<td>TBD</td>
+							<td>5pm - 8pm</td>
 						</tr>
 						<tr>
 							<td>Thursday</td>
 							<td>Feb 12th</td>
 							<td>Game Night</td>
-							<td>TBD</td>
+							<td>7pm - End</td>
 						</tr>
 						<tr>
 							<td>Saturday</td>
 							<td>Feb 14th</td>
 							<td>Formal Dinner (Invite Only)</td>
-							<td>6pm - End</td>
+							<td>---</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</section>
-    <section class="interview">
+    <!--section class="interview">
         <div class="container">
             <div class="sixteen columns">
                 <div class="link">
@@ -73,7 +73,7 @@ Template Name: Rush page
                 </div>
             </div>
         </div>
-    </section>
+    </section-->
 	<section class="why" id="slides">
 		<div class='gradient'></div>
 		<div class="container">
