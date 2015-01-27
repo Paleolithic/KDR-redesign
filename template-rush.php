@@ -4,7 +4,7 @@ Template Name: Rush page
 */
 ?>
 <?php get_header(); ?>
-<?php include (TEMPLATEPATH . '/includes/eboard-variables.php'); ?>
+<?php include (TEMPLATEPATH . '/includes/position-variables.php'); ?>
 <main class="rush">
 	<section class="schedule">
 		<div class="container">
@@ -169,18 +169,27 @@ Template Name: Rush page
         </div>
         <div class="container">
             <div class="one-third column rush-thirds">
-                <?php $url = get_template_directory_uri() . "/images/brothers/" . $st_info->pin . ".jpg"; ?>
-                <div class="portrait" style="background-image: url('<?php echo $url; ?>');"></div>
+                <?php $url = get_template_directory_uri() . "/images/brothers/" . $st_info->pin . ".jpg";  
+                      $missing_url = get_template_directory_uri() . "/images/brothers/no_pic.jpg"; 
+                      $check_path = TEMPLATEPATH . "/images/brothers/" . $st_info->pin . ".jpg";
+                ?>
+                <?php if(file_exists ( $check_path)){ ?><div class="portrait" style="background-image: url('<?php echo $url; ?>');"></div>
+                <?php } else{ ?><div class="portrait" style="background-image: url('<?php echo $missing_url; ?>');"></div><?php } ?>
                 <h4>Senior Tribune</h4>
                 <div class="border-bottom transition-right"></div>
+                <?php echo $st_info ?>
                 <p><span><?php echo $st_info->first_name; ?></span><span><?php echo $st_info->last_name; ?></span><span><a href="mailto:seniortribune@kdrib.org">seniortribune@kdrib.org</a></span></p>
             </div>
             <div class="one-third column rush-thirds">
-                <div class="portrait" id="rush"></div>
+                <?php $url = get_template_directory_uri() . "/images/brothers/" . $rush_info->pin . ".jpg";  
+                      $missing_url = get_template_directory_uri() . "/images/brothers/no_pic.jpg"; 
+                      $check_path = TEMPLATEPATH . "/images/brothers/" . $rush_info->pin . ".jpg";
+                ?>
+                <?php if(file_exists ( $check_path)){ ?><div class="portrait" style="background-image: url('<?php echo $url; ?>');"></div>
+                <?php } else{ ?><div class="portrait" style="background-image: url('<?php echo $missing_url; ?>');"></div><?php } ?>
                 <h4>Rush Chair</h4>
                 <div class="border-bottom transition-center"></div>
-                <p><span>Matthew</span><span>Leahy</span><span><a href="mailto:mtl1739@kdrib.org">mtl1739@kdrib.org</a></span><span><a>(716) 479 - 7643</a></span></p>
-            </div>
+                <p><span><?php echo $rush_info->first_name; ?></span><span><?php echo $rush_info->last_name; ?></span><span><a href="mailto:<?php echo $rush_info->email;?>"><?php echo $rush_info->email; ?></a></span></p>            </div>
             <div class="one-third column rush-thirds">
                 <div class="portrait" id="brother"></div>
                 <h4>Any Brother</h4>

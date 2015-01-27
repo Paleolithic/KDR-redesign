@@ -379,7 +379,7 @@ header#header{
 	li{
 		display: inline-block;
 		@include border-radius(4px);
-		width: 91px;
+		width: 84px;
 		margin: 0px 7px;
 		text-transform: uppercase;
 		cursor: pointer;
@@ -497,7 +497,7 @@ header#header{
 			height: 12px;
 			background-size: 12px 12px;
 			margin-top: 8px;
-			margin-left: 12px;
+			margin-left: 8px;
 			position: absolute;
 		}
 

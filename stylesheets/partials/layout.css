@@ -447,7 +447,7 @@ header#header li {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  width: 91px;
+  width: 84px;
   margin: 0px 7px;
   text-transform: uppercase;
   cursor: pointer;
@@ -572,7 +572,7 @@ header#header .menu-item-has-children:before {
   height: 12px;
   background-size: 12px 12px;
   margin-top: 8px;
-  margin-left: 12px;
+  margin-left: 8px;
   position: absolute;
 }
 /* line 505, ../../sass/partials/layout.scss */

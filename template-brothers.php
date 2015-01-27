@@ -4,7 +4,7 @@ Template Name: Brothers page
 */
 ?>
 <?php get_header(); ?>
-<?php include (TEMPLATEPATH . '/includes/eboard-variables.php'); ?>
+<?php include (TEMPLATEPATH . '/includes/position-variables.php'); ?>
 <main class="brothers">
 	<section class="e-board">
 		<div class="container">

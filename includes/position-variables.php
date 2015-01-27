@@ -38,4 +38,12 @@
 		));
 	$quaestor = $quaestorA[0];
 	$quaestor_info = get_userdata($quaestor->ID);
+
+	$rush = get_users(array(
+   		'meta_key' => 'eboard_position',
+   		'meta_value' => 'rush',
+   		'meta_compare' => '='
+		));
+	$rush = $rushA[0];
+	$rush_info = get_userdata($rush->ID);
 ?>
