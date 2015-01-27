@@ -188,8 +188,7 @@ Template Name: Rush page
                 <?php } else{ ?><div class="portrait" style="background-image: url('<?php echo $missing_url; ?>');"></div><?php } ?>
                 <h4>Rush Chair</h4>
                 <div class="border-bottom transition-center"></div>
-                <?php var_dump($rush_info); ?>
-                <p><span><?php echo $rush_info->first_name; ?></span><span><?php echo $rush_info->last_name; ?></span><span><a href="mailto:<?php echo $rush_info->email;?>"><?php echo $rush_info->email; ?></a></span></p>
+                <p><span><?php echo $rush_info->first_name; ?></span><span><?php echo $rush_info->last_name; ?></span><span><a href="mailto:<?php echo $rush_info->user_email;?>"><?php echo $rush_info->user_email; ?></a></span></p>
             </div>
             <div class="one-third column rush-thirds">
                 <div class="portrait" id="brother"></div>
