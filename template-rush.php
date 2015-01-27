@@ -177,7 +177,6 @@ Template Name: Rush page
                 <?php } else{ ?><div class="portrait" style="background-image: url('<?php echo $missing_url; ?>');"></div><?php } ?>
                 <h4>Senior Tribune</h4>
                 <div class="border-bottom transition-right"></div>
-                <?php echo $st_info ?>
                 <p><span><?php echo $st_info->first_name; ?></span><span><?php echo $st_info->last_name; ?></span><span><a href="mailto:seniortribune@kdrib.org">seniortribune@kdrib.org</a></span></p>
             </div>
             <div class="one-third column rush-thirds">
