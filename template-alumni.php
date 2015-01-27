@@ -135,12 +135,5 @@ Template Name: Alumni page
             </form>
 		</div>
 	</section>
-	<section class="dues">
-		<div id="container" class="container">
-			<header class="fourteen columns offset-by-one blogs-title">
-				<h1 class='lobster'>Alumni Dues</h1>
-			</header>
-		</div>
-	</section>
 </main>
 <?php get_footer(); ?>

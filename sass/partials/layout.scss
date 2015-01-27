@@ -18,8 +18,10 @@ BlankSlate is distributed under the terms of the GNU GPL
 
 /* SITE STYLES
  * ------------------------------------------------ */
-/* Add site styles here */
-/* For example: a { color: #000; } */
+html, body{
+	height: 100%;
+}
+
 main{
 	section{
 		padding: 42px 0px 70px 0px;
@@ -37,8 +39,19 @@ main{
 			}
 		}
 	}
-}
 
+}
+.hfeed{
+	min-height: 100%;
+	/*equal to footer height*/
+	margin-bottom: -38px;
+
+	&:after{
+		content: "";
+		display: block;
+	}
+
+}
 code{
 	display: block;
 	margin: .4em 0;
@@ -211,33 +224,97 @@ thead{
 }
 
 .blogs{
-		background-color: #EEEEEE;
+	background-color: #EEEEEE;
 
-		#container.container{
-			margin-top: 0px;
+	#container.container{
+		margin-top: 0px;
+	}
+
+	h1{
+		color: $mainOrange;
+		&:before, &:after {
+		    background-color: $mainOrange;
+		}
+	}
+
+	.blog{
+		margin-top: 42px;
+		margin-bottom: 42px;
+
+		.blog-image{
+			// width: 100%;
+			height: 301px;
+			background-position: 50% 50%;
+			background-size: 100% auto;
+			background-color: white;
+			background-repeat: no-repeat;
+			@include border-radius(4px);
+		}
+	}
+}
+
+.custom-radio {
+	    list-style-type:none;
+
+		li {
+		    // float:left;
+		    // margin:0 5px 0 0;
+		    // width:100px;
+		    height:14px;
+		    padding-top: 7px;
+		    padding-bottom: 7px;
+		    // position:relative;
+
+			text-decoration: none;
+			display: inline-block;
+			@include border-radius(4px);
+			color: white;
+			font-weight: 800;
+
+			
 		}
 
-		h1{
-			color: $mainOrange;
-			&:before, &:after {
-			    background-color: $mainOrange;
-			}
+		label, input {
+		    display:block;
+		    position:absolute;
+		    top:0;
+		    left:0;
+		    right:0;
+		    bottom:0;
 		}
 
-		.blog{
-			margin-top: 42px;
-			margin-bottom: 42px;
-
-			.blog-image{
-				// width: 100%;
-				height: 301px;
-				background-position: 50% 50%;
-				background-size: 100% auto;
-				background-color: white;
-				background-repeat: no-repeat;
-				@include border-radius(4px);
-			}
+		input[type="radio"] {
+		    opacity:0.011;
+		    z-index:100;
 		}
+
+		input[type="radio"]:checked + label {
+		    background-color: $borderBlue;
+		    border-bottom: 3px solid $borderBlue;
+
+		    &:hover{
+		    	border-bottom: 3px solid $borderBlue;
+		    }
+		}
+
+		label {
+		    padding:5px;
+		    cursor:pointer;
+		    z-index:90;
+
+		    @include border-radius(4px);
+		    background-color: $mainBlue;
+		    border-bottom: 3px solid $borderBlue;
+
+		    &:hover{
+		    	background-color: $mainOrange;
+		    	border-bottom: 3px solid $borderOrange;
+		    }
+		}
+
+		// label:hover {
+		//     background:#DDD;
+		// }
 	}
 
 
@@ -615,7 +692,7 @@ header#header{
 //Footer stylization
 body > footer{
 	background-color: $secondaryBlue;
-	// height: 42px;
+	height: 38px;
 
 	#copyright{
 		margin-top: 10px;
@@ -1311,83 +1388,20 @@ body > footer{
 				background-color: $mainOrange;
 			}
 		}
-
-		.custom-radio {
-		    list-style-type:none;
-	
-			li {
-			    // float:left;
-			    // margin:0 5px 0 0;
-			    // width:100px;
-			    height:14px;
-			    padding-top: 7px;
-			    padding-bottom: 7px;
-			    // position:relative;
-
-				text-decoration: none;
-				display: inline-block;
-				@include border-radius(4px);
-				color: white;
-				font-weight: 800;
-
-				
-			}
-
-			label, input {
-			    display:block;
-			    position:absolute;
-			    top:0;
-			    left:0;
-			    right:0;
-			    bottom:0;
-			}
-
-			input[type="radio"] {
-			    opacity:0.011;
-			    z-index:100;
-			}
-
-			input[type="radio"]:checked + label {
-			    background-color: $borderBlue;
-			    border-bottom: 3px solid $borderBlue;
-
-			    &:hover{
-			    	border-bottom: 3px solid $borderBlue;
-			    }
-			}
-
-			label {
-			    padding:5px;
-			    cursor:pointer;
-			    z-index:90;
-
-			    @include border-radius(4px);
-			    background-color: $mainBlue;
-			    border-bottom: 3px solid $borderBlue;
-
-			    &:hover{
-			    	background-color: $mainOrange;
-			    	border-bottom: 3px solid $borderOrange;
-			    }
-			}
-
-			// label:hover {
-			//     background:#DDD;
-			// }
-		}
-
 	}
+}
 
+.ibac-dues{
 	.dues{
-		background-color: $mainOrange;
+		background-color: #EEEEEE;
 
 		h1{
-			color: white;
+			color: $mainOrange;
 			&:before, &:after{
-				background-color: white;
+				background-color: $mainOrange;
 			}
 		}
-	}
+	}	
 }
 /* MEDIA QUERIES
  * ------------------------------------------------ */
