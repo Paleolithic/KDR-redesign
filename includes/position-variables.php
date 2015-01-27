@@ -1,6 +1,6 @@
 <?php 
 	$praetorA = get_users(array(
-   		'meta_key' => 'eboard_position',
+   		'meta_key' => 'position',
    		'meta_value' => 'praetor',
    		'meta_compare' => '='
 		));
@@ -8,7 +8,7 @@
 	$praetor_info = get_userdata($praetor->ID);
 
 	$jtA = get_users(array(
-   		'meta_key' => 'eboard_position',
+   		'meta_key' => 'position',
    		'meta_value' => 'jt',
    		'meta_compare' => '='
 		));
@@ -16,7 +16,7 @@
 	$jt_info = get_userdata($jt->ID);
 
 	$consulA = get_users(array(
-   		'meta_key' => 'eboard_position',
+   		'meta_key' => 'position',
    		'meta_value' => 'consul',
    		'meta_compare' => '='
 		));
@@ -24,7 +24,7 @@
 	$consul_info = get_userdata($consul->ID);
 
 	$stA = get_users(array(
-   		'meta_key' => 'eboard_position',
+   		'meta_key' => 'position',
    		'meta_value' => 'st',
    		'meta_compare' => '='
 		));
@@ -32,7 +32,7 @@
 	$st_info = get_userdata($st->ID);
 
 	$quaestorA = get_users(array(
-   		'meta_key' => 'eboard_position',
+   		'meta_key' => 'position',
    		'meta_value' => 'quaestor',
    		'meta_compare' => '='
 		));
@@ -40,7 +40,7 @@
 	$quaestor_info = get_userdata($quaestor->ID);
 
 	$rush = get_users(array(
-   		'meta_key' => 'eboard_position',
+   		'meta_key' => 'position',
    		'meta_value' => 'rush',
    		'meta_compare' => '='
 		));
