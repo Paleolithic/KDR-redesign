@@ -39,7 +39,7 @@
 	$quaestor = $quaestorA[0];
 	$quaestor_info = get_userdata($quaestor->ID);
 
-	$rush = get_users(array(
+	$rushA = get_users(array(
    		'meta_key' => 'position',
    		'meta_value' => 'rush',
    		'meta_compare' => '='
