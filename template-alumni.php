@@ -46,24 +46,22 @@ Template Name: Alumni page
 			<header class="fourteen columns offset-by-one blogs-title">
 				<h1 class='lobster'>Mailing List Signup</h1>
 			</header>
-			<div class="sixteen columns">
-				<form action="" method="post" enctype="text/plain">
-	                <input class="four columns" type="text" name="first" placeholder="First Name" />
-	                <input class="four columns" type="text" name="first" placeholder="Last Name" />
-					<input class="eight columns" type="text" name="email" placeholder="Email" />
-					<select class="sixteen columns" multiple="multiple" required="required">
-	                	<option value="Active chapter minutes">Active chapter minutes</option>
-	                	<option value="IBAC annual meeting minutes">IBAC annual meeting minutes</option>
-	                	<option value="Newsletters">Newsletters</option>
-	                	<option value="Announcements">Announcements</option>
-	                	<option value="Only annual events">Only annual events</option>
-	                	<option value="KDR IB Rochester events">KDR IB Rochester events</option>
-	                	<option value="Career Opportunities">Career Opportunities</option>
-	                </select>
+			<form action="" method="post" enctype="text/plain">
+                <input class="four columns" type="text" name="first" placeholder="First Name" />
+                <input class="four columns" type="text" name="first" placeholder="Last Name" />
+				<input class="eight columns" type="text" name="email" placeholder="Email" />
+				<select class="sixteen columns" multiple="multiple" required="required">
+                	<option value="Active chapter minutes">Active chapter minutes</option>
+                	<option value="IBAC annual meeting minutes">IBAC annual meeting minutes</option>
+                	<option value="Newsletters">Newsletters</option>
+                	<option value="Announcements">Announcements</option>
+                	<option value="Only annual events">Only annual events</option>
+                	<option value="KDR IB Rochester events">KDR IB Rochester events</option>
+                	<option value="Career Opportunities">Career Opportunities</option>
+                </select>
 
-	                <input class="sixteen columns" type='submit' value='Sign Up'>
-	            </form>
-	        </div>
+                <input class="sixteen columns" type='submit' value='Sign Up'>
+            </form>
 		</div>
 	</section>
 	<section class="support">
