@@ -42,30 +42,32 @@ Template Name: Alumni page
 		</div>
 	</section>
 	<section class="mailing">
-		<div id="container" class="container">
+		<div class="container">
 			<header class="fourteen columns offset-by-one blogs-title">
 				<h1 class='lobster'>Mailing List Signup</h1>
 			</header>
-			<form action="" method="post" enctype="text/plain">
-                <input class="four columns" type="text" name="first" placeholder="First Name" />
-                <input class="four columns" type="text" name="first" placeholder="Last Name" />
-				<input class="eight columns" type="text" name="email" placeholder="Email" />
-				<select class="sixteen columns" multiple="multiple" required="required">
-                	<option value="Active chapter minutes">Active chapter minutes</option>
-                	<option value="IBAC annual meeting minutes">IBAC annual meeting minutes</option>
-                	<option value="Newsletters">Newsletters</option>
-                	<option value="Announcements">Announcements</option>
-                	<option value="Only annual events">Only annual events</option>
-                	<option value="KDR IB Rochester events">KDR IB Rochester events</option>
-                	<option value="Career Opportunities">Career Opportunities</option>
-                </select>
+			<div class="sixteen columns">
+				<form action="" method="post" enctype="text/plain">
+	                <input class="four columns" type="text" name="first" placeholder="First Name" />
+	                <input class="four columns" type="text" name="first" placeholder="Last Name" />
+					<input class="eight columns" type="text" name="email" placeholder="Email" />
+					<select class="sixteen columns" multiple="multiple" required="required">
+	                	<option value="Active chapter minutes">Active chapter minutes</option>
+	                	<option value="IBAC annual meeting minutes">IBAC annual meeting minutes</option>
+	                	<option value="Newsletters">Newsletters</option>
+	                	<option value="Announcements">Announcements</option>
+	                	<option value="Only annual events">Only annual events</option>
+	                	<option value="KDR IB Rochester events">KDR IB Rochester events</option>
+	                	<option value="Career Opportunities">Career Opportunities</option>
+	                </select>
 
-                <input class="sixteen columns" type='submit' value='Sign Up'>
-            </form>
+	                <input class="sixteen columns" type='submit' value='Sign Up'>
+	            </form>
+	        </div>
 		</div>
 	</section>
 	<section class="support">
-		<div id="container" class="container">
+		<div class="container">
 			<header class="fourteen columns offset-by-one blogs-title">
 				<h1 class='lobster'>Support KDR IB</h1>
 				<p>
@@ -78,64 +80,74 @@ Template Name: Alumni page
                 <h3 class="sixteen columns">Installments</h3>
                 <ul class="sixteen columns custom-radio">
                 	<li class="one-third column alpha">
-                		<input type="radio" id="12m" name="length" value="12 Months">
+                		<input type="radio" onclick="selectDuration(0);" id="12m" name="length" value="12 Months">
                 		<label for="12m">12 Months</label>
                 	</li>
                 	<li class="one-third column">
-                		<input type="radio" id="24m" name="length" value="24 Months">
+                		<input type="radio" onclick="selectDuration(1);" id="24m" name="length" value="24 Months">
                 		<label for="24m">24 Months</label>
                 	</li>
                 	<li class="one-third column omega">
-                		<input type="radio" id="30m" name="length" value="30 Months" checked>
+                		<input type="radio" onclick="selectDuration(2);" id="30m" name="length" value="30 Months" checked>
                 		<label for="30m">30 Months</label>
                 	</li>
             	</ul>	
                 <h3 class="sixteen columns">Monthly Amount</h3>
                 <ul class="sixteen columns custom-radio">
                 	<li class="two columns alpha">
-                		<input type="radio" id="10" name="amount" value="$10">
+                		<input type="radio" onclick="selectAmount(0);" id="10" name="amount" value="$10">
                 		<label for="10">$10</label>
                 	</li>
 					<li class="two columns">
-		                <input type="radio" id="15" name="amount" value="$15">
+		                <input type="radio" onclick="selectAmount(1);" id="15" name="amount" value="$15">
 		                <label for="15">$15</label>
 	                </li>
 					<li class="two columns">
-		                <input type="radio" id="20" name="amount" value="$20" checked>
+		                <input type="radio" onclick="selectAmount(2);" id="20" name="amount" value="$20" checked>
 		                <label for="20">$20</label>
 	                </li>
 					<li class="two columns">
-		                <input type="radio" id="25" name="amount" value="$25">
+		                <input type="radio" onclick="selectAmount(3);" id="25" name="amount" value="$25">
 		                <label for="25">$25</label>
 	                </li>
 					<li class="two columns">
-		                <input type="radio" id="30" name="amount" value="$30">
+		                <input type="radio" onclick="selectAmount(4);" id="30" name="amount" value="$30">
 		                <label for="30">$30</label>
 	                </li>
 					<li class="two columns">
-		                <input type="radio" id="35" name="amount" value="$35">
+		                <input type="radio" onclick="selectAmount(5);" id="35" name="amount" value="$35">
 		                <label for="35">$35</label>
 	                </li>
 					<li class="two columns">
-		                <input type="radio" id="40" name="amount" value="$40">
+		                <input type="radio" onclick="selectAmount(6);" id="40" name="amount" value="$40">
 		                <label for="40">$40</label>
 	                </li>
 					<li class="two columns omega">
-		                <input type="radio" id="50" name="amount" value="$50">
+		                <input onclick="selectAmount(7);" type="radio" id="50" name="amount" value="$50">
 		                <label for="50">$50</label>
 	                </li>
 					<li class="two columns alpha">
-		                <input type="radio" id="75" name="amount" value="$75">
+		                <input onclick="selectAmount(8);" type="radio" id="75" name="amount" value="$75">
 		                <label for="75">$75</label>
 	                </li>
 					<li class="two columns omega">
-		                <input type="radio" id="100" name="amount" value="$100">
+		                <input onclick="selectAmount(9);" type="radio" id="100" name="amount" value="$100">
 		                <label for="100">$100</label>
 	                </li>
                 </ul>
-                <input class="sixteen columns" type='submit' value='Donate'>
+                <input class="sixteen columns" type='submit' onclick="gotoPayPal();" value='Donate'>
             </form>
 		</div>
 	</section>
 </main>
 <?php get_footer(); ?>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/paypal-functions.js"/></script>
+<script type="text/javascript">
+    //                   10       15       20       25       30       35       40       50       75       100
+    codes[0] = new Array(3026390, 3026356, 3026334, 3026311, 3026301, 3026283, 3026268, 3026249, 3026191, 3005979); //12 month 
+    codes[1] = new Array(3026717, 3026660, 3026642, 3026612, 3026586, 3026527, 3026499, 3026480, 3026458, 3026425); //24 month
+    codes[2] = new Array(3027046, 3027015, 3026958, 3026925, 3026898, 3026882, 3026863, 3026831, 3026796, 3026770); //30 month
+
+    var durationId = 2;
+    var amountId = 2;
+</script>

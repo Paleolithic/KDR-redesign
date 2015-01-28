@@ -41,18 +41,18 @@ main{
 	}
 
 }
+
 .hfeed{
 	min-height: 100%;
 	/*equal to footer height*/
 	margin-bottom: -38px;
-	background-color: #EEEEEE;
 
 	&:after{
 		content: "";
 		display: block;
 	}
-
 }
+
 code{
 	display: block;
 	margin: .4em 0;
@@ -67,7 +67,7 @@ input[type="button"],input[type="submit"],.custom-radio label{
     border: none;
     text-shadow: none !important;
 }
-input[type="button"]:hover,input[type="submit"]:hover, .custom-radio label{
+input[type="button"]:hover,input[type="submit"]:hover{
     background: none;
     border: none;
     color: white;
@@ -104,6 +104,24 @@ thead{
 .table-hover > tbody > tr:hover > th{
 	background-color: $mainOrange;
 	cursor: pointer;
+}
+
+input[type="submit"]{
+	background-color: $mainGrey;
+	border-bottom: 3px solid $borderGrey;
+	text-decoration: none;
+	display: inline-block;
+	padding: 7px 14px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	@include border-radius(4px);
+	color: white;
+	font-weight: 800;
+
+	&:hover{
+		background-color: $mainOrange;
+		border-bottom: 3px solid $borderOrange;
+	}
 }
 
 .lobster{
@@ -330,7 +348,7 @@ html,body{
 }
 
 body{
-	background-color: #F3F3F3;	
+	background-color: #EEEEEE;	
 }
 
 header#header{
@@ -521,8 +539,9 @@ header#header{
 
 
 #container.container{
+	margin-top: 49px;	
+	
 	article:first-child{
-		margin-top: 49px;
 	}
 
 	p{
@@ -533,6 +552,13 @@ header#header{
 	a{
 		color: $mainBlue;
 		text-decoration: none;
+	}
+
+	.entry-title{
+		font-size: 35px;
+		line-height: 40px;
+		margin-bottom: 3px;
+		font-weight: 600;
 	}
 
 	.entry-date{
@@ -609,23 +635,6 @@ header#header{
 
 		i{
 			color: white;
-		}
-	}
-
-	input[type="submit"]{
-		background-color: $mainGrey;
-		border-bottom: 3px solid $borderGrey;
-		text-decoration: none;
-		display: inline-block;
-		padding: 7px 14px;
-		margin: 7px;
-		@include border-radius(4px);
-		color: white;
-		font-weight: 800;
-
-		&:hover{
-			background-color: $mainOrange;
-			border-bottom: 3px solid $borderOrange;
 		}
 	}
 
@@ -1404,6 +1413,19 @@ body > footer{
 		}
 	}	
 }
+
+.fourofour-page{
+	.not-found{
+		background-color: #EEEEEE;
+
+		h1{
+			color: $mainOrange;
+			&:before, &:after{
+				background-color: $mainOrange;
+			}
+		}
+	}
+}
 /* MEDIA QUERIES
  * ------------------------------------------------ */
 /* Otherwise known as custom responsive code! Write it here! */
@@ -1448,6 +1470,7 @@ body > footer{
 			}
 		}
 	}
+
 	.history{
 		.timeline:before, .timeline:after{
 			width: 748px;
@@ -1463,6 +1486,7 @@ body > footer{
 			display: none;
 		}
 	}
+
 	.brothers, .e-board{
 		.one-fifth.column{
 			width: 100%;
@@ -1477,6 +1501,16 @@ body > footer{
 		}	
 	}
 	
+	.blogs{
+		.blog{
+			margin-top: 14px;
+			margin-bottom: 14px;
+			.blog-image{
+				display: none;
+			}
+		}
+	}
+	
 	main{
 		section{
 			padding: 35px 0 56px 0;
@@ -1484,18 +1518,6 @@ body > footer{
 			header{
 				h1{
 					font-size: 42px;
-				}
-			}
-		}
-	}
-
-	.about{
-		.blogs{
-			.blog{
-				margin-top: 14px;
-				margin-bottom: 14px;
-				.blog-image{
-					display: none;
 				}
 			}
 		}

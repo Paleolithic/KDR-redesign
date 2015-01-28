@@ -1,14 +1,16 @@
 <?php get_header(); ?>
-<section id="content" role="main">
-<article id="post-0" class="post not-found">
-<header class="header">
-<h1 class="entry-title"><?php _e( 'Not Found', 'blankslate' ); ?></h1>
-</header>
-<section class="entry-content">
-<p><?php _e( 'Nothing found for the requested page. Try a search instead?', 'blankslate' ); ?></p>
-<?php get_search_form(); ?>
-</section>
-</article>
-</section>
+<main class="fourofour-page">
+	<section class="post not-found">
+		<div id="container" class="container">
+			<header class="fourteen columns offset-by-one">
+				<h1 class="lobster"><?php _e( 'Not Found', 'blankslate' ); ?></h1>
+				<p><?php _e( 'Nothing found for the requested page. Try a search instead?', 'blankslate' ); ?></p>
+			</header>
+			<div class="eight columns offset-by-four entry-content">
+				<?php get_search_form(); ?>
+			</div>
+		</div>
+	</article>
+</main>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
