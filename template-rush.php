@@ -65,7 +65,7 @@ Template Name: Rush page
 			</div>
 		</div>
 	</section>
-    <!--section class="interview">
+    <section class="interview">
         <div class="container">
             <div class="sixteen columns">
                 <div class="link">
@@ -73,7 +73,7 @@ Template Name: Rush page
                 </div>
             </div>
         </div>
-    </section-->
+    </section>
 	<section class="why" id="slides">
 		<div class='gradient'></div>
 		<div class="container">
