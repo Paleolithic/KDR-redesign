@@ -63,24 +63,10 @@ if(isset($_POST['email'])) {
  	
 
 	// create email headers
-	$headers = 'From: '.$email_from."\r\n".
+	$headers = 'From: '.$email_to."\r\n".
 	'Reply-To: '.$email_from."\r\n" .
 	'X-Mailer: PHP/' . phpversion();
 	mail($email_to, $email_subject, $email_message, $headers);   
-
-	$to = "tjb@kdrib.org";
-	$subject = "This is subject";
-	$message = "This is simple text message.";
-	$header = "From:tjb@kdrib.org \r\n";
-	$retval = mail ($to,$subject,$message,$header);
-	if( $retval == true )  
-	{
-	  echo "Message sent successfully...\n";
-	}
-	else
-	{
-	  echo "Message could not be sent...\n";
-	}
 
  	echo($email_message);
 }
