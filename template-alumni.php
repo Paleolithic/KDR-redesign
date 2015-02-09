@@ -62,7 +62,7 @@ Template Name: Alumni page
                 	<option value="Career Opportunities">Career Opportunities</option>
                 </select>
 
-                <input class="sixteen columns" type='submit' value='Sign Up'>
+                <input id="mailing_submit" class="sixteen columns" type='submit' value='Sign Up'>
             </form>
 		</div>
 	</section>
@@ -155,18 +155,15 @@ Template Name: Alumni page
 	 (function($){
 	 	// $first_name, $last_name, $email;
 		// Function to validate username, password, and email input on client side
+        var first_nameInput = document.getElementById("first_name");
+        var last_nameInput = document.getElementById("last_name");
+        var emailInput = document.getElementById("email"); 
+	    
 	    function validate()
 	    {
-	        var first_nameInput = document.getElementById("first_name");
 	        $first_name = first_nameInput.value;
-	        
-	        var last_nameInput = document.getElementById("last_name");
 	        $last_name = last_nameInput.value;
-
-	        var emailInput = document.getElementById("email"); 
 	        $email = emailInput.value;
-	        
-	        console.log($first_name + " " + $last_name + " " + $email);
 
 	        $validFName  = $first_name != "";
 	        $validLName  = $last_name != "";
@@ -181,9 +178,7 @@ Template Name: Alumni page
 	        $color = $validEmail ? "grey" : "red";
 	        emailInput.style.border="1px solid " + $color;
 
-	        if ($validFName && $validLName && $validEmail) {
-	            return true;
-	        }
+	        if ($validFName && $validLName && $validEmail) {return true;}
 	        
 	        return false;
 	    }
@@ -193,7 +188,6 @@ Template Name: Alumni page
 			e.preventDefault();
 
 			if(validate()){
-				var mailingList = document.getElementById('mailing_options').options.value;
 				var selectedOptions = [];
 
 				$("#mailing_options").each(function(){
@@ -212,6 +206,22 @@ Template Name: Alumni page
 					},
 					success: function(res){
 						console.log(res);
+
+						first_nameInput.value = "";
+						last_nameInput.value = "";
+						emailInput.value = "";
+
+						first_nameInput.style.border = "1px solid grey";
+						last_nameInput.style.border = "1px solid grey";
+						emailInput.style.border = "1px solid grey";
+
+						$("#mailing_options").val("Active chapter minutes");
+
+						$submit = $("#mailing_submit");
+						$submit.css("background-color", "rgb(172, 205, 138)");
+						$submit.prop("disabled", true);
+						$submit.prop("value", "Success!");
+
 					}
 				});				
 			}
