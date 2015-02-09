@@ -4,6 +4,7 @@ Template Name: Alumni page
 */
 ?>
 <?php get_header(); ?>
+<?php ini_set('display_errors',1); ?>
 <main class="ibac">
 	<section class="info">
 		<div class="container">
@@ -46,12 +47,13 @@ Template Name: Alumni page
 			<header class="fourteen columns offset-by-one blogs-title">
 				<h1 class='lobster'>Mailing List Signup</h1>
 			</header>
-			<form action="" method="post" enctype="text/plain">
-                <input class="four columns" type="text" name="first" placeholder="First Name" />
-                <input class="four columns" type="text" name="first" placeholder="Last Name" />
-				<input class="eight columns" type="text" name="email" placeholder="Email" />
-				<select class="sixteen columns" multiple="multiple" required="required">
-                	<option value="Active chapter minutes">Active chapter minutes</option>
+
+			<form id="email-signup" method="post" enctype="text/plain">
+                <input class="four columns" type="text" id="first_name" name="first_name" placeholder="First Name" />
+                <input class="four columns" type="text" id="last_name" name="last_name" placeholder="Last Name" />
+				<input class="eight columns" type="text" id="email" name="email" placeholder="Email" />
+				<select id="mailing_options" class="sixteen columns" multiple="multiple" name="list[]" required="required">
+                	<option value="Active chapter minutes" selected>Active chapter minutes</option>
                 	<option value="IBAC annual meeting minutes">IBAC annual meeting minutes</option>
                 	<option value="Newsletters">Newsletters</option>
                 	<option value="Announcements">Announcements</option>
@@ -148,4 +150,71 @@ Template Name: Alumni page
 
     var durationId = 2;
     var amountId = 2;
+</script>
+<script type="text/javascript">
+	 (function($){
+	 	// $first_name, $last_name, $email;
+		// Function to validate username, password, and email input on client side
+	    function validate()
+	    {
+	        var first_nameInput = document.getElementById("first_name");
+	        $first_name = first_nameInput.value;
+	        
+	        var last_nameInput = document.getElementById("last_name");
+	        $last_name = last_nameInput.value;
+
+	        var emailInput = document.getElementById("email"); 
+	        $email = emailInput.value;
+	        
+	        console.log($first_name + " " + $last_name + " " + $email);
+
+	        $validFName  = $first_name != "";
+	        $validLName  = $last_name != "";
+	        $validEmail = $email != "" && $email.indexOf("@") >= 0; 
+
+	        $color = $validFName ? "grey" : "red";
+	        first_nameInput.style.border="1px solid " + $color;
+
+	        $color = $validLName ? "grey" : "red";
+	        last_nameInput.style.border="1px solid " + $color;
+
+	        $color = $validEmail ? "grey" : "red";
+	        emailInput.style.border="1px solid " + $color;
+
+	        if ($validFName && $validLName && $validEmail) {
+	            return true;
+	        }
+	        
+	        return false;
+	    }
+	
+		$("#email-signup").submit(function(e){
+			console.log("submitted");
+			e.preventDefault();
+
+			if(validate()){
+				var mailingList = document.getElementById('mailing_options').options.value;
+				var selectedOptions = [];
+
+				$("#mailing_options").each(function(){
+					selectedOptions.push($(this).val()); 
+				});
+
+				console.log(selectedOptions);
+				$.ajax({
+					url: "<?php bloginfo('template_directory');?>/includes/send_email.php",
+					type: "POST",
+					data: {
+						"first_name": $first_name,
+						"last_name": $last_name,
+						"email": $email,
+						"list": selectedOptions
+					},
+					success: function(res){
+						console.log(res);
+					}
+				});				
+			}
+		});
+	}(jQuery));
 </script>
