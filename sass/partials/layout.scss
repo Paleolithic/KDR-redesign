@@ -1387,6 +1387,21 @@ body > footer{
 		select{
 			text-align: center;
 		}
+
+		#mailing_submit{
+			@include transition-property(background-color, border-bottom);
+			@include transition-duration(500ms);			
+		}
+		#mailing_submit.complete{
+			background-color: rgb(172, 205, 138);
+			border-bottom: 3px solid #90AB73;
+
+			&:hover{ border-bottom: 3px solid #90AB73; }
+		}
+		
+		.loading{
+
+		}
 	}
 
 	.support{

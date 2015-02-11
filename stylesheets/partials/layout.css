@@ -1510,41 +1510,61 @@ body > footer a {
 .ibac .mailing select {
   text-align: center;
 }
-/* line 1392, ../../sass/partials/layout.scss */
+/* line 1391, ../../sass/partials/layout.scss */
+.ibac .mailing #mailing_submit {
+  -moz-transition-property: background-color, border-bottom;
+  -o-transition-property: background-color, border-bottom;
+  -webkit-transition-property: background-color, border-bottom;
+  transition-property: background-color, border-bottom;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+/* line 1395, ../../sass/partials/layout.scss */
+.ibac .mailing #mailing_submit.complete {
+  background-color: #accd8a;
+  border-bottom: 3px solid #90AB73;
+}
+/* line 1399, ../../sass/partials/layout.scss */
+.ibac .mailing #mailing_submit.complete:hover {
+  border-bottom: 3px solid #90AB73;
+}
+/* line 1407, ../../sass/partials/layout.scss */
 .ibac .support {
   background-color: #F3F3F3;
 }
-/* line 1395, ../../sass/partials/layout.scss */
+/* line 1410, ../../sass/partials/layout.scss */
 .ibac .support h1 {
   color: #E5655D;
 }
-/* line 1397, ../../sass/partials/layout.scss */
+/* line 1412, ../../sass/partials/layout.scss */
 .ibac .support h1:before, .ibac .support h1:after {
   background-color: #E5655D;
 }
 
-/* line 1405, ../../sass/partials/layout.scss */
+/* line 1420, ../../sass/partials/layout.scss */
 .ibac-dues .dues {
   background-color: #EEEEEE;
 }
-/* line 1408, ../../sass/partials/layout.scss */
+/* line 1423, ../../sass/partials/layout.scss */
 .ibac-dues .dues h1 {
   color: #E5655D;
 }
-/* line 1410, ../../sass/partials/layout.scss */
+/* line 1425, ../../sass/partials/layout.scss */
 .ibac-dues .dues h1:before, .ibac-dues .dues h1:after {
   background-color: #E5655D;
 }
 
-/* line 1418, ../../sass/partials/layout.scss */
+/* line 1433, ../../sass/partials/layout.scss */
 .fourofour-page .not-found {
   background-color: #EEEEEE;
 }
-/* line 1421, ../../sass/partials/layout.scss */
+/* line 1436, ../../sass/partials/layout.scss */
 .fourofour-page .not-found h1 {
   color: #E5655D;
 }
-/* line 1423, ../../sass/partials/layout.scss */
+/* line 1438, ../../sass/partials/layout.scss */
 .fourofour-page .not-found h1:before, .fourofour-page .not-found h1:after {
   background-color: #E5655D;
 }
@@ -1558,7 +1578,7 @@ body > footer a {
 /* Smaller than standard strip-units(960px) (devices and browsers) */
 @media only screen and (max-width: 959px) {
   /* add code here */
-  /* line 1440, ../../sass/partials/layout.scss */
+  /* line 1455, ../../sass/partials/layout.scss */
   header#header h1 {
     font-size: 21px;
   }
@@ -1566,25 +1586,25 @@ body > footer a {
 /* Tablet Portrait size to standard strip-units(960px) (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   /* add code here */
-  /* line 1450, ../../sass/partials/layout.scss */
+  /* line 1465, ../../sass/partials/layout.scss */
   .brothers .portrait, .e-board .portrait {
     height: 132px;
     background-size: 132px 170px;
   }
 
-  /* line 1458, ../../sass/partials/layout.scss */
+  /* line 1473, ../../sass/partials/layout.scss */
   .about .top h1 {
     font-size: 91px;
   }
 
-  /* line 1466, ../../sass/partials/layout.scss */
+  /* line 1481, ../../sass/partials/layout.scss */
   .rush .who .rush-photo {
     height: 132px;
     width: 132px;
     background-size: 132px 170px;
   }
 
-  /* line 1475, ../../sass/partials/layout.scss */
+  /* line 1490, ../../sass/partials/layout.scss */
   .history .timeline:before, .history .timeline:after {
     width: 748px;
   }
@@ -1592,18 +1612,18 @@ body > footer a {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   /* add code here */
-  /* line 1485, ../../sass/partials/layout.scss */
+  /* line 1500, ../../sass/partials/layout.scss */
   .lobster:before, .lobster:after {
     display: none;
   }
 
-  /* line 1491, ../../sass/partials/layout.scss */
+  /* line 1506, ../../sass/partials/layout.scss */
   .brothers .one-fifth.column, .e-board .one-fifth.column {
     width: 100%;
     margin-top: 14px;
     margin-bottom: 14px;
   }
-  /* line 1496, ../../sass/partials/layout.scss */
+  /* line 1511, ../../sass/partials/layout.scss */
   .brothers .portrait, .e-board .portrait {
     height: 132px;
     width: 132px;
@@ -1611,33 +1631,33 @@ body > footer a {
     margin: 0 auto;
   }
 
-  /* line 1505, ../../sass/partials/layout.scss */
+  /* line 1520, ../../sass/partials/layout.scss */
   .blogs .blog {
     margin-top: 14px;
     margin-bottom: 14px;
   }
-  /* line 1508, ../../sass/partials/layout.scss */
+  /* line 1523, ../../sass/partials/layout.scss */
   .blogs .blog .blog-image {
     display: none;
   }
 
-  /* line 1515, ../../sass/partials/layout.scss */
+  /* line 1530, ../../sass/partials/layout.scss */
   main section {
     padding: 35px 0 56px 0;
   }
-  /* line 1519, ../../sass/partials/layout.scss */
+  /* line 1534, ../../sass/partials/layout.scss */
   main section header h1 {
     font-size: 42px;
   }
 
-  /* line 1528, ../../sass/partials/layout.scss */
+  /* line 1543, ../../sass/partials/layout.scss */
   .rush .who .rush-thirds {
     width: 100%;
     margin-top: 14px;
     margin-bottom: 14px;
   }
 
-  /* line 1537, ../../sass/partials/layout.scss */
+  /* line 1552, ../../sass/partials/layout.scss */
   .history .timeline:before, .history .timeline:after {
     width: 420px;
   }
@@ -1649,43 +1669,43 @@ body > footer a {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   /* add code here */
-  /* line 1551, ../../sass/partials/layout.scss */
+  /* line 1566, ../../sass/partials/layout.scss */
   #container.container a.more-link {
     text-align: left;
   }
 
-  /* line 1557, ../../sass/partials/layout.scss */
+  /* line 1572, ../../sass/partials/layout.scss */
   .about .top h1 {
     font-size: 91px;
   }
-  /* line 1562, ../../sass/partials/layout.scss */
+  /* line 1577, ../../sass/partials/layout.scss */
   .about .where {
     height: auto;
     padding: 42px 0px 70px 0px;
     background-color: #E5655D;
   }
-  /* line 1567, ../../sass/partials/layout.scss */
+  /* line 1582, ../../sass/partials/layout.scss */
   .about .where header {
     margin-bottom: 0px;
   }
-  /* line 1571, ../../sass/partials/layout.scss */
+  /* line 1586, ../../sass/partials/layout.scss */
   .about .where h1 {
     color: white;
   }
-  /* line 1573, ../../sass/partials/layout.scss */
+  /* line 1588, ../../sass/partials/layout.scss */
   .about .where h1:before, .about .where h1:after {
     background-color: white;
   }
-  /* line 1578, ../../sass/partials/layout.scss */
+  /* line 1593, ../../sass/partials/layout.scss */
   .about .where p {
     color: white;
   }
-  /* line 1582, ../../sass/partials/layout.scss */
+  /* line 1597, ../../sass/partials/layout.scss */
   .about .where .map {
     display: none;
   }
 
-  /* line 1589, ../../sass/partials/layout.scss */
+  /* line 1604, ../../sass/partials/layout.scss */
   .history .timeline:before, .history .timeline:after {
     width: 300px;
   }

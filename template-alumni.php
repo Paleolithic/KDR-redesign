@@ -188,8 +188,11 @@ Template Name: Alumni page
 			e.preventDefault();
 
 			if(validate()){
+				$submit = $("#mailing_submit");
+				$submit.toggleClass("loading");
+				$submit.prop("value", "Loading...");
+				
 				var selectedOptions = [];
-
 				$("#mailing_options").each(function(){
 					selectedOptions.push($(this).val()); 
 				});
@@ -217,8 +220,8 @@ Template Name: Alumni page
 
 						$("#mailing_options").val("Active chapter minutes");
 
-						$submit = $("#mailing_submit");
-						$submit.css("background-color", "rgb(172, 205, 138)");
+						// $submit = $("#mailing_submit");
+						$submit.toggleClass("loading complete");
 						$submit.prop("disabled", true);
 						$submit.prop("value", "Success!");
 
