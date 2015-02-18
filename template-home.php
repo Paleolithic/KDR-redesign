@@ -128,11 +128,10 @@ Template Name: Home page
 	<section class="e-board">
 		<div class="container">
 			<header class="fourteen columns offset-by-one e-board-title">
-				<h1 class='lobster'>Our Brothers</h1>
+				<h1 class='lobster'>Meet our E-Board</h1>
 				<p>These are the gentlemen who keep our fraternity alive and well. They each have a specific job in managing our day to day activities, and do their best to keep us efficient
 				</p>
 			</header>
-			<h2 class="sixteen columns">Executive Board</h2>
 			<div class="one-fifth column e-board-fifths">
 				<?php $url = get_template_directory_uri() . "/images/brothers/" . $praetor_info->pin . ".jpg";  
 					  $missing_url = get_template_directory_uri() . "/images/brothers/no_pic.jpg"; 
