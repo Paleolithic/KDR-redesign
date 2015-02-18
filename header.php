@@ -21,10 +21,9 @@
 			<h1><a href='http://www.kdrib.org'><span>&Kappa;<span class="delta">&Delta;</span>&Rho; </span>Iota Beta</a></h1>
 			<!-- <div id="site-description"><?php bloginfo( 'description' ); ?></div> -->
 		</section>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+		<label for="nav-trigger"></label>
 		<nav class='eleven columns' id="menu" role="navigation">
-			<div id="search">
-			<!-- <?php get_search_form(); ?> -->
-			</div>
 			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 		</nav>
 	</div>

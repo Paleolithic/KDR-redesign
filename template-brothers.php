@@ -44,7 +44,7 @@ Template Name: Brothers page
 							<?php if(file_exists ( $check_path)){ ?>
 								<div class="portrait" style="background-image: url('<?php echo $url; ?>');"></div>
 							<?php } else{ ?>
-								<div class="portrait" style="background-image: url('<?php echo $missing_url; ?>');"></div>
+								<div class="portrait missing" style="background-image: url('<?php echo $missing_url; ?>');"></div>
 							<?php } ?>
 							<p>
 								<span><?php echo $user_info->first_name ?></span>
@@ -74,7 +74,7 @@ Template Name: Brothers page
 							<?php if(file_exists ( $check_path)){ ?>
 								<div class="portrait" style="background-image: url('<?php echo $url; ?>');"></div>
 							<?php } else{ ?>
-								<div class="portrait" style="background-image: url('<?php echo $missing_url; ?>');"></div>
+								<div class="portrait missing" style="background-image: url('<?php echo $missing_url; ?>');"></div>
 							<?php } ?>
 							<p>
 								<span><?php echo $user_info->first_name ?></span>

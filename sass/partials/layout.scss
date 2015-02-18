@@ -415,6 +415,25 @@ header#header{
 		} 
 	}
 
+	.nav-trigger {
+	    position: absolute;
+	    clip: rect(0, 0, 0, 0);
+	}
+
+	label[for="nav-trigger"] {
+		position: absolute;
+	    z-index: 2;
+	    width: 30px;
+	    height: 30px;
+	    cursor: pointer;
+	    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+	    background-size: contain;
+	    top: 16px;
+	    right: 10px;
+	    display:none;
+
+	}
+
 	.current-menu-item, .current-menu-ancestor{
 		background-color: $secondaryBlue;
 		border-bottom: 3px solid $borderBlue;
@@ -1450,11 +1469,24 @@ body > footer{
 @media only screen and (max-width: $baseWidthMQ - 1) {
 	/* add code here */
 	header#header h1{ font-size: 21px; }
+
+
 }
 
 /* Tablet Portrait size to standard #{strip-units($baseWidthMQ)} (devices and browsers) */
 @media only screen and (min-width: $tabletWidth) and (max-width: $baseWidthMQ - 1) {
 	/* add code here */
+
+	header#header{
+
+		label[for="nav-trigger"] {
+	    	display:block;
+		}
+		ul{
+			display: none;
+		}
+	}
+
 	.brothers, .e-board{
 		.portrait{
 			height: 132px;
@@ -1484,6 +1516,16 @@ body > footer{
 @media only screen and (max-width: $tabletWidth - 1) {
 	/* add code here */
 	.lobster:before, .lobster:after{ display: none; }
+
+	header#header{
+
+		label[for="nav-trigger"] {
+	    	display:block;
+		}
+		ul{
+			display: none;
+		}
+	}
 
 	.brothers, .e-board{
 		.one-fifth.column{
