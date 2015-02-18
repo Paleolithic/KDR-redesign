@@ -18,9 +18,7 @@ BlankSlate is distributed under the terms of the GNU GPL
 
 /* SITE STYLES
  * ------------------------------------------------ */
-html, body{
-	height: 100%;
-}
+html, body{ height: 100%; }
 
 main{
 	section{
@@ -246,7 +244,7 @@ input[type="submit"]{
 	background-color: #EEEEEE;
 
 	#container.container{
-		margin-top: 0px;
+		padding-top: 0px;
 	}
 
 	h1{
@@ -1451,11 +1449,7 @@ body > footer{
 /* Smaller than standard #{strip-units($baseWidthMQ)} (devices and browsers) */
 @media only screen and (max-width: $baseWidthMQ - 1) {
 	/* add code here */
-	header#header{	
-		h1{
-			font-size: 21px;
-		}
-	}
+	header#header h1{ font-size: 21px; }
 }
 
 /* Tablet Portrait size to standard #{strip-units($baseWidthMQ)} (devices and browsers) */
@@ -1465,16 +1459,13 @@ body > footer{
 		.portrait{
 			height: 132px;
 			background-size: 132px 170px;
+		}
+		.missing{
+			background-size: 132px;
 		}			
 	}
 	
-	.about{
-		.top{
-			h1{
-				font-size: 91px;
-			}
-		}
-	}
+	.about .top h1{ font-size: 91px; }
 
 	.rush{
 		.who{
@@ -1486,21 +1477,13 @@ body > footer{
 		}
 	}
 
-	.history{
-		.timeline:before, .timeline:after{
-			width: 748px;
-		}
-	}
+	.history .timeline:before, .history .timeline:after{ width: 748px; }
 }
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: $tabletWidth - 1) {
 	/* add code here */
-	.lobster{
-		&:before, &:after{
-			display: none;
-		}
-	}
+	.lobster:before, .lobster:after{ display: none; }
 
 	.brothers, .e-board{
 		.one-fifth.column{
@@ -1513,6 +1496,9 @@ body > footer{
 			width: 132px;
 			background-size: 132px 170px;
 			margin: 0 auto;
+		}
+		.missing{
+			background-size: 132px;
 		}	
 	}
 	
@@ -1520,9 +1506,8 @@ body > footer{
 		.blog{
 			margin-top: 14px;
 			margin-bottom: 14px;
-			.blog-image{
-				display: none;
-			}
+
+			.blog-image{ display: none; }
 		}
 	}
 	
@@ -1530,11 +1515,7 @@ body > footer{
 		section{
 			padding: 35px 0 56px 0;
 
-			header{
-				h1{
-					font-size: 42px;
-				}
-			}
+			header h1{ font-size: 42px; }
 		}
 	}
 
@@ -1548,11 +1529,7 @@ body > footer{
 		}
 	}
 
-	.history{
-		.timeline:before, .timeline:after{
-			width: 420px;
-		}
-	}
+	.history .timeline:before, .history .timeline:after{ width: 420px; }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -1563,46 +1540,31 @@ body > footer{
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 	/* add code here */
-	#container.container a.more-link {
-		text-align: left;
-	}
+	body > footer{ height: 60px; }
+	// .hfeed{	margin-bottom: -60px; }
+
+	#container.container a.more-link { text-align: left; }
 
 	.about{
-		.top{
-			h1{
-				font-size: 91px;
-			}
-		}
+		.top h1{ font-size: 91px; }
 
 		.where{
 			height: auto;
 			padding: 42px 0px 70px 0px;
 			background-color: $mainOrange;
 
-			header{
-				margin-bottom: 0px;
-			}
+			header{ margin-bottom: 0px; }
 
 			h1{
 				color: white;
-			 	&:before, &:after{
-					background-color: white;
-			 	}
+			 	&:before, &:after{ background-color: white; }
 			}
 
-			p{
-				color: white;
-			}
+			p{ color: white; }
 
-			.map{
-				display: none;
-			}
+			.map{ display: none; }
 		}
 	}
 
-	.history{
-		.timeline:before, .timeline:after{
-			width: 300px;
-		}
-	}
+	.history .timeline:before, .history .timeline:after{ width: 300px; }
 }
